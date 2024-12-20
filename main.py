@@ -36,6 +36,36 @@ hide_streamlit_style = """
                 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
+st.markdown("""
+<style>
+
+	.stTabs [data-baseweb="tab-list"] {
+		gap: 13px;
+    }
+
+	.stTabs [data-baseweb="tab"] {
+		height: 50px;
+        white-space: pre-wrap;
+		background-color: #000000;
+		border-radius: 4px 4px 0px 0px;
+		gap: 5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+    }
+
+	.stTabs [aria-selected="true"] {
+  		background-color: #FFFFFF;
+        color: #6A7FDB;
+        font-weight: bold;
+	}
+
+    /* Change text color when tab is hovered */
+    .stTabs [data-baseweb="tab"]:hover {
+        color: #6A7FDB;  /* Change this to your desired color */
+    }
+    
+</style>""", unsafe_allow_html=True)
+
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(["01/2024", "02/2024", "03/2024", "04/2024", "05/2024", "06/2024", "07/2024", "08/2024", "09/2024", "10/2024", "11/2024", "12/2024"])
 
 # January 2024
