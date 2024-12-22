@@ -228,6 +228,18 @@ with tab1:
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .tooltip-col3-first {{
             display: block;
             background-color: #B56F76;
