@@ -217,13 +217,25 @@ with tab1:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3:hover {{
-            background-color: #B56F76;
+            background-color: #A3646A;
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
         }}
         .vertical-rectangle-col3-v2:hover {{
-            background-color: #84B067;
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
@@ -543,6 +555,12 @@ with tab3:
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
+        .vertical-rectangle-col3-march:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
@@ -820,6 +838,12 @@ with tab5:
             margin-bottom: 98px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-may:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
         }}
     </style>
     <div class="rectangle-container">
@@ -1384,6 +1408,12 @@ with tab9:
             margin-bottom: 107px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-sept:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
         }}
     </style>
     <div class="rectangle-container">
