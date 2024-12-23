@@ -88,7 +88,7 @@ with tab1:
             background-color: #708090; /* Example color */
             color: white !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             width: 110px;
             height: 90px;
@@ -159,7 +159,7 @@ with tab1:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -179,7 +179,7 @@ with tab1:
             height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -199,7 +199,7 @@ with tab1:
             height: 90px;
             background-color: #84B067;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -317,7 +317,7 @@ with tab2:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -387,7 +387,7 @@ with tab2:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -445,7 +445,7 @@ with tab3:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -516,7 +516,7 @@ with tab3:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -536,7 +536,7 @@ with tab3:
             height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -600,7 +600,7 @@ with tab4:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -671,7 +671,7 @@ with tab4:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -729,7 +729,7 @@ with tab5:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -800,7 +800,7 @@ with tab5:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -820,7 +820,7 @@ with tab5:
             height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -884,7 +884,7 @@ with tab6:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -955,7 +955,7 @@ with tab6:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1013,7 +1013,7 @@ with tab7:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1084,7 +1084,7 @@ with tab7:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1156,7 +1156,7 @@ with tab8:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1227,7 +1227,7 @@ with tab8:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1299,7 +1299,7 @@ with tab9:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1370,7 +1370,7 @@ with tab9:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1390,7 +1390,7 @@ with tab9:
             height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1468,7 +1468,7 @@ with tab10:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1539,7 +1539,7 @@ with tab10:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1611,7 +1611,7 @@ with tab11:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1682,7 +1682,7 @@ with tab11:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
@@ -1750,7 +1750,7 @@ with tab12:
             background-color: #708090; /* Example color */
             color: #F5F5F5 !important;;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1821,7 +1821,7 @@ with tab12:
             height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             color: white;
             display: flex;
