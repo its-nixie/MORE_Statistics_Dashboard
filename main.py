@@ -1,4 +1,3 @@
-# Necessary imports
 import streamlit as st
 
 st.set_page_config(page_title="Statistics Dashboard", page_icon="more_power_logo.png")
@@ -46,7 +45,6 @@ st.markdown("""
 	.stTabs [data-baseweb="tab"] {
 		height: 50px;
         white-space: pre-wrap;
-		background-color: #000000;
 		border-radius: 4px 4px 0px 0px;
 		gap: 5px;
 		padding-top: 10px;
@@ -54,14 +52,13 @@ st.markdown("""
     }
 
 	.stTabs [aria-selected="true"] {
-  		background-color: #FFFFFF;
-        color: #6A7FDB;
+  		background-color: #D4AF37;
+        color: #000000;
         font-weight: bold;
 	}
 
-    /* Change text color when tab is hovered */
-    .stTabs [data-baseweb="tab"]:hover {
-        color: #6A7FDB;  /* Change this to your desired color */
+    .st-c2 {
+            border-bottom: 4px solid #F5F5DC !important;
     }
     
 </style>""", unsafe_allow_html=True)
@@ -193,7 +190,7 @@ with tab1:
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
             position: relative;
-            margin-bottom: 80px;
+            margin-bottom: 90px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
@@ -256,9 +253,8 @@ with tab1:
             opacity: 1;
             width: 200px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            font-size: 10px;
+            font-size: 12px;
         }}
-
         .tooltip-col3-second {{
             display: block;
             background-color: #84B067;
@@ -275,9 +271,9 @@ with tab1:
             opacity: 1;
             width: 200px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            font-size: 10px;
+            font-size: 12px;
         }}
-    
+        
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
@@ -551,7 +547,7 @@ with tab3:
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
             position: relative;
-            margin-bottom: 90px;
+            margin-bottom: 100px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
@@ -835,7 +831,7 @@ with tab5:
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
             position: relative;
-            margin-bottom: 98px;
+            margin-bottom: 110px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
@@ -1405,7 +1401,7 @@ with tab9:
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
             position: relative;
-            margin-bottom: 107px;
+            margin-bottom: 120px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
@@ -1856,7 +1852,7 @@ with tab12:
             opacity: 1;
             width: 200px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            font-size: 10px;
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
