@@ -277,7 +277,7 @@ with tab1:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 48,462,295 
+            Captive (48,462,295)
         </div>
         <div class="vertical-rectangle-col3" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -405,7 +405,7 @@ with tab2:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 49,036,876  
+            Captive (49,036,876)
         </div>
         <div class="vertical-rectangle-col3" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -560,7 +560,7 @@ with tab3:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 53,006,149 
+            Captive (53,006,149)
         </div>
         <div class="vertical-rectangle-col3-march" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -689,7 +689,7 @@ with tab4:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 59,991,576 
+            Captive (59,991,576)
         </div>
         <div class="vertical-rectangle-col3-march" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -844,7 +844,7 @@ with tab5:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 63,552,930 
+            Captive (63,552,930) 
         </div>
         <div class="vertical-rectangle-col3-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -973,7 +973,7 @@ with tab6:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 56,319,151 
+            Captive (56,319,151)
         </div>
         <div class="vertical-rectangle-col3-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -1102,7 +1102,7 @@ with tab7:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 53,631,867 
+            Captive (53,631,867)
         </div>
         <div class="vertical-rectangle-col3-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -1245,7 +1245,7 @@ with tab8:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 56,902,886 
+            Captive (56,902,886)
         </div>
         <div class="vertical-rectangle-col3-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -1414,7 +1414,7 @@ with tab9:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 54,557,518 
+            Captive (54,557,518)
         </div>
         <div class="vertical-rectangle-col3-sept" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -1557,7 +1557,7 @@ with tab10:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 54,894,755   
+            Captive (54,894,755)
         </div>
         <div class="vertical-rectangle-col3-sept" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
@@ -1700,7 +1700,7 @@ with tab11:
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-            Captive: 55,379,891 
+            Captive (55,379,891)
         </div>
         <div class="vertical-rectangle-col3" onclick="fetch('/?rect=2').then(() => window.location.reload())">
             Contestables
