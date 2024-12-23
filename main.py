@@ -217,13 +217,21 @@ with tab1:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3:hover {{
+<<<<<<< HEAD
             background-color: #A3646A;
+=======
+            background-color: #B56F76;
+>>>>>>> 8900aa6e0777e9a91491ac00137c072ef9e4abea
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
         }}
         .vertical-rectangle-col3-v2:hover {{
+<<<<<<< HEAD
             background-color: #779E5C;
+=======
+            background-color: #84B067;
+>>>>>>> 8900aa6e0777e9a91491ac00137c072ef9e4abea
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
@@ -556,7 +564,11 @@ with tab3:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-march:hover {{
+<<<<<<< HEAD
             background-color: #A3646A;
+=======
+            background-color: #B56F76;
+>>>>>>> 8900aa6e0777e9a91491ac00137c072ef9e4abea
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
@@ -840,7 +852,11 @@ with tab5:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-may:hover {{
+<<<<<<< HEAD
             background-color: #A3646A;
+=======
+            background-color: #B56F76;
+>>>>>>> 8900aa6e0777e9a91491ac00137c072ef9e4abea
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
@@ -1410,7 +1426,11 @@ with tab9:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-sept:hover {{
+<<<<<<< HEAD
             background-color: #A3646A;
+=======
+            background-color: #B56F76;
+>>>>>>> 8900aa6e0777e9a91491ac00137c072ef9e4abea
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
