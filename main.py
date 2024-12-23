@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Statistics Dashboard", page_icon="more_power_logo.png")
+st.set_page_config(page_title="Statistics Dashboard", page_icon="more_power_logo.png", layout="wide")
 
 hide_streamlit_style = """
                 <style>
@@ -35,39 +35,43 @@ hide_streamlit_style = """
                 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-st.markdown("""
-<style>
+# FOR TABS
+# st.markdown("""
+# <style>
 
-	.stTabs [data-baseweb="tab-list"] {
-		gap: 13px;
-    }
+# 	.stTabs [data-baseweb="tab-list"] {
+# 		gap: 13px;
+#     }
 
-	.stTabs [data-baseweb="tab"] {
-		height: 50px;
-        white-space: pre-wrap;
-		border-radius: 4px 4px 0px 0px;
-		gap: 5px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-    }
+# 	.stTabs [data-baseweb="tab"] {
+# 		height: 50px;
+#         white-space: pre-wrap;
+# 		border-radius: 4px 4px 0px 0px;
+# 		gap: 5px;
+# 		padding-top: 10px;
+# 		padding-bottom: 10px;
+#     }
 
-	.stTabs [aria-selected="true"] {
-  		background-color: #D4AF37;
-        color: #000000;
-        font-weight: bold;
-	}
+# 	.stTabs [aria-selected="true"] {
+#   		background-color: #D4AF37;
+#         color: #000000;
+#         font-weight: bold;
+# 	}
 
-    .st-c2 {
-            border-bottom: 4px solid #F5F5DC !important;
-    }
+#     .st-c2 {
+#             border-bottom: 4px solid #F5F5DC !important;
+#     }
     
-</style>""", unsafe_allow_html=True)
+# </style>""", unsafe_allow_html=True)
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(["01/2024", "02/2024", "03/2024", "04/2024", "05/2024", "06/2024", "07/2024", "08/2024", "09/2024", "10/2024", "11/2024", "12/2024"])
+# tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(["01/2024", "02/2024", "03/2024", "04/2024", "05/2024", "06/2024", "07/2024", "08/2024", "09/2024", "10/2024", "11/2024", "12/2024"])
+
+st.sidebar.title("MORE Statistics Dashboard")
+tabs = st.sidebar.radio("Months", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
 
 # January 2024
-with tab1:
-
+# with tab1:
+if tabs == "January 2024":    
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
 
@@ -296,10 +300,11 @@ with tab1:
 )
 
 # February 2024
-with tab2:
+# with tab2:
+elif tabs == "February 2024": 
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
-
+    
     with col1:
         st.markdown("Input")
         st.markdown(
@@ -315,9 +320,10 @@ with tab2:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -402,6 +408,105 @@ with tab2:
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
+        .vertical-rectangle-col3 {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 90px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
@@ -424,7 +529,8 @@ with tab2:
 )
 
 # March 2024
-with tab3:
+# with tab3:
+elif tabs == "March 2024": 
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
 
@@ -433,7 +539,6 @@ with tab3:
         st.markdown(
     """
     <style>
-        /* Force small gap between rectangles */
         .rectangle-container {
             display: flex;
             flex-direction: column;
@@ -443,9 +548,10 @@ with tab3:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -531,6 +637,31 @@ with tab3:
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-col3-march {{
             width: 110px;
             height: 90px;
@@ -551,11 +682,59 @@ with tab3:
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-col3-march:hover {{
             background-color: #A3646A;
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
@@ -579,7 +758,8 @@ with tab3:
 )
 
 # April 2024
-with tab4:
+# with tab4:
+elif tabs == "April 2024": 
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
 
@@ -598,9 +778,10 @@ with tab4:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -686,6 +867,105 @@ with tab4:
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
+        .vertical-rectangle-col3-march {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 100px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-march:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
@@ -708,7 +988,8 @@ with tab4:
 )
 
 # May 2024
-with tab5:
+# with tab5:
+elif tabs == "May 2024":
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
 
@@ -727,9 +1008,10 @@ with tab5:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -795,6 +1077,12 @@ with tab5:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -814,6 +1102,12 @@ with tab5:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
         }}
         .vertical-rectangle-col3-may {{
             width: 110px;
@@ -841,6 +1135,67 @@ with tab5:
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
         }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
@@ -863,7 +1218,8 @@ with tab5:
 )
 
 # June 2024
-with tab6:
+# with tab6:
+elif tabs == "June 2024":
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
 
@@ -882,9 +1238,10 @@ with tab6:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -950,6 +1307,12 @@ with tab6:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -969,6 +1332,99 @@ with tab6:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-may {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 110px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-may:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
@@ -992,7 +1448,8 @@ with tab6:
 )
 
 # July 2024
-with tab7:
+# with tab7:
+elif tabs == "July 2024":
     # Create the rectangles
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1011,9 +1468,10 @@ with tab7:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1079,6 +1537,12 @@ with tab7:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -1098,6 +1562,99 @@ with tab7:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-may {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 110px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-may:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
@@ -1135,7 +1692,8 @@ with tab7:
         )
 
 # August 2024
-with tab8:
+# with tab8:
+elif tabs == "August 2024":
     # Create the rectangles
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1154,9 +1712,10 @@ with tab8:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1222,6 +1781,12 @@ with tab8:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -1241,6 +1806,99 @@ with tab8:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-may {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 110px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-may:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
@@ -1278,7 +1936,8 @@ with tab8:
         )
 
 # September 2024
-with tab9:
+# with tab9:
+elif tabs == "September 2024":
     # Create the rectangles
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1297,9 +1956,10 @@ with tab9:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1365,6 +2025,12 @@ with tab9:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -1384,6 +2050,12 @@ with tab9:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
         }}
         .vertical-rectangle-col3-sept {{
             width: 110px;
@@ -1410,6 +2082,67 @@ with tab9:
             color: #000;
             transform: scale(1.05);
             transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
@@ -1447,7 +2180,8 @@ with tab9:
         )
 
 # October 2024
-with tab10:
+# with tab10:
+elif tabs == "October 2024":
     # Create the rectangles
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1466,9 +2200,10 @@ with tab10:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1534,6 +2269,12 @@ with tab10:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -1553,6 +2294,99 @@ with tab10:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-sept {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 120px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-sept:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .vertical-rectangle-col3-v2 {{
+            width: 110px;
+            height: 90px;
+            background-color: #84B067;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3-v2:hover {{
+            background-color: #779E5C;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
         }}
     </style>
     <div class="rectangle-container">
@@ -1590,7 +2424,8 @@ with tab10:
         )
 
 # November 2024
-with tab11:
+# with tab11:
+elif tabs == "November 2024":
     # Create the rectangles
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1609,9 +2444,10 @@ with tab11:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1677,6 +2513,12 @@ with tab11:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -1697,6 +2539,75 @@ with tab11:
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
+        .vertical-rectangle-other:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+        .tooltip-col3-first {{
+            display: block;
+            background-color: #B56F76;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .tooltip-col3-second {{
+            display: block;
+            background-color: #84B067;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            left: 110%; /* Position the tooltip to the right of the rectangle */
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px; /* Add space between the rectangle and the tooltip */
+            opacity: 1;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+        }}
+        .vertical-rectangle-col3 {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 90px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
+
     </style>
     <div class="rectangle-container">
         <div class="vertical-rectangle-other" onclick="fetch('/?rect=1').then(() => window.location.reload())">
@@ -1729,7 +2640,8 @@ with tab11:
         )
 
 # December 2024
-with tab12:
+# with tab12:
+elif tabs == "December 2024":
     # Create the rectangles
     col1, col2, col3, col4 = st.columns(4)
 
@@ -1748,9 +2660,10 @@ with tab12:
         }
         .vertical-rectangle {
             background-color: #708090; /* Example color */
-            color: #F5F5F5 !important;;
+            color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
+            font-weight: bold;
             width: 110px;
             height: 90px;
             display: flex;
@@ -1816,6 +2729,12 @@ with tab12:
             align-items: flex-start;
             margin-top: 20px;
         }}
+        .vertical-rectangle:hover {{
+            background-color: #5A6978;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-other {{
             width: 110px;
             height: 90px;
@@ -1835,6 +2754,32 @@ with tab12:
             margin-bottom: 80px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3 {{
+            width: 110px;
+            height: 90px;
+            background-color: #B56F76;
+            color: #F5F5F5 !important;;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            margin-bottom: 90px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
+        }}
+        .vertical-rectangle-col3:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
         }}
         .tooltip-dec {{
             display: block;
