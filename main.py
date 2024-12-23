@@ -70,10 +70,10 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 sidebar_style = """
     <style>
     [data-testid="stSidebar"] {
-        width: 250px; /* Adjust the width as needed */
+        width: 270px; /* Adjust the width as needed */
     }
     [data-testid="stSidebar"] [aria-expanded="true"] > div:first-child {
-        width: 250px; /* Optional: Ensures proper width on expanded sidebar */
+        width: 270px; /* Optional: Ensures proper width on expanded sidebar */
     }
     </style>
 """
