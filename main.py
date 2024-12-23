@@ -70,7 +70,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 sidebar_style = """
     <style>
     [data-testid="stSidebar"] {
-        width: 300px;  /* Adjust the width as needed */
+        width: 250px;  /* Adjust the width as needed */
     }
     </style>
 """
