@@ -66,6 +66,18 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(["01/2024", "02/2024", "03/2024", "04/2024", "05/2024", "06/2024", "07/2024", "08/2024", "09/2024", "10/2024", "11/2024", "12/2024"])
 
+# Custom CSS to adjust sidebar width
+sidebar_style = """
+    <style>
+    [data-testid="stSidebar"] {
+        width: 300px;  /* Adjust the width as needed */
+    }
+    </style>
+"""
+
+# Apply the custom CSS
+st.markdown(sidebar_style, unsafe_allow_html=True)
+
 st.sidebar.title("MORE Statistics Dashboard")
 tabs = st.sidebar.radio("Months", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
 
