@@ -94,7 +94,7 @@ with tab1:
             border: 1px solid #ccc;
             font-weight: bold;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -159,7 +159,7 @@ with tab1:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -179,7 +179,7 @@ with tab1:
         }}
         .vertical-rectangle-col3 {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -199,7 +199,7 @@ with tab1:
         }}
         .vertical-rectangle-col3-v2 {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #84B067;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -323,7 +323,7 @@ with tab2:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -388,7 +388,7 @@ with tab2:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -451,7 +451,7 @@ with tab3:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -517,7 +517,7 @@ with tab3:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -537,7 +537,7 @@ with tab3:
         }}
         .vertical-rectangle-col3-march {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -606,7 +606,7 @@ with tab4:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -672,7 +672,7 @@ with tab4:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -735,7 +735,7 @@ with tab5:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -801,7 +801,7 @@ with tab5:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -821,7 +821,7 @@ with tab5:
         }}
         .vertical-rectangle-col3-may {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -890,7 +890,7 @@ with tab6:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -956,7 +956,7 @@ with tab6:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1019,7 +1019,7 @@ with tab7:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1085,7 +1085,7 @@ with tab7:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1162,7 +1162,7 @@ with tab8:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1228,7 +1228,7 @@ with tab8:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1305,7 +1305,7 @@ with tab9:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1371,7 +1371,7 @@ with tab9:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1391,7 +1391,7 @@ with tab9:
         }}
         .vertical-rectangle-col3-sept {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1474,7 +1474,7 @@ with tab10:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1540,7 +1540,7 @@ with tab10:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1617,7 +1617,7 @@ with tab11:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1683,7 +1683,7 @@ with tab11:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1756,7 +1756,7 @@ with tab12:
             padding: 10px;
             border: 1px solid #ccc;
             width: 110px;
-            height: 80px;
+            height: 90px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1822,7 +1822,7 @@ with tab12:
         }}
         .vertical-rectangle-other {{
             width: 110px;
-            height: 80px;
+            height: 90px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
