@@ -93,8 +93,8 @@ with tab1:
             padding: 10px;
             border: 1px solid #ccc;
             font-weight: bold;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -158,8 +158,8 @@ with tab1:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -178,8 +178,8 @@ with tab1:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3 {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -198,8 +198,8 @@ with tab1:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-v2 {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #84B067;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -322,8 +322,8 @@ with tab2:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -387,8 +387,8 @@ with tab2:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -450,8 +450,8 @@ with tab3:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -516,8 +516,8 @@ with tab3:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -536,8 +536,8 @@ with tab3:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-march {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -605,8 +605,8 @@ with tab4:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -671,8 +671,8 @@ with tab4:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -734,8 +734,8 @@ with tab5:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -800,8 +800,8 @@ with tab5:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -820,8 +820,8 @@ with tab5:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-may {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -889,8 +889,8 @@ with tab6:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -955,8 +955,8 @@ with tab6:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1018,8 +1018,8 @@ with tab7:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1084,8 +1084,8 @@ with tab7:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1161,8 +1161,8 @@ with tab8:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1227,8 +1227,8 @@ with tab8:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1304,8 +1304,8 @@ with tab9:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1370,8 +1370,8 @@ with tab9:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1390,8 +1390,8 @@ with tab9:
             box-shadow: 0 4px 8px rgba(17, 16, 16, 0.2);
         }}
         .vertical-rectangle-col3-sept {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #B56F76;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1473,8 +1473,8 @@ with tab10:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1539,8 +1539,8 @@ with tab10:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1616,8 +1616,8 @@ with tab11:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1682,8 +1682,8 @@ with tab11:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
@@ -1755,8 +1755,8 @@ with tab12:
             color: #F5F5F5 !important;;
             padding: 10px;
             border: 1px solid #ccc;
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
@@ -1821,8 +1821,8 @@ with tab12:
             margin-top: 20px;
         }}
         .vertical-rectangle-other {{
-            width: 100px;
-            height: 70px;
+            width: 110px;
+            height: 80px;
             background-color: #708090;
             color: #F5F5F5 !important;;
             border: 1px solid #ccc;
