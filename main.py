@@ -47,51 +47,14 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# FOR TABS
-# st.markdown("""
-# <style>
-
-# 	.stTabs [data-baseweb="tab-list"] {
-# 		gap: 13px;
-#     }
-
-# 	.stTabs [data-baseweb="tab"] {
-# 		height: 50px;
-#         white-space: pre-wrap;
-# 		border-radius: 4px 4px 0px 0px;
-# 		gap: 5px;
-# 		padding-top: 10px;
-# 		padding-bottom: 10px;
-#     }
-
-# 	.stTabs [aria-selected="true"] {
-#   		background-color: #D4AF37;
-#         color: #000000;
-#         font-weight: bold;
-# 	}
-
-#     .st-c2 {
-#             border-bottom: 4px solid #F5F5DC !important;
-#     }
-    
-# </style>""", unsafe_allow_html=True)
-
-# tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(["01/2024", "02/2024", "03/2024", "04/2024", "05/2024", "06/2024", "07/2024", "08/2024", "09/2024", "10/2024", "11/2024", "12/2024"])
-
-# Custom CSS to adjust sidebar width
-sidebar_style = """
+# Inject custom CSS to adjust sidebar size
+st.markdown("""
     <style>
-    [data-testid="stSidebar"] {
-        width: 270px; /* Adjust the width as needed */
-    }
-    [data-testid="stSidebar"] [aria-expanded="true"] > div:first-child {
-        width: 270px; /* Optional: Ensures proper width on expanded sidebar */
-    }
+        .css-1d391kg {
+            width: 350px;  /* Set the desired width here */
+        }
     </style>
-"""
-
-# Apply the custom CSS
-st.markdown(sidebar_style, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 st.sidebar.title("MORE Statistics Dashboard")
 tabs = st.sidebar.radio("Months", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
@@ -126,6 +89,12 @@ if tabs == "January 2024":
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
         .vertical-rectangle-jan2024-ilomore01 {
             background-color: #708090; /* Example color */
             color: white !important;;
@@ -146,6 +115,12 @@ if tabs == "January 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
         }
+        .vertical-rectangle-jan2024-ilomore01:hover {{
+            background-color: #A3646A;
+            color: #000;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }}
         .vertical-rectangle-jan2024-sbamore02 {
             background-color: #708090; /* Example color */
             color: white !important;;
@@ -287,6 +262,153 @@ if tabs == "January 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 46.66%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 9.02%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.30%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 40.09%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.77%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.24%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.92%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -325,6 +447,39 @@ if tabs == "January 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (18,628,682)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (22,612,876)
+                    </div>
+                    <div class="vertical-rectangle-commercial-jan" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,370,276)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-jan" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (143,182)
+                    </div>
+                    <div class="vertical-rectangle-power-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (19,430,194)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (859,156)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (600,334)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (446,277)
                     </div>
                 </div>
             </div>
@@ -415,6 +570,12 @@ elif tabs == "February 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -523,6 +684,153 @@ elif tabs == "February 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 45.68%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 9.12%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.30%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 40.76%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.97%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.24%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-feb {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.92%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -561,6 +869,39 @@ elif tabs == "February 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (11,293,125)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-feb" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (22,402,208)
+                    </div>
+                    <div class="vertical-rectangle-commercial-feb" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,474,132)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-feb" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (148,940)
+                    </div>
+                    <div class="vertical-rectangle-power-feb" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (19,985,679)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (965,591)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (607,960)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (452,367)
                     </div>
                 </div>
             </div>
@@ -650,6 +991,12 @@ elif tabs == "March 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -758,6 +1105,153 @@ elif tabs == "March 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 47.92%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.99%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.31%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 38.90%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.86%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.23%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-mar {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.78%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -796,6 +1290,39 @@ elif tabs == "March 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (11,735,138)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-mar" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (25,402,152)
+                    </div>
+                    <div class="vertical-rectangle-commercial-mar" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,763,443)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-mar" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (166,078)
+                    </div>
+                    <div class="vertical-rectangle-power-mar" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (20,619,608)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (986,917)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (653,259)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (414,691)
                     </div>
                 </div>
             </div>
@@ -888,6 +1415,12 @@ elif tabs == "April 2024":
             height: 530px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid transparent;
         }
         .vertical-rectangle-kspc-apr {
             background-color: #708090; /* Example color */
@@ -994,6 +1527,153 @@ elif tabs == "April 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 50.41%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.89%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.32%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 36.91%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.54%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.18%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-apr {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.75%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -1032,6 +1712,39 @@ elif tabs == "April 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (15,461,966)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-apr" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (30,242,166)
+                    </div>
+                    <div class="vertical-rectangle-commercial-apr" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (5,330,890)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-apr" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (192,821)
+                    </div>
+                    <div class="vertical-rectangle-power-apr" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (22,142,952)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (924,248)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (710,324)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (448,175)
                     </div>
                 </div>
             </div>
@@ -1122,6 +1835,12 @@ elif tabs == "May 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1230,6 +1949,153 @@ elif tabs == "May 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 50.58%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.87%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.33%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 36.67%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.61%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.27%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-may {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.68%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -1268,6 +2134,39 @@ elif tabs == "May 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (22,299,874)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (32,143,692)
+                    </div>
+                    <div class="vertical-rectangle-commercial-may" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (5,635,237)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-may" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (208,063)
+                    </div>
+                    <div class="vertical-rectangle-power-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (23,302,909)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (1,021,343)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (806,996)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (434,690)
                     </div>
                 </div>
             </div>
@@ -1358,6 +2257,12 @@ elif tabs == "June 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1466,6 +2371,153 @@ elif tabs == "June 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 50.58%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.87%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.33%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 36.67%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.61%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.27%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-jun {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.68%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -1504,6 +2556,39 @@ elif tabs == "June 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (27,109,551)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-jun" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (27,326,241)
+                    </div>
+                    <div class="vertical-rectangle-commercial-jun" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (5,017,783)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-jun" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (182,714)
+                    </div>
+                    <div class="vertical-rectangle-power-jun" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (21,749,431)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (875,200)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (732,954)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (434,829)
                     </div>
                 </div>
             </div>
@@ -1594,6 +2679,12 @@ elif tabs == "July 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1701,6 +2792,153 @@ elif tabs == "July 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+        }
+        .vertical-rectangle-residential-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 47.95%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 9.12%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.31%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 39.01%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.56%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.27%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-jul {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.77%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
         }   
     </style>
     <div class="rectangle-container">
@@ -1740,6 +2978,39 @@ elif tabs == "July 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (18,008,199)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-jul" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (25,719,097)
+                    </div>
+                    <div class="vertical-rectangle-commercial-jul" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,892,858)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-jul" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (168,171)
+                    </div>
+                    <div class="vertical-rectangle-power-jul" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (20,922,838)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (836,197)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (680,647)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (412,060)
                     </div>
                 </div>
             </div>
@@ -1831,6 +3102,12 @@ elif tabs == "August 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1939,6 +3216,153 @@ elif tabs == "August 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 48.68%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.86%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.32%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 37.98%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.91%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.50%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-aug {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.76%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -1977,6 +3401,39 @@ elif tabs == "August 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (14,709,732)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-aug" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (27,699,354)
+                    </div>
+                    <div class="vertical-rectangle-commercial-aug" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (5,041,468)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-aug" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (182,203)
+                    </div>
+                    <div class="vertical-rectangle-power-aug" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (21,610,325)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (1,084,803)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (854,535)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (430,198)
                     </div>
                 </div>
             </div>
@@ -2068,6 +3525,12 @@ elif tabs == "September 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2176,6 +3639,153 @@ elif tabs == "September 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 47.36%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.91%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.32%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 38.97%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.87%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.62%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-sep {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.97%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -2214,6 +3824,39 @@ elif tabs == "September 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (20,904,582)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-sep" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (25,836,637)
+                    </div>
+                    <div class="vertical-rectangle-commercial-sep" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,860,307)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-sep" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (171,989)
+                    </div>
+                    <div class="vertical-rectangle-power-sep" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (21,259,541)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (1,020,489)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (881,758)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (526,798)
                     </div>
                 </div>
             </div>
@@ -2304,6 +3947,12 @@ elif tabs == "October 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2412,6 +4061,154 @@ elif tabs == "October 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 47.44%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 8.89%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.32%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 38.88%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 2.03%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.65%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-oct {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.79%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -2450,6 +4247,38 @@ elif tabs == "October 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (18,747,975)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-oct" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (26,039,704)
+                    </div>
+                    <div class="vertical-rectangle-commercial-oct" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,880,754)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-oct" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (172,949)
+                    </div>
+                    <div class="vertical-rectangle-power-oct" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (21,345,716)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (1,112,136)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (907,607)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (435,889)
                     </div>
                 </div>
             </div>
@@ -2540,6 +4369,12 @@ elif tabs == "November 2024":
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
             height: 530px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2648,6 +4483,153 @@ elif tabs == "November 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
         }
+        .vertical-rectangle-residential-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 48.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-commercial-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 9.09%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-intermediate-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.32%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-power-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 38.19%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citygovernment-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.91%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-othergovernment-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 1.63%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
+        .vertical-rectangle-citystreetlights-nov {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: 0.79%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
     </style>
     <div class="rectangle-container">
         <div class="invisible-rectangle-1st-column">
@@ -2686,6 +4668,39 @@ elif tabs == "November 2024":
                     </div>
                     <div class="vertical-rectangle-wesm-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         WESM (21,860,612)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-nov" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (26,621,291)
+                    </div>
+                    <div class="vertical-rectangle-commercial-nov" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (5,034,110)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-nov" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (174,857)
+                    </div>
+                    <div class="vertical-rectangle-power-nov" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (21,147,490)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (1,060,257)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (902,769)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (439,117)
                     </div>
                 </div>
             </div>
