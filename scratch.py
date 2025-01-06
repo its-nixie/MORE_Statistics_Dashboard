@@ -33,3 +33,53 @@
 
 # December 2024
 <div class="tooltip-dec">SM Delgado - 467,927<br>SM City - 2,395,474<br>Golden Portals - 597,285<br>QHP - 416,100<br>Mary Mart - 248,980<br>HEVA - 389,432<br>Marriott - 436,659<br>Festive Walk Mall - 667,290<br>Smart Communications - 350,653<br>HEVA ICC - 131,164<br>KAREILA - 225,575<br>One Fintech - 358,438<br>Seda Hotel - 119,322<br>Innove Communications - 190,648<br>Adauge (The Shops) - 109,907<br>Sunnyfield - 219,858<br>Two Fintech - 341,476<br>Festive Walk 2 - 262,334</div>
+
+
+
+
+
+<div class="tooltip-feb">
+    <div class="arrow"></div>SM Delgado - 412,418<br>SM City - 2,133,582<br>Golden Portals - 517,279<br>QHP - 373,970<br>Mary Mart - 242,663<br>HEVA - 372,596<br>Marriott - 283,046<br>Festive Walk Mall - 624,995<br>Smart Communications - 316,744<br>HEVA ICC - 116,031<br>KAREILA - 200,944<br>One Fintech - 410,240<br>Seda Hotel - 110,157<br>Innove Communications - 174,634<br>Adauge (The Shops) - 84,544
+</div>
+
+.tooltip-jan {
+            display: block;
+            position: absolute;
+            top: -50px;
+            left: 100%;
+            width: 150%;
+            margin-left: 10px;
+            background-color: #fff;
+            color:black;
+            padding: 10px;
+            border: 1px solid #ddd;
+            z-index: 10;
+            opacity: 80%;
+        }
+        .tooltip-jan .arrow {
+            position: absolute;
+            top: 20%; /* Vertically center the arrow */
+            left: -10px; /* Position it to the left of the tooltip box */
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent; /* Left side of the arrow */
+            border-bottom: 10px solid transparent; /* Right side of the arrow */
+            border-right: 10px solid #ddd; /* Visible top part of the arrow */
+            transform: translateY(-50%); /* Adjust the vertical position */
+        }
+
+<div class="invisible-rectangle-3rd-column-2">
+                    <div class="vertical-rectangle-feeder-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        DSL_Feeder ()
+                    </div>
+                    <div class="vertical-rectangle-stss-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        DSL_ST+SS, KWH ()
+                    </div>
+                </div>
+
+.invisible-rectangle-3rd-column-2 {
+            width: 165px;  /* Set the width of the rectangle */
+            height: 100px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }

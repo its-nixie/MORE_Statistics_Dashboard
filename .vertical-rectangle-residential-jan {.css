@@ -1,0 +1,180 @@
+.vertical-rectangle-residential-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 46.66%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+.vertical-rectangle-commercial-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 9.02%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+.vertical-rectangle-intermediate-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 0.30%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+.vertical-rectangle-power-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 40.09%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+.vertical-rectangle-citygovernment-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 1.77%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+.vertical-rectangle-othergovernment-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 1.24%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+.vertical-rectangle-citystreetlights-jan {
+    background-color: #708090; /* Example color */
+    color: white !important;;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    width: 165px;
+    height: 0.92%;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 !important; /* Remove rectangle margin */
+    box-sizing: border-box; /* Ensure consistent sizing */
+    z-index: 10;
+}
+
+with col3:
+        st.markdown("Sales")
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Residential (22,612,876)
+                    </div>
+                    <div class="vertical-rectangle-commercial-jan" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Commercial (4,370,276)
+                    </div>
+                    <div class="vertical-rectangle-intermediate-jan" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Intermediate (143,182)
+                    </div>
+                    <div class="vertical-rectangle-power-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Power (19,430,194)
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Govt. (859,156)
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Other Govt. (600,334)
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        City Streetlights (446,277)
+                    </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
