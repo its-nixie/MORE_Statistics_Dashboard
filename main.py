@@ -139,7 +139,7 @@ if tabs == "January 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -560,20 +560,20 @@ if tabs == "January 2024":
                         City Streetlights (446,277)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,505,359)
                     </div>
                     <div class="vertical-rectangle-stss-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH ( 758,861 )
+                        DSL_ST+SS, KWH (758,861)
                     </div>
                 </div>
             </div>
             """,
             unsafe_allow_html=True
             )
-        
-        
+
 # February 2024
 elif tabs == "February 2024": 
     # Create the rectangles
@@ -640,7 +640,7 @@ elif tabs == "February 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1076,6 +1076,7 @@ elif tabs == "February 2024":
                         City Streetlights (452,367)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,839,645)
@@ -1147,7 +1148,7 @@ elif tabs == "March 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1591,6 +1592,7 @@ elif tabs == "March 2024":
                         City Streetlights (414,691)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (354,998)
@@ -1625,7 +1627,7 @@ elif tabs == "April 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2099,6 +2101,7 @@ elif tabs == "April 2024":
                         City Streetlights (448,175)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,316,900)
@@ -2153,7 +2156,7 @@ elif tabs == "May 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2607,6 +2610,7 @@ elif tabs == "May 2024":
                         City Streetlights (434,690)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (4,458,153)
@@ -2661,7 +2665,7 @@ elif tabs == "June 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -3115,6 +3119,7 @@ elif tabs == "June 2024":
                         City Streetlights (434,829)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,398,984)
@@ -3169,7 +3174,7 @@ elif tabs == "July 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -3623,6 +3628,7 @@ elif tabs == "July 2024":
                         City Streetlights (412,060)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,092,143)
@@ -3678,7 +3684,7 @@ elif tabs == "August 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -4132,6 +4138,7 @@ elif tabs == "August 2024":
                         City Streetlights (430,198)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,701,268)
@@ -4187,7 +4194,7 @@ elif tabs == "September 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -4641,6 +4648,7 @@ elif tabs == "September 2024":
                         City Streetlights (526,798)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (596,899)
@@ -4695,7 +4703,7 @@ elif tabs == "October 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -5148,6 +5156,7 @@ elif tabs == "October 2024":
                         City Streetlights (435,889)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,278,701)
@@ -5202,7 +5211,7 @@ elif tabs == "November 2024":
         }
         .invisible-rectangle-3rd-column-2 {
             width: 175px;  /* Set the width of the rectangle */
-            height: 200px; /* Set the height of the rectangle */
+            height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -5656,12 +5665,13 @@ elif tabs == "November 2024":
                         City Streetlights (439,117)
                     </div>
                 </div>
+                <div>System Loss</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_Feeder ()
+                        DSL_Feeder (3,104,654)
                     </div>
                     <div class="vertical-rectangle-stss-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH ()
+                        DSL_ST+SS, KWH (920,307)
                     </div>
                 </div>
             </div>
