@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(page_title="Statistics Dashboard", page_icon="more_power_logo.png", layout="wide")
 
@@ -47,7 +48,126 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.sidebar.title("MORE Statistics Dashboard")
+# def add_logo_with_text(logo_path, text, max_width=None, max_height=None):
+#     """Adds a logo with text to the sidebar, maintaining aspect ratio."""
+#     try:
+#         logo = Image.open(logo_path)
+#         original_width, original_height = logo.size
+
+#         if max_width and max_height:
+#             width_ratio = max_width / original_width
+#             height_ratio = max_height / original_height
+#             scale_factor = min(width_ratio, height_ratio)
+#             new_width = int(original_width * scale_factor)
+#             new_height = int(original_height * scale_factor)
+#             logo = logo.resize((new_width, new_height), Image.LANCZOS)
+#         elif max_width:
+#             new_height = int(original_height * (max_width / original_width))
+#             logo = logo.resize((max_width, new_height), Image.LANCZOS)
+#         elif max_height:
+#             new_width = int(original_width * (max_height / original_height))
+#             logo = logo.resize((new_width, max_height), Image.LANCZOS)
+
+#         st.sidebar.image(logo)
+#         st.sidebar.markdown(f"<p style='text-align: center; font-size: smaller;'>{text}</p>", unsafe_allow_html=True) #Smaller text as well
+
+#     except FileNotFoundError:
+#         st.error(f"Logo not found at {logo_path}")
+#     except Exception as e:
+#         st.error(f"Error displaying logo or text: {e}")
+
+# def add_logo_with_text(logo_path, text, max_width=None, max_height=None, text_size=16):
+#     """Adds a logo with text to the sidebar, maintaining aspect ratio.
+
+#     Args:
+#         logo_path (str): Path to the logo image.
+#         text (str): Text to display below the logo.
+#         max_width (int, optional): Maximum width of the logo. Defaults to None.
+#         max_height (int, optional): Maximum height of the logo. Defaults to None.
+#         text_size (int, optional): Font size for the text. Defaults to 16.
+#     """
+#     try:
+#         logo = Image.open(logo_path)
+#         original_width, original_height = logo.size
+
+#         if max_width and max_height:
+#             width_ratio = max_width / original_width
+#             height_ratio = max_height / original_height
+#             scale_factor = min(width_ratio, height_ratio)
+#             new_width = int(original_width * scale_factor)
+#             new_height = int(original_height * scale_factor)
+#             logo = logo.resize((new_width, new_height), Image.LANCZOS)
+#         elif max_width:
+#             new_height = int(original_height * (max_width / original_width))
+#             logo = logo.resize((max_width, new_height), Image.LANCZOS)
+#         elif max_height:
+#             new_width = int(original_width * (max_height / original_height))
+#             logo = logo.resize((new_width, max_height), Image.LANCZOS)
+
+#         st.sidebar.image(logo)
+#         st.sidebar.markdown(f"<p style='text-align: center; font-size: {text_size}px;'>{text}</p>", unsafe_allow_html=True)
+
+#     except FileNotFoundError:
+#         st.error(f"Logo not found at {logo_path}")
+#     except Exception as e:
+#         st.error(f"Error displaying logo or text: {e}")
+
+# add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150, text_size=20)
+
+def add_logo_with_text(logo_path, text, max_width=None, max_height=None, text_size=16):
+    """Adds a logo with text to the sidebar, maintaining aspect ratio.
+
+    Args:
+        logo_path (str): Path to the logo image.
+        text (str): Text to display below the logo.
+        max_width (int, optional): Maximum width of the logo. Defaults to None.
+        max_height (int, optional): Maximum height of the logo. Defaults to None.
+        text_size (int, optional): Font size for the text. Defaults to 16.
+    """
+    try:
+        logo = Image.open(logo_path)
+        original_width, original_height = logo.size
+
+        if max_width and max_height:
+            width_ratio = max_width / original_width
+            height_ratio = max_height / original_height
+            scale_factor = min(width_ratio, height_ratio)
+            new_width = int(original_width * scale_factor)
+            new_height = int(original_height * scale_factor)
+            logo = logo.resize((new_width, new_height), Image.LANCZOS)
+        elif max_width:
+            new_height = int(original_height * (max_width / original_width))
+            logo = logo.resize((max_width, new_height), Image.LANCZOS)
+        elif max_height:
+            new_width = int(original_width * (max_height / original_height))
+            logo = logo.resize((new_width, max_height), Image.LANCZOS)
+
+        # Center the logo and text within the sidebar
+        sidebar_content = f"""
+        <div style="text-align: center;">
+            <img src="data:image/png;base64,{get_base64_from_image(logo)}" style="max-width: 100%; max-height: {max_height if max_height else 'auto'}px;" />
+            <p style="font-size: {text_size}px; margin-top: 10px;">{text}</p>
+        </div>
+        """
+
+        st.sidebar.markdown(sidebar_content, unsafe_allow_html=True)
+
+    except FileNotFoundError:
+        st.error(f"Logo not found at {logo_path}")
+    except Exception as e:
+        st.error(f"Error displaying logo or text: {e}")
+
+def get_base64_from_image(image):
+    """Converts image to base64 for embedding in HTML"""
+    import base64
+    from io import BytesIO
+
+    buffered = BytesIO()
+    image.save(buffered, format="PNG")
+    return base64.b64encode(buffered.getvalue()).decode()
+
+add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150, text_size=20)
+
 tabs = st.sidebar.radio("Months", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
 
 # January 2024
