@@ -103,13 +103,13 @@ def get_base64_from_image(image):
 
 add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150, text_size=20, font_family="Helvetica")
 
-tabs = st.sidebar.radio("Months", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
+tabs = st.sidebar.radio("", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
 
 # January 2024
 if tabs == "January 2024":    
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
         st.markdown("Input")
@@ -163,12 +163,12 @@ if tabs == "January 2024":
         .tooltip-jan {
             display: block;
             position: absolute;
-            top: -50px;
+            top: -40px;
             left: 100%;
-            width: 150%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -633,7 +633,7 @@ if tabs == "January 2024":
 elif tabs == "February 2024": 
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
     
     with col1:
         st.markdown("Input")
@@ -739,9 +739,9 @@ elif tabs == "February 2024":
         .tooltip-feb {
             display: block;
             position: absolute;
-            top: -45px;
-            left: 37%;
-            width: 55%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
             color: black;
@@ -865,6 +865,8 @@ elif tabs == "February 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-feb {
             background-color: #708090; /* Example color */
@@ -1149,7 +1151,7 @@ elif tabs == "February 2024":
 elif tabs == "March 2024": 
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
         st.markdown("Input")
@@ -1247,12 +1249,12 @@ elif tabs == "March 2024":
         .tooltip-mar {
             display: block;
             position: absolute;
-            top: -45px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -1373,6 +1375,8 @@ elif tabs == "March 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .hoverable-contestables-jan {
             visibility: hidden;
@@ -1665,7 +1669,7 @@ elif tabs == "March 2024":
 elif tabs == "April 2024": 
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
         st.markdown("Input")
@@ -1764,12 +1768,12 @@ elif tabs == "April 2024":
         .tooltip-apr {
             display: block;
             position: absolute;
-            top: -48px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -1890,6 +1894,8 @@ elif tabs == "April 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-apr {
             background-color: #708090; /* Example color */
@@ -2174,7 +2180,7 @@ elif tabs == "April 2024":
 elif tabs == "May 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
         st.markdown("Input")
@@ -2273,12 +2279,12 @@ elif tabs == "May 2024":
         .tooltip-may {
             display: block;
             position: absolute;
-            top: -53px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -2399,6 +2405,8 @@ elif tabs == "May 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-may {
             background-color: #708090; /* Example color */
@@ -2683,7 +2691,7 @@ elif tabs == "May 2024":
 elif tabs == "June 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
         st.markdown("Input")
@@ -2782,12 +2790,12 @@ elif tabs == "June 2024":
         .tooltip-jun {
             display: block;
             position: absolute;
-            top: -53px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -2908,6 +2916,8 @@ elif tabs == "June 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-jun {
             background-color: #708090; /* Example color */
@@ -3192,7 +3202,7 @@ elif tabs == "June 2024":
 elif tabs == "July 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
         st.markdown("Input")
@@ -3291,12 +3301,12 @@ elif tabs == "July 2024":
         .tooltip-jul {
             display: block;
             position: absolute;
-            top: -53px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -3417,6 +3427,8 @@ elif tabs == "July 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-jul {
             background-color: #708090; /* Example color */
@@ -3702,7 +3714,7 @@ elif tabs == "July 2024":
 elif tabs == "August 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
         st.markdown("Input")
@@ -3801,12 +3813,12 @@ elif tabs == "August 2024":
         .tooltip-aug {
             display: block;
             position: absolute;
-            top: -53px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -3927,6 +3939,8 @@ elif tabs == "August 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-aug {
             background-color: #708090; /* Example color */
@@ -4212,7 +4226,7 @@ elif tabs == "August 2024":
 elif tabs == "September 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
         st.markdown("Input")
@@ -4311,12 +4325,12 @@ elif tabs == "September 2024":
         .tooltip-sep {
             display: block;
             position: absolute;
-            top: -53px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -4437,6 +4451,8 @@ elif tabs == "September 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-sep {
             background-color: #708090; /* Example color */
@@ -4721,7 +4737,7 @@ elif tabs == "September 2024":
 elif tabs == "October 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
         st.markdown("Input")
@@ -4820,12 +4836,12 @@ elif tabs == "October 2024":
         .tooltip-oct {
             display: block;
             position: absolute;
-            top: -53px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -4946,6 +4962,8 @@ elif tabs == "October 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-oct {
             background-color: #708090; /* Example color */
@@ -5229,7 +5247,7 @@ elif tabs == "October 2024":
 elif tabs == "November 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
         st.markdown("Input")
@@ -5328,12 +5346,12 @@ elif tabs == "November 2024":
         .tooltip-nov {
             display: block;
             position: absolute;
-            top: -58px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
@@ -5454,6 +5472,8 @@ elif tabs == "November 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
         .vertical-rectangle-residential-nov {
             background-color: #708090; /* Example color */
@@ -5738,7 +5758,7 @@ elif tabs == "November 2024":
 elif tabs == "December 2024":
     # Create the rectangles
     # col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns([1, 1.65, 1, 1])
+    col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
         st.markdown("Input")
@@ -5830,9 +5850,9 @@ elif tabs == "December 2024":
         .tooltip-dec {
             display: block;
             position: absolute;
-            top: -58px;
-            left: 37%;
-            width: 58%;
+            top: -40px;
+            left: 100%;
+            width: 180%;
             margin-left: 10px;
             background-color: #fff;
             color: black;
@@ -5943,7 +5963,7 @@ elif tabs == "December 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 110px;
-            height: 11.80%;
+            height: 11.81%;
             top: 0;
             left: 0;
             display: flex;
@@ -5956,6 +5976,8 @@ elif tabs == "December 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
+            position: relative;
+            pointer-events: auto;
         }
     </style>
     <div class="rectangle-container">
