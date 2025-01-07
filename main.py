@@ -127,13 +127,13 @@ if tabs == "January 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -719,13 +719,13 @@ elif tabs == "February 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1227,13 +1227,13 @@ elif tabs == "March 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -1744,13 +1744,13 @@ elif tabs == "April 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2253,13 +2253,13 @@ elif tabs == "May 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -2762,13 +2762,13 @@ elif tabs == "June 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -3271,13 +3271,13 @@ elif tabs == "July 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -3781,13 +3781,13 @@ elif tabs == "August 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -4291,13 +4291,13 @@ elif tabs == "September 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -4800,13 +4800,13 @@ elif tabs == "October 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -5308,13 +5308,13 @@ elif tabs == "November 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -5817,13 +5817,13 @@ elif tabs == "December 2024":
         }
         .invisible-rectangle-1st-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
             width: 110px;  /* Set the width of the rectangle */
-            height: 530px; /* Set the height of the rectangle */
+            height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -5835,7 +5835,7 @@ elif tabs == "December 2024":
             width: 58%;
             margin-left: 10px;
             background-color: #fff;
-            color:black;
+            color: black;
             padding: 10px;
             border: 1px solid #ddd;
             z-index: 10;
