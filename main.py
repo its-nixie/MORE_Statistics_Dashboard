@@ -126,7 +126,7 @@ if tabs == "January 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
     
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -177,7 +177,7 @@ if tabs == "January 2024":
         .tooltip-jan {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -190,7 +190,7 @@ if tabs == "January 2024":
         }
         .tooltip-jan .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -572,13 +572,13 @@ if tabs == "January 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-jan">
-                        Contestables
+                        Contestables (6,992,365)
                         <div class="tooltip-jan">
                             <div class="arrow"></div>SM Delgado - 464,921<br>SM City - 2,381,612<br>Golden Portals -  634,825<br>QHP -  395,239<br>Mary Mart -  275,059<br>HEVA -  414,681<br>Marriott -  419,552<br>Festive Walk Mall -  655,735<br>Smart Communications -  326,431<br>HEVA ICC -  125,321<br>KAREILA -  214,966<br>One Fintech -  298,937<br>Seda Hotel -  119,976<br>Innove Communications -  179,489<br>Adauge (The Shops) -  85,622
                         </div>
@@ -602,7 +602,7 @@ if tabs == "January 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -629,13 +629,13 @@ if tabs == "January 2024":
                         City Streetlights (446,277)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,505,359)
                     </div>
                     <div class="vertical-rectangle-stss-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (758,861)
+                        DSL_ST+SS (758,861)
                     </div>
                 </div>
             </div>
@@ -650,7 +650,7 @@ elif tabs == "February 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
     
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -753,7 +753,7 @@ elif tabs == "February 2024":
         .tooltip-feb {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -766,7 +766,7 @@ elif tabs == "February 2024":
         }
         .tooltip-feb .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -1090,13 +1090,13 @@ elif tabs == "February 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-feb">
-                        Contestables
+                        Contestables (6,373,843)
                         <div class="tooltip-feb">
                             <div class="arrow"></div>SM Delgado - 412,418<br>SM City - 2,133,582<br>Golden Portals - 517,279<br>QHP - 373,970<br>Mary Mart - 242,663<br>HEVA - 372,596<br>Marriott - 283,046<br>Festive Walk Mall - 624,995<br>Smart Communications - 316,744<br>HEVA ICC - 116,031<br>KAREILA - 200,944<br>One Fintech - 410,240<br>Seda Hotel - 110,157<br>Innove Communications - 174,634<br>Adauge (The Shops) - 84,544
                         </div>
@@ -1120,7 +1120,7 @@ elif tabs == "February 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -1147,13 +1147,13 @@ elif tabs == "February 2024":
                         City Streetlights (452,367)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,839,645)
                     </div>
                     <div class="vertical-rectangle-stss-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (819,041)
+                        DSL_ST+SS (819,041)
                     </div>
                 </div>
             </div>
@@ -1168,7 +1168,7 @@ elif tabs == "March 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -1263,7 +1263,7 @@ elif tabs == "March 2024":
         .tooltip-mar {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -1276,7 +1276,7 @@ elif tabs == "March 2024":
         }
         .tooltip-mar .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -1391,14 +1391,6 @@ elif tabs == "March 2024":
             z-index: 10;
             position: relative;
             pointer-events: auto;
-        }
-        .hoverable-contestables-jan {
-            visibility: hidden;
-            background-color: white;
-            color: black;
-            left: 100px;
-            width:200px;
-            height: 200px;
         }
         .vertical-rectangle-residential-mar {
             background-color: #365E32; /* Example color */
@@ -1608,13 +1600,13 @@ elif tabs == "March 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-mar" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (6,886,562)
                         <div class="tooltip-mar">
                             <div class="arrow"></div>SM Delgado - 419,025<br>SM City - 2,133,598<br>Golden Portals - 682,832<br>QHP - 377,284<br>Mary Mart - 237,082<br>HEVA - 401,585<br>Marriott - 448,332<br>Festive Walk Mall - 634,036<br>Smart Communications - 333,804<br>HEVA ICC - 132,857<br>KAREILA - 208,988<br>One Fintech - 288,040<br>Seda Hotel - 114,442<br>Innove Communications - 185,419<br>Adauge (The Shops) - 102,167<br>Sunnyfield - 187,073
                         </div>
@@ -1638,7 +1630,7 @@ elif tabs == "March 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -1665,13 +1657,13 @@ elif tabs == "March 2024":
                         City Streetlights (414,691)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (354,998)
                     </div>
                     <div class="vertical-rectangle-stss-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (815,450)
+                        DSL_ST+SS (815,450)
                     </div>
                 </div>
             </div>
@@ -1686,7 +1678,7 @@ elif tabs == "April 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -1782,7 +1774,7 @@ elif tabs == "April 2024":
         .tooltip-apr {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -1795,7 +1787,7 @@ elif tabs == "April 2024":
         }
         .tooltip-apr .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -2119,13 +2111,13 @@ elif tabs == "April 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-apr" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (6,505,632)
                         <div class="tooltip-apr">
                             <div class="arrow"></div>SM Delgado - 404,103<br>SM City - 2,050,316<br>Golden Portals - 611,192<br>QHP - 360,829<br>Mary Mart - 224,742<br>HEVA - 362,058<br>Marriott - 396,130<br>Festive Walk Mall - 594,367<br>Smart Communications - 314,155<br>HEVA ICC - 110,785<br>KAREILA - 210,198<br>One Fintech - 289,569<br>Seda Hotel - 107,910<br>Innove Communications - 175,184<br>Adauge (The Shops) - 106,909<br>Sunnyfield - 187,186
                         </div>
@@ -2149,7 +2141,7 @@ elif tabs == "April 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -2176,13 +2168,13 @@ elif tabs == "April 2024":
                         City Streetlights (448,175)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,316,900)
                     </div>
                     <div class="vertical-rectangle-stss-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (1,065,819)
+                        DSL_ST+SS (1,065,819)
                     </div>
                 </div>
             </div>
@@ -2197,7 +2189,7 @@ elif tabs == "May 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -2293,7 +2285,7 @@ elif tabs == "May 2024":
         .tooltip-may {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -2306,7 +2298,7 @@ elif tabs == "May 2024":
         }
         .tooltip-may .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -2630,13 +2622,13 @@ elif tabs == "May 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,254,088)
                         <div class="tooltip-may">
                             <div class="arrow"></div>SM Delgado - 451,882<br>SM City - 2,166,781<br>Golden Portals - 595,754<br>QHP - 404,974<br>Mary Mart - 248,199<br>HEVA - 363,478<br>Marriott - 440,699<br>Festive Walk Mall - 660,892<br>Smart Communications - 337,731<br>HEVA ICC - 113,843<br>KAREILA - 220,966<br>One Fintech - 358,314<br>Seda Hotel - 119,053<br>Innove Communications - 191,918<br>Adauge (The Shops) - 116,183<br>Sunnyfield - 218,283<br>Two Fintech - 245,138
                         </div>
@@ -2660,7 +2652,7 @@ elif tabs == "May 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -2687,13 +2679,13 @@ elif tabs == "May 2024":
                         City Streetlights (434,690)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (4,458,153)
                     </div>
                     <div class="vertical-rectangle-stss-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (855,002)
+                        DSL_ST+SS (855,002)
                     </div>
                 </div>
             </div>
@@ -2704,11 +2696,10 @@ elif tabs == "May 2024":
 # June 2024
 elif tabs == "June 2024":
     # Create the rectangles
-    # col1, col2, col3, col4 = st.columns(4)
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -2804,7 +2795,7 @@ elif tabs == "June 2024":
         .tooltip-jun {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -2817,7 +2808,7 @@ elif tabs == "June 2024":
         }
         .tooltip-jun .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -3141,13 +3132,13 @@ elif tabs == "June 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-jun" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,800,150)
                         <div class="tooltip-jun">
                             <div class="arrow"></div>SM Delgado - 498,748<br>SM City - 2,354,727<br>Golden Portals - 551,244<br>QHP - 425,955<br>Mary Mart - 278,924<br>HEVA - 394,472<br>Marriott - 469,620<br>Festive Walk Mall - 718,441<br>Smart Communications - 327,853<br>HEVA ICC - 126,367<br>KAREILA - 225,506<br>One Fintech - 392,809<br>Seda Hotel - 121,354<br>Innove Communications - 188,774<br>Adauge (The Shops) - 121,735<br>Sunnyfield - 224,792<br>Two Fintech - 378,828
                         </div>
@@ -3171,7 +3162,7 @@ elif tabs == "June 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -3198,13 +3189,13 @@ elif tabs == "June 2024":
                         City Streetlights (434,829)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,398,984)
                     </div>
                     <div class="vertical-rectangle-stss-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (691,715)
+                        DSL_ST+SS (691,715)
                     </div>
                 </div>
             </div>
@@ -3219,7 +3210,7 @@ elif tabs == "July 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -3315,7 +3306,7 @@ elif tabs == "July 2024":
         .tooltip-jul {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -3328,7 +3319,7 @@ elif tabs == "July 2024":
         }
         .tooltip-jul .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -3652,13 +3643,13 @@ elif tabs == "July 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-jul" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,742,896)
                         <div class="tooltip-jul">
                             <div class="arrow"></div>SM Delgado - 487,208<br>SM City - 2,402,620<br>Golden Portals - 566,921<br>QHP - 435,601<br>Mary Mart - 283,328<br>HEVA - 404,338<br>Marriott - 438,771<br>Festive Walk Mall - 692,681<br>Smart Communications - 324,408<br>HEVA ICC - 181,363<br>KAREILA - 230,556<br>One Fintech - 339,034<br>Seda Hotel - 117,790<br>Innove Communications - 189,532<br>Adauge (The Shops) - 112,040<br>Sunnyfield - 203,348<br>Two Fintech - 333,356
                         </div>
@@ -3682,7 +3673,7 @@ elif tabs == "July 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -3709,13 +3700,13 @@ elif tabs == "July 2024":
                         City Streetlights (412,060)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,092,143)
                     </div>
                     <div class="vertical-rectangle-stss-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (563,739)
+                        DSL_ST+SS (563,739)
                     </div>
                 </div>
             </div>
@@ -3731,7 +3722,7 @@ elif tabs == "August 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -3827,7 +3818,7 @@ elif tabs == "August 2024":
         .tooltip-aug {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -3840,7 +3831,7 @@ elif tabs == "August 2024":
         }
         .tooltip-aug .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -4164,13 +4155,13 @@ elif tabs == "August 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-aug" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,519,190)
                         <div class="tooltip-aug">
                             <div class="arrow"></div>SM Delgado - 462,079<br>SM City - 2,353,111<br>Golden Portals - 521,017<br>QHP - 403,050<br>Mary Mart - 269,805<br>HEVA - 401,757<br>Marriott - 430,391<br>Festive Walk Mall - 731,992<br>Smart Communications - 324,970<br>HEVA ICC - 156,644<br>KAREILA - 222,950<br>One Fintech - 326,749<br>Seda Hotel - 105,723<br>Innove Communications - 184,324<br>Adauge (The Shops) - 109,197<br>Sunnyfield - 194,022<br>Two Fintech - 321,409
                         </div>
@@ -4194,7 +4185,7 @@ elif tabs == "August 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -4221,13 +4212,13 @@ elif tabs == "August 2024":
                         City Streetlights (430,198)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,701,268)
                     </div>
                     <div class="vertical-rectangle-stss-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (1,825,939)
+                        DSL_ST+SS (1,825,939)
                     </div>
                 </div>
             </div>
@@ -4243,7 +4234,7 @@ elif tabs == "September 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -4339,7 +4330,7 @@ elif tabs == "September 2024":
         .tooltip-sep {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -4352,7 +4343,7 @@ elif tabs == "September 2024":
         }
         .tooltip-sep .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -4676,13 +4667,13 @@ elif tabs == "September 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-sep" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,981,778)
                         <div class="tooltip-sep">
                             <div class="arrow"></div>SM Delgado - 499,415<br>SM City - 2,514,803<br>Golden Portals - 595,414<br>QHP - 417,255<br>Mary Mart - 283,283<br>HEVA - 412,157<br>Marriott - 418,028<br>Festive Walk Mall - 699,974<br>Smart Communications - 344,200<br>HEVA ICC - 139,041<br>KAREILA - 221,593<br>One Fintech - 347,894<br>Seda Hotel - 115,010<br>Innove Communications - 193,378<br>Adauge (The Shops) - 116,084<br>Sunnyfield - 217,471<br>Two Fintech - 346,897<br>Festive Walk 2 - 99,881
                         </div>
@@ -4706,7 +4697,7 @@ elif tabs == "September 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -4733,13 +4724,13 @@ elif tabs == "September 2024":
                         City Streetlights (526,798)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (596,899)
                     </div>
                     <div class="vertical-rectangle-stss-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (2,912,053)
+                        DSL_ST+SS (2,912,053)
                     </div>
                 </div>
             </div>
@@ -4754,7 +4745,7 @@ elif tabs == "October 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -4850,7 +4841,7 @@ elif tabs == "October 2024":
         .tooltip-oct {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -4863,7 +4854,7 @@ elif tabs == "October 2024":
         }
         .tooltip-oct .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -5187,13 +5178,13 @@ elif tabs == "October 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-oct" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,958,002)
                         <div class="tooltip-oct">
                             <div class="arrow"></div>SM Delgado - 495,935<br>SM City - 2,447,375<br>Golden Portals - 572,551<br>QHP - 409,942<br>Mary Mart - 278,523<br>HEVA - 407,636<br>Marriott - 393,030<br>Festive Walk Mall - 648,333<br>Smart Communications - 344,777<br>HEVA ICC - 141,546<br>KAREILA - 230,704<br>One Fintech - 344,818<br>Seda Hotel - 122,471<br>Innove Communications - 190,941<br>Adauge (The Shops) - 108,446<br>Sunnyfield - 212,502<br>Two Fintech - 337,632<br>Festive Walk 2 - 270,841
                         </div>
@@ -5216,7 +5207,7 @@ elif tabs == "October 2024":
             unsafe_allow_html=True
         )
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -5243,13 +5234,13 @@ elif tabs == "October 2024":
                         City Streetlights (435,889)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,278,701)
                     </div>
                     <div class="vertical-rectangle-stss-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (375,299)
+                        DSL_ST+SS (375,299)
                     </div>
                 </div>
             </div>
@@ -5264,7 +5255,7 @@ elif tabs == "November 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -5360,7 +5351,7 @@ elif tabs == "November 2024":
         .tooltip-nov {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -5373,7 +5364,7 @@ elif tabs == "November 2024":
         }
         .tooltip-nov .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -5697,13 +5688,13 @@ elif tabs == "November 2024":
 )
 
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-nov" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,822,466)
                         <div class="tooltip-nov">
                             <div class="arrow"></div>SM Delgado - 412,418<br>SM Delgado - 460,159<br>SM City - 2,370,681<br>Golden Portals - 583,385<br>QHP - 406,496<br>Mary Mart - 252,063<br>HEVA - 392,500<br>Marriott - 430,235<br>Festive Walk Mall - 651,642<br>Smart Communications - 340,873<br>HEVA ICC - 139,782<br>KAREILA - 221,555<br>One Fintech - 346,065<br>Seda Hotel - 122,340<br>Innove Communications - 183,604<br>Adauge (The Shops) - 108,707<br>Sunnyfield - 214,031<br>Two Fintech - 332,917<br>Festive Walk 2 - 265,430
                         </div>
@@ -5727,7 +5718,7 @@ elif tabs == "November 2024":
         )
     
     with col3:
-        st.markdown("Sales")
+        st.markdown("Sales (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -5754,13 +5745,13 @@ elif tabs == "November 2024":
                         City Streetlights (439,117)
                     </div>
                 </div>
-                <div>System Loss</div>
+                <div>System Loss (kWh)</div>
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,104,654)
                     </div>
                     <div class="vertical-rectangle-stss-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS, KWH (920,307)
+                        DSL_ST+SS (920,307)
                     </div>
                 </div>
             </div>
@@ -5775,7 +5766,7 @@ elif tabs == "December 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Input")
+        st.markdown("Energy Input (kWh)")
         st.markdown(
     """
     <style>
@@ -5864,7 +5855,7 @@ elif tabs == "December 2024":
         .tooltip-dec {
             display: block;
             position: absolute;
-            top: -40px;
+            top: -15px;
             left: 100%;
             width: 180%;
             margin-left: 10px;
@@ -5877,7 +5868,7 @@ elif tabs == "December 2024":
         }
         .tooltip-dec .arrow {
             position: absolute;
-            top: 20%; /* Vertically center the arrow */
+            top: 13%; /* Vertically center the arrow */
             left: -10px; /* Position it to the left of the tooltip box */
             width: 0;
             height: 0;
@@ -6012,13 +6003,13 @@ elif tabs == "December 2024":
 )
         
     with col2:
-        st.markdown("Purchase")
+        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
         st.markdown(
             f"""
             <div class="rectangle-container">
                 <div class="invisible-rectangle-2nd-column">
                     <div class="vertical-rectangle-cc-dec" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-                        Contestables
+                        Contestables (7,928,521)
                         <div class="tooltip-dec">
                             <div class="arrow"></div>SM Delgado - 467,927<br>SM City - 2,395,474<br>Golden Portals - 597,285<br>QHP - 416,100<br>Mary Mart - 248,980<br>HEVA - 389,432<br>Marriott - 436,659<br>Festive Walk Mall - 667,290<br>Smart Communications - 350,653<br>HEVA ICC - 131,164<br>KAREILA - 225,575<br>One Fintech - 358,438<br>Seda Hotel - 119,322<br>Innove Communications - 190,648<br>Adauge (The Shops) - 109,907<br>Sunnyfield - 219,858<br>Two Fintech - 341,476<br>Festive Walk 2 - 262,334
                         </div>
