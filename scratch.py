@@ -83,3 +83,48 @@
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
+
+
+
+.vertical-rectangle-stss-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: ;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+        }
+        .vertical-rectangle-feeder-jan {
+            background-color: #708090; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 165px;
+            height: ;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+        }
