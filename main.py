@@ -48,6 +48,22 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Set custom CSS to change the background color of the dashboard and its sidebar
+st. markdown("""
+    <style>
+        .stApp {
+            background-color: #81A263;   
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+# .st-emotion-cache-1gwvy71 {
+#             background-color: #659287;
+#         }
+#         .st-emotion-cache-1mi2ry5 {
+#             background-color: #659287;
+#         }
+
 def add_logo_with_text(logo_path, text, max_width=None, max_height=None, text_size=16, font_family="Arial"):
     """Adds a logo with text to the sidebar, maintaining aspect ratio.
 
@@ -107,10 +123,8 @@ tabs = st.sidebar.radio("", ["January 2024", "February 2024", "March 2024", "Apr
 
 # January 2024
 if tabs == "January 2024":    
-    # Create the rectangles
-    # col1, col2, col3, col4 = st.columns(4)
     col1, col2, col3 = st.columns([1, 1.5, 1])
-
+    
     with col1:
         st.markdown("Input")
         st.markdown(
@@ -140,7 +154,7 @@ if tabs == "January 2024":
             z-index: 1; /* Ensure that the parent has lower stacking order than the children */
         }
         .vertical-rectangle-cc-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white;  /* Text color */
             padding: 10px;
             border: 2px solid #ccc;
@@ -167,7 +181,7 @@ if tabs == "January 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -205,7 +219,7 @@ if tabs == "January 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-jan2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -231,7 +245,7 @@ if tabs == "January 2024":
             transition: background-color 0.3s, transform 0.3s;
         }}
         .vertical-rectangle-jan2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -249,7 +263,7 @@ if tabs == "January 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-jan2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -267,7 +281,7 @@ if tabs == "January 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-kspc-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -288,7 +302,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -309,7 +323,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -330,7 +344,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -351,7 +365,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-residential-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -372,7 +386,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -393,7 +407,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -414,7 +428,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -435,7 +449,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -456,7 +470,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -477,7 +491,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -498,7 +512,7 @@ if tabs == "January 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -519,7 +533,7 @@ if tabs == "January 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-jan {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -656,7 +670,7 @@ elif tabs == "February 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-feb2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -676,7 +690,7 @@ elif tabs == "February 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-feb2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -700,7 +714,7 @@ elif tabs == "February 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-feb2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -743,7 +757,7 @@ elif tabs == "February 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -762,7 +776,7 @@ elif tabs == "February 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -783,7 +797,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -804,7 +818,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -825,7 +839,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -846,7 +860,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -869,7 +883,7 @@ elif tabs == "February 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -890,7 +904,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -911,7 +925,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -932,7 +946,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -953,7 +967,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -974,7 +988,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -995,7 +1009,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1016,7 +1030,7 @@ elif tabs == "February 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1037,7 +1051,7 @@ elif tabs == "February 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-feb {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1166,7 +1180,7 @@ elif tabs == "March 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-mar2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1186,7 +1200,7 @@ elif tabs == "March 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-mar2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1210,7 +1224,7 @@ elif tabs == "March 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-mar2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1253,7 +1267,7 @@ elif tabs == "March 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -1272,7 +1286,7 @@ elif tabs == "March 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1293,7 +1307,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1314,7 +1328,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1335,7 +1349,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1356,7 +1370,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1387,7 +1401,7 @@ elif tabs == "March 2024":
             height: 200px;
         }
         .vertical-rectangle-residential-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1408,7 +1422,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1429,7 +1443,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1450,7 +1464,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1471,7 +1485,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1492,7 +1506,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1513,7 +1527,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1534,7 +1548,7 @@ elif tabs == "March 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1555,7 +1569,7 @@ elif tabs == "March 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-mar {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1691,7 +1705,7 @@ elif tabs == "April 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-apr2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1711,7 +1725,7 @@ elif tabs == "April 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-apr2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1729,7 +1743,7 @@ elif tabs == "April 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-apr2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1772,7 +1786,7 @@ elif tabs == "April 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -1791,7 +1805,7 @@ elif tabs == "April 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1812,7 +1826,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1833,7 +1847,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1854,7 +1868,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1875,7 +1889,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1898,7 +1912,7 @@ elif tabs == "April 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1919,7 +1933,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1940,7 +1954,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1961,7 +1975,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -1982,7 +1996,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2003,7 +2017,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2024,7 +2038,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2045,7 +2059,7 @@ elif tabs == "April 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2066,7 +2080,7 @@ elif tabs == "April 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-apr {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2196,7 +2210,7 @@ elif tabs == "May 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-may2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2222,7 +2236,7 @@ elif tabs == "May 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-may2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2240,7 +2254,7 @@ elif tabs == "May 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-may2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2283,7 +2297,7 @@ elif tabs == "May 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -2302,7 +2316,7 @@ elif tabs == "May 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2323,7 +2337,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2344,7 +2358,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2365,7 +2379,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2386,7 +2400,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2409,7 +2423,7 @@ elif tabs == "May 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2430,7 +2444,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2451,7 +2465,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2472,7 +2486,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2493,7 +2507,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2514,7 +2528,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2535,7 +2549,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2556,7 +2570,7 @@ elif tabs == "May 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2577,7 +2591,7 @@ elif tabs == "May 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-may {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2707,7 +2721,7 @@ elif tabs == "June 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-jun2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2733,7 +2747,7 @@ elif tabs == "June 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-jun2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2751,7 +2765,7 @@ elif tabs == "June 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-jun2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2794,7 +2808,7 @@ elif tabs == "June 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -2813,7 +2827,7 @@ elif tabs == "June 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2834,7 +2848,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2855,7 +2869,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2876,7 +2890,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2897,7 +2911,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2920,7 +2934,7 @@ elif tabs == "June 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2941,7 +2955,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2962,7 +2976,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -2983,7 +2997,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3004,7 +3018,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3025,7 +3039,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3046,7 +3060,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3067,7 +3081,7 @@ elif tabs == "June 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3088,7 +3102,7 @@ elif tabs == "June 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-jun {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3218,7 +3232,7 @@ elif tabs == "July 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-jul2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3244,7 +3258,7 @@ elif tabs == "July 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-jul2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3262,7 +3276,7 @@ elif tabs == "July 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-jul2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3305,7 +3319,7 @@ elif tabs == "July 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -3324,7 +3338,7 @@ elif tabs == "July 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3345,7 +3359,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3366,7 +3380,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3387,7 +3401,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3408,7 +3422,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3431,7 +3445,7 @@ elif tabs == "July 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3452,7 +3466,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3473,7 +3487,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3494,7 +3508,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3515,7 +3529,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3536,7 +3550,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3557,7 +3571,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3578,7 +3592,7 @@ elif tabs == "July 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3599,7 +3613,7 @@ elif tabs == "July 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-jul {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3730,7 +3744,7 @@ elif tabs == "August 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-aug2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3756,7 +3770,7 @@ elif tabs == "August 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-aug2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3774,7 +3788,7 @@ elif tabs == "August 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-aug2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3817,7 +3831,7 @@ elif tabs == "August 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -3836,7 +3850,7 @@ elif tabs == "August 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3857,7 +3871,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3878,7 +3892,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3899,7 +3913,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3920,7 +3934,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3943,7 +3957,7 @@ elif tabs == "August 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3964,7 +3978,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -3985,7 +3999,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4006,7 +4020,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4027,7 +4041,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4048,7 +4062,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4069,7 +4083,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4090,7 +4104,7 @@ elif tabs == "August 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4111,7 +4125,7 @@ elif tabs == "August 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-aug {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4242,7 +4256,7 @@ elif tabs == "September 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-sep2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4268,7 +4282,7 @@ elif tabs == "September 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-sep2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4286,7 +4300,7 @@ elif tabs == "September 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-sep2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4329,7 +4343,7 @@ elif tabs == "September 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -4348,7 +4362,7 @@ elif tabs == "September 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4369,7 +4383,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4390,7 +4404,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4411,7 +4425,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4432,7 +4446,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4455,7 +4469,7 @@ elif tabs == "September 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4476,7 +4490,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4497,7 +4511,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4518,7 +4532,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4539,7 +4553,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4560,7 +4574,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4581,7 +4595,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4602,7 +4616,7 @@ elif tabs == "September 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4623,7 +4637,7 @@ elif tabs == "September 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-sep {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4753,7 +4767,7 @@ elif tabs == "October 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-oct2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4779,7 +4793,7 @@ elif tabs == "October 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-oct2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4797,7 +4811,7 @@ elif tabs == "October 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-oct2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4840,7 +4854,7 @@ elif tabs == "October 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -4859,7 +4873,7 @@ elif tabs == "October 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4880,7 +4894,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4901,7 +4915,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4922,7 +4936,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4943,7 +4957,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4966,7 +4980,7 @@ elif tabs == "October 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -4987,7 +5001,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5008,7 +5022,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5029,7 +5043,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5050,7 +5064,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5071,7 +5085,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5092,7 +5106,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5113,7 +5127,7 @@ elif tabs == "October 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5134,7 +5148,7 @@ elif tabs == "October 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-oct {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5263,7 +5277,7 @@ elif tabs == "November 2024":
             padding: 0 !important; /* Remove container padding */
         }
         .vertical-rectangle-nov2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5289,7 +5303,7 @@ elif tabs == "November 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-nov2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5307,7 +5321,7 @@ elif tabs == "November 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-nov2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5350,7 +5364,7 @@ elif tabs == "November 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -5369,7 +5383,7 @@ elif tabs == "November 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5390,7 +5404,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5411,7 +5425,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5432,7 +5446,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-scpc-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5453,7 +5467,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5476,7 +5490,7 @@ elif tabs == "November 2024":
             pointer-events: auto;
         }
         .vertical-rectangle-residential-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5497,7 +5511,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-commercial-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5518,7 +5532,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-intermediate-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5539,7 +5553,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-power-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5560,7 +5574,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-citygovernment-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5581,7 +5595,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-othergovernment-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5602,7 +5616,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-citystreetlights-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5623,7 +5637,7 @@ elif tabs == "November 2024":
             z-index: 10;
         }
         .vertical-rectangle-stss-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5644,7 +5658,7 @@ elif tabs == "November 2024":
             z-index: 10;    
         }
         .vertical-rectangle-feeder-nov {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5780,7 +5794,7 @@ elif tabs == "December 2024":
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-dec2024-ilomore01 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5800,7 +5814,7 @@ elif tabs == "December 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-dec2024-sbamore02 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5818,7 +5832,7 @@ elif tabs == "December 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .vertical-rectangle-dec2024-sbamore03 {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5854,7 +5868,7 @@ elif tabs == "December 2024":
             left: 100%;
             width: 180%;
             margin-left: 10px;
-            background-color: #fff;
+            background-color: #E7D37F;
             color: black;
             padding: 10px;
             border: 1px solid #ddd;
@@ -5873,7 +5887,7 @@ elif tabs == "December 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .vertical-rectangle-kspc-dec {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5894,7 +5908,7 @@ elif tabs == "December 2024":
             z-index: 10;
         }
         .vertical-rectangle-wesm-dec {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5915,7 +5929,7 @@ elif tabs == "December 2024":
             z-index: 10;
         }
         .vertical-rectangle-edc-dec {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5936,7 +5950,7 @@ elif tabs == "December 2024":
             z-index: 10;
         }
         .vertical-rectangle-pedc-dec {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
@@ -5957,7 +5971,7 @@ elif tabs == "December 2024":
             z-index: 10;
         }
         .vertical-rectangle-cc-dec {
-            background-color: #708090; /* Example color */
+            background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
