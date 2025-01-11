@@ -48,7 +48,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Set custom CSS to change the background color of the dashboard and its sidebar
+# Set custom CSS to change the background color of the dashboard
 st. markdown("""
     <style>
         .stApp {
@@ -119,7 +119,7 @@ def get_base64_from_image(image):
 
 add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150, text_size=20, font_family="Helvetica")
 
-tabs = st.sidebar.radio("", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
+tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"], index=0)
 
 # January 2024
 if tabs == "January 2024":    
