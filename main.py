@@ -3220,7 +3220,7 @@ elif tabs == "June 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-intermediate-jun {
             background-color: #365E32; /* Example color */
@@ -3242,7 +3242,7 @@ elif tabs == "June 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-power-jun {
             background-color: #365E32; /* Example color */
@@ -3330,7 +3330,7 @@ elif tabs == "June 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-jun {
             background-color: #365E32; /* Example color */
@@ -3778,7 +3778,7 @@ elif tabs == "July 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-intermediate-jul {
             background-color: #365E32; /* Example color */
@@ -3800,7 +3800,7 @@ elif tabs == "July 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-power-jul {
             background-color: #365E32; /* Example color */
@@ -3888,7 +3888,7 @@ elif tabs == "July 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-jul {
             background-color: #365E32; /* Example color */
@@ -4339,7 +4339,7 @@ elif tabs == "August 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-intermediate-aug {
             background-color: #365E32; /* Example color */
@@ -4361,7 +4361,7 @@ elif tabs == "August 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-power-aug {
             background-color: #365E32; /* Example color */
@@ -4449,7 +4449,7 @@ elif tabs == "August 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-aug {
             background-color: #365E32; /* Example color */
@@ -4900,7 +4900,7 @@ elif tabs == "September 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-intermediate-sep {
             background-color: #365E32; /* Example color */
@@ -4922,7 +4922,7 @@ elif tabs == "September 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-power-sep {
             background-color: #365E32; /* Example color */
@@ -5010,7 +5010,7 @@ elif tabs == "September 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-sep {
             background-color: #365E32; /* Example color */
@@ -5569,7 +5569,7 @@ elif tabs == "October 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-oct {
             background-color: #365E32; /* Example color */
@@ -6128,7 +6128,7 @@ elif tabs == "November 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-nov {
             background-color: #365E32; /* Example color */
