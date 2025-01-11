@@ -420,7 +420,7 @@ if tabs == "January 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 80%;
         }
         .vertical-rectangle-intermediate-jan {
             background-color: #365E32; /* Example color */
@@ -442,7 +442,7 @@ if tabs == "January 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 80%;
         }
         .vertical-rectangle-power-jan {
             background-color: #365E32; /* Example color */
@@ -530,7 +530,7 @@ if tabs == "January 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 75%;
         }
         .vertical-rectangle-stss-jan {
             background-color: #365E32; /* Example color */
