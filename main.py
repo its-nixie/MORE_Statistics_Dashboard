@@ -126,7 +126,11 @@ if tabs == "January 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
     
     with col1:
-        st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
+        
         st.markdown(
     """
     <style>
@@ -139,14 +143,22 @@ if tabs == "January 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -155,11 +167,11 @@ if tabs == "January 2024":
         }
         .vertical-rectangle-cc-jan {
             background-color: #365E32; /* Example color */
-            color: white;  /* Text color */
+            color: white; /* Text color */
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px; /* Matching width with the parent */
+            width: 100%; /* Matching width with the parent */
             height: 11.08%; /* Use percentage to fit based on parent height */
             display: flex;
             justify-content: center;
@@ -200,21 +212,15 @@ if tabs == "January 2024":
             transform: translateY(-50%); /* Adjust the vertical position */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             margin-bottom: 100px;
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
-            background-color: white; /* Make the rectangle invisible */
-            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
-        }
-        .invisible-rectangle-4th-column {
-            width: 165px;  /* Set the width of the rectangle */
-            height: 30px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
@@ -224,7 +230,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 50.88%;
             top: 0;
             left: 0;
@@ -250,7 +256,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.89%;
             display: flex;
             font-size: 12px;
@@ -268,7 +274,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 27.23%;
             display: flex;
             font-size: 12px;
@@ -286,7 +292,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 17.82%;
             top: 0;
             left: 0;
@@ -307,7 +313,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 29.52%;
             top: 0;
             left: 0;
@@ -328,7 +334,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 14.83%;
             top: 0;
             left: 0;
@@ -349,7 +355,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 26.75%;
             top: 0;
             left: 0;
@@ -370,7 +376,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 46.66%;
             top: 0;
             left: 0;
@@ -391,7 +397,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 9.02%;
             top: 0;
             left: 0;
@@ -412,7 +418,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.30%;
             top: 0;
             left: 0;
@@ -433,7 +439,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 40.09%;
             top: 0;
             left: 0;
@@ -454,7 +460,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.77%;
             top: 0;
             left: 0;
@@ -475,7 +481,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.24%;
             top: 0;
             left: 0;
@@ -496,7 +502,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.92%;
             top: 0;
             left: 0;
@@ -517,7 +523,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 17.80%;
             top: 0;
             left: 0;
@@ -538,7 +544,7 @@ if tabs == "January 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 82.20%;
             top: 0;
             left: 0;
@@ -572,7 +578,11 @@ if tabs == "January 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -602,7 +612,11 @@ if tabs == "January 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        # st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -629,19 +643,31 @@ if tabs == "January 2024":
                         City Streetlights (446,277)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
-                <div class="invisible-rectangle-3rd-column-2">
-                    <div class="vertical-rectangle-feeder-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_Feeder (3,505,359)
-                    </div>
-                    <div class="vertical-rectangle-stss-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS (758,861)
-                    </div>
-                </div>
             </div>
             """,
             unsafe_allow_html=True
             )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+        
+        st.markdown(
+        f"""
+        <div class="rectangle-container-2">
+            <div class="invisible-rectangle-3rd-column-2">
+                <div class="vertical-rectangle-feeder-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                    DSL_Feeder (3,505,359)
+                </div>
+                <div class="vertical-rectangle-stss-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                    DSL_ST+SS (758,861)
+                </div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+        )
 
 # February 2024
 elif tabs == "February 2024": 
@@ -650,7 +676,11 @@ elif tabs == "February 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
     
     with col1:
-        st.markdown("Energy Input (kWh)")
+        # st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -658,6 +688,14 @@ elif tabs == "February 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -675,7 +713,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 50.93%;
             top: 0;
             left: 0;
@@ -695,7 +733,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.60%;
             display: flex;
             font-size: 12px;
@@ -708,7 +746,7 @@ elif tabs == "February 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -719,7 +757,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 27.47%;
             display: flex;
             font-size: 12px;
@@ -732,19 +770,19 @@ elif tabs == "February 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -781,7 +819,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 23.99%;
             top: 0;
             left: 0;
@@ -802,7 +840,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 19.15%;
             top: 0;
             left: 0;
@@ -823,7 +861,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 15.89%;
             top: 0;
             left: 0;
@@ -844,7 +882,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 30.16%;
             top: 0;
             left: 0;
@@ -865,7 +903,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 10.81%;
             top: 0;
             left: 0;
@@ -888,7 +926,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 45.68%;
             top: 0;
             left: 0;
@@ -909,7 +947,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 9.12%;
             top: 0;
             left: 0;
@@ -930,7 +968,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.30%;
             top: 0;
             left: 0;
@@ -951,7 +989,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 40.76%;
             top: 0;
             left: 0;
@@ -972,7 +1010,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.97%;
             top: 0;
             left: 0;
@@ -993,7 +1031,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.24%;
             top: 0;
             left: 0;
@@ -1014,7 +1052,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.92%;
             top: 0;
             left: 0;
@@ -1035,7 +1073,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 22.39%;
             top: 0;
             left: 0;
@@ -1056,7 +1094,7 @@ elif tabs == "February 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 77.61%;
             top: 0;
             left: 0;
@@ -1090,7 +1128,11 @@ elif tabs == "February 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -1120,7 +1162,11 @@ elif tabs == "February 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -1147,19 +1193,31 @@ elif tabs == "February 2024":
                         City Streetlights (452,367)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
-                <div class="invisible-rectangle-3rd-column-2">
-                    <div class="vertical-rectangle-feeder-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_Feeder (2,839,645)
-                    </div>
-                    <div class="vertical-rectangle-stss-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS (819,041)
-                    </div>
-                </div>
             </div>
             """,
             unsafe_allow_html=True
         )
+
+
+        st.markdown('''
+            :rainbow-background[System Loss (kWh)]
+        '''
+        )
+        st.markdown(
+            f"""
+                <div class="rectangle-container-2">
+                    <div class="invisible-rectangle-3rd-column-2">
+                        <div class="vertical-rectangle-feeder-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                            DSL_Feeder (2,839,645)
+                        </div>
+                        <div class="vertical-rectangle-stss-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                            DSL_ST+SS (819,041)
+                        </div>
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
 # March 2024
 elif tabs == "March 2024": 
@@ -1168,7 +1226,11 @@ elif tabs == "March 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -1179,13 +1241,21 @@ elif tabs == "March 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .vertical-rectangle-mar2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 51.01%;
             top: 0;
             left: 0;
@@ -1205,7 +1275,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.91%;
             display: flex;
             font-size: 12px;
@@ -1218,7 +1288,7 @@ elif tabs == "March 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -1229,7 +1299,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 27.08%;
             display: flex;
             font-size: 12px;
@@ -1242,19 +1312,19 @@ elif tabs == "March 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -1291,7 +1361,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 22.77%;
             top: 0;
             left: 0;
@@ -1312,7 +1382,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 19.74%;
             top: 0;
             left: 0;
@@ -1333,7 +1403,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 16.12%;
             top: 0;
             left: 0;
@@ -1354,7 +1424,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 29.78%;
             top: 0;
             left: 0;
@@ -1375,7 +1445,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 11.59%;
             top: 0;
             left: 0;
@@ -1398,7 +1468,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 47.92%;
             top: 0;
             left: 0;
@@ -1419,7 +1489,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.99%;
             top: 0;
             left: 0;
@@ -1440,7 +1510,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.31%;
             top: 0;
             left: 0;
@@ -1461,7 +1531,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 38.90%;
             top: 0;
             left: 0;
@@ -1482,7 +1552,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.86%;
             top: 0;
             left: 0;
@@ -1503,7 +1573,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.23%;
             top: 0;
             left: 0;
@@ -1524,7 +1594,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.78%;
             top: 0;
             left: 0;
@@ -1545,7 +1615,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 69.67%;
             top: 0;
             left: 0;
@@ -1566,7 +1636,7 @@ elif tabs == "March 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 30.33%;
             top: 0;
             left: 0;
@@ -1600,7 +1670,11 @@ elif tabs == "March 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -1630,7 +1704,11 @@ elif tabs == "March 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -1657,7 +1735,18 @@ elif tabs == "March 2024":
                         City Streetlights (414,691)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+             """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (354,998)
@@ -1678,11 +1767,14 @@ elif tabs == "April 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
-        /* Force small gap between rectangles */
         .rectangle-container {
             display: flex;
             flex-direction: column;
@@ -1690,8 +1782,16 @@ elif tabs == "April 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -1702,7 +1802,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.38%;
             top: 0;
             left: 0;
@@ -1722,7 +1822,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.39%;
             display: flex;
             font-size: 12px;
@@ -1740,7 +1840,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.23%;
             display: flex;
             font-size: 12px;
@@ -1753,19 +1853,19 @@ elif tabs == "April 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;
+            width: 75%;
             height: 300px;
             background-color: white;
             border: 1px solid transparent;
@@ -1802,7 +1902,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.43%;
             top: 0;
             left: 0;
@@ -1823,7 +1923,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.56%;
             top: 0;
             left: 0;
@@ -1844,7 +1944,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 14.91%;
             top: 0;
             left: 0;
@@ -1865,7 +1965,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 27.34%;
             top: 0;
             left: 0;
@@ -1886,7 +1986,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 10.75%;
             top: 0;
             left: 0;
@@ -1909,7 +2009,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 50.41%;
             top: 0;
             left: 0;
@@ -1930,7 +2030,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.89%;
             top: 0;
             left: 0;
@@ -1951,7 +2051,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.32%;
             top: 0;
             left: 0;
@@ -1972,7 +2072,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 36.91%;
             top: 0;
             left: 0;
@@ -1993,7 +2093,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.54%;
             top: 0;
             left: 0;
@@ -2014,7 +2114,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.18%;
             top: 0;
             left: 0;
@@ -2035,7 +2135,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.75%;
             top: 0;
             left: 0;
@@ -2056,7 +2156,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 24.32%;
             top: 0;
             left: 0;
@@ -2077,7 +2177,7 @@ elif tabs == "April 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 75.68%;
             top: 0;
             left: 0;
@@ -2111,7 +2211,11 @@ elif tabs == "April 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -2141,7 +2245,11 @@ elif tabs == "April 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -2168,7 +2276,18 @@ elif tabs == "April 2024":
                         City Streetlights (448,175)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,316,900)
@@ -2189,7 +2308,11 @@ elif tabs == "May 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -2201,13 +2324,21 @@ elif tabs == "May 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .vertical-rectangle-may2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 55.23%;
             top: 0;
             left: 0;
@@ -2222,7 +2353,7 @@ elif tabs == "May 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -2233,7 +2364,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 19.23%;
             display: flex;
             font-size: 12px;
@@ -2251,7 +2382,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 27.08%;
             display: flex;
             font-size: 12px;
@@ -2264,19 +2395,19 @@ elif tabs == "May 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -2313,7 +2444,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 19.91%;
             top: 0;
             left: 0;
@@ -2334,7 +2465,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 31.21%;
             top: 0;
             left: 0;
@@ -2355,7 +2486,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 13.57%;
             top: 0;
             left: 0;
@@ -2376,7 +2507,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.16%;
             top: 0;
             left: 0;
@@ -2397,7 +2528,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 10.15%;
             top: 0;
             left: 0;
@@ -2420,7 +2551,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 50.58%;
             top: 0;
             left: 0;
@@ -2441,7 +2572,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.87%;
             top: 0;
             left: 0;
@@ -2462,7 +2593,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.33%;
             top: 0;
             left: 0;
@@ -2483,7 +2614,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 36.67%;
             top: 0;
             left: 0;
@@ -2504,7 +2635,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.61%;
             top: 0;
             left: 0;
@@ -2525,7 +2656,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.27%;
             top: 0;
             left: 0;
@@ -2546,7 +2677,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.68%;
             top: 0;
             left: 0;
@@ -2567,7 +2698,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 16.09%;
             top: 0;
             left: 0;
@@ -2588,7 +2719,7 @@ elif tabs == "May 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 83.91%;
             top: 0;
             left: 0;
@@ -2622,7 +2753,11 @@ elif tabs == "May 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -2652,7 +2787,11 @@ elif tabs == "May 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -2679,7 +2818,18 @@ elif tabs == "May 2024":
                         City Streetlights (434,690)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (4,458,153)
@@ -2699,14 +2849,25 @@ elif tabs == "June 2024":
     col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
-        /* Force small gap between rectangles */
         .rectangle-container {
             display: flex;
             flex-direction: column;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -2717,7 +2878,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.90%;
             top: 0;
             left: 0;
@@ -2732,7 +2893,7 @@ elif tabs == "June 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -2743,7 +2904,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 20.21%;
             display: flex;
             font-size: 12px;
@@ -2761,7 +2922,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.89%;
             display: flex;
             font-size: 12px;
@@ -2774,19 +2935,19 @@ elif tabs == "June 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -2823,7 +2984,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 18.53%;
             top: 0;
             left: 0;
@@ -2844,7 +3005,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 35.38%;
             top: 0;
             left: 0;
@@ -2865,7 +3026,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 12.65%;
             top: 0;
             left: 0;
@@ -2886,7 +3047,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 23.26%;
             top: 0;
             left: 0;
@@ -2907,7 +3068,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 10.18%;
             top: 0;
             left: 0;
@@ -2930,7 +3091,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 50.58%;
             top: 0;
             left: 0;
@@ -2951,7 +3112,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.87%;
             top: 0;
             left: 0;
@@ -2972,7 +3133,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.33%;
             top: 0;
             left: 0;
@@ -2993,7 +3154,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 36.67%;
             top: 0;
             left: 0;
@@ -3014,7 +3175,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.61%;
             top: 0;
             left: 0;
@@ -3035,7 +3196,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.27%;
             top: 0;
             left: 0;
@@ -3056,7 +3217,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.68%;
             top: 0;
             left: 0;
@@ -3077,7 +3238,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 16.91%;
             top: 0;
             left: 0;
@@ -3098,7 +3259,7 @@ elif tabs == "June 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 83.09%;
             top: 0;
             left: 0;
@@ -3132,7 +3293,11 @@ elif tabs == "June 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -3162,7 +3327,11 @@ elif tabs == "June 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -3189,7 +3358,18 @@ elif tabs == "June 2024":
                         City Streetlights (434,829)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,398,984)
@@ -3210,14 +3390,25 @@ elif tabs == "July 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
-        /* Force small gap between rectangles */
         .rectangle-container {
             display: flex;
             flex-direction: column;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -3228,7 +3419,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.34%;
             top: 0;
             left: 0;
@@ -3243,7 +3434,7 @@ elif tabs == "July 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -3254,7 +3445,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 20.72%;
             display: flex;
             font-size: 12px;
@@ -3272,7 +3463,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.94%;
             display: flex;
             font-size: 12px;
@@ -3285,19 +3476,19 @@ elif tabs == "July 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -3334,7 +3525,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.31%;
             top: 0;
             left: 0;
@@ -3355,7 +3546,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 26.46%;
             top: 0;
             left: 0;
@@ -3376,7 +3567,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 14.22%;
             top: 0;
             left: 0;
@@ -3397,7 +3588,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 26.63%;
             top: 0;
             left: 0;
@@ -3418,7 +3609,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 11.38%;
             top: 0;
             left: 0;
@@ -3441,7 +3632,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 47.95%;
             top: 0;
             left: 0;
@@ -3462,7 +3653,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 9.12%;
             top: 0;
             left: 0;
@@ -3483,7 +3674,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.31%;
             top: 0;
             left: 0;
@@ -3504,7 +3695,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 39.01%;
             top: 0;
             left: 0;
@@ -3525,7 +3716,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.56%;
             top: 0;
             left: 0;
@@ -3546,7 +3737,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.27%;
             top: 0;
             left: 0;
@@ -3567,7 +3758,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.77%;
             top: 0;
             left: 0;
@@ -3588,7 +3779,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 21.23%;
             top: 0;
             left: 0;
@@ -3609,7 +3800,7 @@ elif tabs == "July 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 78.77%;
             top: 0;
             left: 0;
@@ -3643,7 +3834,11 @@ elif tabs == "July 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -3673,7 +3868,11 @@ elif tabs == "July 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -3700,7 +3899,19 @@ elif tabs == "July 2024":
                         City Streetlights (412,060)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,092,143)
@@ -3722,7 +3933,11 @@ elif tabs == "August 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -3734,13 +3949,21 @@ elif tabs == "August 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .vertical-rectangle-aug2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.60%;
             top: 0;
             left: 0;
@@ -3755,7 +3978,7 @@ elif tabs == "August 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -3766,7 +3989,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 20.68%;
             display: flex;
             font-size: 12px;
@@ -3784,7 +4007,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.73%;
             display: flex;
             font-size: 12px;
@@ -3797,19 +4020,19 @@ elif tabs == "August 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -3846,7 +4069,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.96%;
             top: 0;
             left: 0;
@@ -3867,7 +4090,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 23.09%;
             top: 0;
             left: 0;
@@ -3888,7 +4111,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 15.70%;
             top: 0;
             left: 0;
@@ -3909,7 +4132,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 27.45%;
             top: 0;
             left: 0;
@@ -3930,7 +4153,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 11.80%;
             top: 0;
             left: 0;
@@ -3953,7 +4176,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 48.68%;
             top: 0;
             left: 0;
@@ -3974,7 +4197,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.86%;
             top: 0;
             left: 0;
@@ -3995,7 +4218,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.32%;
             top: 0;
             left: 0;
@@ -4016,7 +4239,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 37.98%;
             top: 0;
             left: 0;
@@ -4037,7 +4260,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.91%;
             top: 0;
             left: 0;
@@ -4058,7 +4281,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.50%;
             top: 0;
             left: 0;
@@ -4079,7 +4302,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.76%;
             top: 0;
             left: 0;
@@ -4100,7 +4323,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 40.33%;
             top: 0;
             left: 0;
@@ -4121,7 +4344,7 @@ elif tabs == "August 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 59.67%;
             top: 0;
             left: 0;
@@ -4155,7 +4378,11 @@ elif tabs == "August 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -4185,7 +4412,11 @@ elif tabs == "August 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -4212,7 +4443,19 @@ elif tabs == "August 2024":
                         City Streetlights (430,198)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+            )
+        
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,701,268)
@@ -4234,7 +4477,11 @@ elif tabs == "September 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -4246,13 +4493,21 @@ elif tabs == "September 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .vertical-rectangle-sep2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.09%;
             top: 0;
             left: 0;
@@ -4267,7 +4522,7 @@ elif tabs == "September 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -4278,7 +4533,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.04%;
             display: flex;
             font-size: 12px;
@@ -4296,7 +4551,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.87%;
             display: flex;
             font-size: 12px;
@@ -4309,19 +4564,19 @@ elif tabs == "September 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -4358,7 +4613,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 19.41%;
             top: 0;
             left: 0;
@@ -4379,7 +4634,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 30.17%;
             top: 0;
             left: 0;
@@ -4400,7 +4655,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 13.96%;
             top: 0;
             left: 0;
@@ -4421,7 +4676,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 24.93%;
             top: 0;
             left: 0;
@@ -4442,7 +4697,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 11.52%;
             top: 0;
             left: 0;
@@ -4465,7 +4720,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 47.36%;
             top: 0;
             left: 0;
@@ -4486,7 +4741,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.91%;
             top: 0;
             left: 0;
@@ -4507,7 +4762,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.32%;
             top: 0;
             left: 0;
@@ -4528,7 +4783,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 38.97%;
             top: 0;
             left: 0;
@@ -4549,7 +4804,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.87%;
             top: 0;
             left: 0;
@@ -4570,7 +4825,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.62%;
             top: 0;
             left: 0;
@@ -4591,7 +4846,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.97%;
             top: 0;
             left: 0;
@@ -4612,7 +4867,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 82.99%;
             top: 0;
             left: 0;
@@ -4633,7 +4888,7 @@ elif tabs == "September 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 17.01%;
             top: 0;
             left: 0;
@@ -4667,7 +4922,11 @@ elif tabs == "September 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -4697,7 +4956,11 @@ elif tabs == "September 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -4724,7 +4987,19 @@ elif tabs == "September 2024":
                         City Streetlights (526,798)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+        )
+        
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (596,899)
@@ -4745,14 +5020,25 @@ elif tabs == "October 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
-        /* Force small gap between rectangles */
         .rectangle-container {
             display: flex;
             flex-direction: column;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -4763,7 +5049,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.67%;
             top: 0;
             left: 0;
@@ -4778,7 +5064,7 @@ elif tabs == "October 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -4789,7 +5075,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 20.73%;
             display: flex;
             font-size: 12px;
@@ -4807,7 +5093,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.60%;
             display: flex;
             font-size: 12px;
@@ -4820,19 +5106,19 @@ elif tabs == "October 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -4869,7 +5155,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 20.15%;
             top: 0;
             left: 0;
@@ -4890,7 +5176,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 28.40%;
             top: 0;
             left: 0;
@@ -4911,7 +5197,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 14.66%;
             top: 0;
             left: 0;
@@ -4932,7 +5218,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 24.73%;
             top: 0;
             left: 0;
@@ -4953,7 +5239,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 12.06%;
             top: 0;
             left: 0;
@@ -4976,7 +5262,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 47.44%;
             top: 0;
             left: 0;
@@ -4997,7 +5283,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 8.89%;
             top: 0;
             left: 0;
@@ -5018,7 +5304,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.32%;
             top: 0;
             left: 0;
@@ -5039,7 +5325,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 38.88%;
             top: 0;
             left: 0;
@@ -5060,7 +5346,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 2.03%;
             top: 0;
             left: 0;
@@ -5081,7 +5367,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.65%;
             top: 0;
             left: 0;
@@ -5102,7 +5388,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.79%;
             top: 0;
             left: 0;
@@ -5123,7 +5409,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 10.27%;
             top: 0;
             left: 0;
@@ -5144,7 +5430,7 @@ elif tabs == "October 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 89.73%;
             top: 0;
             left: 0;
@@ -5178,7 +5464,11 @@ elif tabs == "October 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -5207,7 +5497,11 @@ elif tabs == "October 2024":
             unsafe_allow_html=True
         )
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -5234,7 +5528,19 @@ elif tabs == "October 2024":
                         City Streetlights (435,889)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        st.markdown('''
+                :rainbow-background[System Loss (kWh)]
+            '''
+        )
+        
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,278,701)
@@ -5255,7 +5561,11 @@ elif tabs == "November 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -5267,13 +5577,21 @@ elif tabs == "November 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .vertical-rectangle-nov2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 53.16%;
             top: 0;
             left: 0;
@@ -5288,7 +5606,7 @@ elif tabs == "November 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-3rd-column-2 {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 175px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -5299,7 +5617,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.71%;
             display: flex;
             font-size: 12px;
@@ -5317,7 +5635,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.13%;
             display: flex;
             font-size: 12px;
@@ -5330,19 +5648,19 @@ elif tabs == "November 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-3rd-column {
-            width: 175px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 300px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -5379,7 +5697,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 18.27%;
             top: 0;
             left: 0;
@@ -5400,7 +5718,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 33.00%;
             top: 0;
             left: 0;
@@ -5421,7 +5739,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 14.13%;
             top: 0;
             left: 0;
@@ -5442,7 +5760,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 22.79%;
             top: 0;
             left: 0;
@@ -5463,7 +5781,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 11.81%;
             top: 0;
             left: 0;
@@ -5486,7 +5804,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 48.07%;
             top: 0;
             left: 0;
@@ -5507,7 +5825,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 9.09%;
             top: 0;
             left: 0;
@@ -5528,7 +5846,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.32%;
             top: 0;
             left: 0;
@@ -5549,7 +5867,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 38.19%;
             top: 0;
             left: 0;
@@ -5570,7 +5888,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.91%;
             top: 0;
             left: 0;
@@ -5591,7 +5909,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 1.63%;
             top: 0;
             left: 0;
@@ -5612,7 +5930,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 0.79%;
             top: 0;
             left: 0;
@@ -5633,7 +5951,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 22.86%;
             top: 0;
             left: 0;
@@ -5654,7 +5972,7 @@ elif tabs == "November 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 175px;
+            width: 100%;
             height: 77.14%;
             top: 0;
             left: 0;
@@ -5688,7 +6006,11 @@ elif tabs == "November 2024":
 )
 
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -5718,7 +6040,11 @@ elif tabs == "November 2024":
         )
     
     with col3:
-        st.markdown("Sales (kWh)")
+        #st.markdown("Sales (kWh)")
+        st.markdown('''
+        :rainbow-background[Sales (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
@@ -5745,7 +6071,19 @@ elif tabs == "November 2024":
                         City Streetlights (439,117)
                     </div>
                 </div>
-                <div>System Loss (kWh)</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        st.markdown('''
+            :rainbow-background[System Loss (kWh)]
+        '''
+        )
+
+        st.markdown(
+        f"""
+            <div class="rectangle-container-2">
                 <div class="invisible-rectangle-3rd-column-2">
                     <div class="vertical-rectangle-feeder-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,104,654)
@@ -5766,7 +6104,11 @@ elif tabs == "December 2024":
     col1, col2, col3 = st.columns([1, 1.3, 1])
 
     with col1:
-        st.markdown("Energy Input (kWh)")
+        #st.markdown("Energy Input (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Input (kWh)]
+'''
+        )
         st.markdown(
     """
     <style>
@@ -5778,8 +6120,16 @@ elif tabs == "December 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
         .invisible-rectangle-3rd-column-2 {
-            width: 165px;  /* Set the width of the rectangle */
+            width: 75%;  /* Set the width of the rectangle */
             height: 100px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -5790,7 +6140,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 52.39%;
             top: 0;
             left: 0;
@@ -5810,7 +6160,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 21.70%;
             display: flex;
             font-size: 12px;
@@ -5828,7 +6178,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 25.91%;
             display: flex;
             font-size: 12px;
@@ -5841,13 +6191,13 @@ elif tabs == "December 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
         }
         .invisible-rectangle-1st-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 48%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .invisible-rectangle-2nd-column {
-            width: 110px;  /* Set the width of the rectangle */
+            width: 33%;  /* Set the width of the rectangle */
             height: 620px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
@@ -5883,7 +6233,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 18.93%;
             top: 0;
             left: 0;
@@ -5904,7 +6254,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 46.26%;
             top: 0;
             left: 0;
@@ -5925,7 +6275,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 14.39%;
             top: 0;
             left: 0;
@@ -5946,7 +6296,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 8.62%;
             top: 0;
             left: 0;
@@ -5967,7 +6317,7 @@ elif tabs == "December 2024":
             padding: 10px;
             border: 2px solid #ccc;
             font-weight: bold;
-            width: 110px;
+            width: 100%;
             height: 11.81%;
             top: 0;
             left: 0;
@@ -6003,7 +6353,11 @@ elif tabs == "December 2024":
 )
         
     with col2:
-        st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        #st.markdown("Energy Purchase + Energy Wheeled (kWh)")
+        st.markdown('''
+        :rainbow-background[Energy Purchase + Energy Wheeled (kWh)]
+'''
+        )
         st.markdown(
             f"""
             <div class="rectangle-container">
