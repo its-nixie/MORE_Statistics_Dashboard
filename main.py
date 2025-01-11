@@ -2663,7 +2663,7 @@ elif tabs == "May 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-intermediate-may {
             background-color: #365E32; /* Example color */
@@ -2685,7 +2685,7 @@ elif tabs == "May 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 85%;
+            font-size: 75%;
         }
         .vertical-rectangle-power-may {
             background-color: #365E32; /* Example color */
@@ -2773,7 +2773,7 @@ elif tabs == "May 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
-            font-size: 80%;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-may {
             background-color: #365E32; /* Example color */
