@@ -2453,7 +2453,7 @@ elif tabs == "May 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 27.08%;
+            height: 25.54%;
             display: flex;
             font-size: 12px;
             border-radius: 5px;
