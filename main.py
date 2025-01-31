@@ -958,17 +958,6 @@ elif tabs == "February 2024":
             z-index: 15;
             opacity: 100%;
         }
-        .tooltip-feb .arrow {
-            position: absolute;
-            top: 13%; /* Vertically center the arrow */
-            left: -10px; /* Position it to the left of the tooltip box */
-            width: 0;
-            height: 0;
-            border-top: 10px solid transparent; /* Left side of the arrow */
-            border-bottom: 10px solid transparent; /* Right side of the arrow */
-            border-right: 10px solid #ddd; /* Visible top part of the arrow */
-            transform: translateY(-50%); /* Adjust the vertical position */
-        }
         .vertical-rectangle-kspc-feb {
             background-color: #4682B4; /* Example color */
             color: white !important;;
