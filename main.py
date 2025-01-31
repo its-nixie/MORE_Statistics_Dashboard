@@ -752,7 +752,7 @@ if tabs == "January 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">58,341,497 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,100,358 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5766,7 +5766,7 @@ elif tabs == "September 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 4.40%;
+            height: 0.90%;
             top: 0;
             left: 0;
             display: flex;
@@ -5788,7 +5788,7 @@ elif tabs == "September 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 0.90%;
+            height: 4.40%;
             top: 0;
             left: 0;
             display: flex;
@@ -5971,10 +5971,10 @@ elif tabs == "September 2024":
                         City Streetlights (526,798)
                     </div>
                     <div class="vertical-rectangle-feeder-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_Feeder (596,899)
+                        DSL_Feeder (2,912,053)
                     </div>
                     <div class="vertical-rectangle-stss-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        DSL_ST+SS (2,912,053)
+                        DSL_ST+SS (596,899)
                     </div>
                     <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
