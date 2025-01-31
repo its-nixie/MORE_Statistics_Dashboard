@@ -35,7 +35,7 @@ buffered_5 = BytesIO()
 arrow_image.save(buffered_5, format="PNG")
 arrow_img_str = base64.b64encode(buffered_5.getvalue()).decode()
 
-# Column titles
+# COLUMN TITLES
 first_column_title = "Energy Purchases + RES"
 second_column_title = "DU Metering"
 third_column_title = "Sales"
@@ -94,13 +94,6 @@ st. markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
-
-# .st-emotion-cache-1gwvy71 {
-#             background-color: #659287;
-#         }
-#         .st-emotion-cache-1mi2ry5 {
-#             background-color: #659287;
-#         }
 
 def add_logo_with_text(logo_path, text, max_width=None, max_height=None, text_size=16, font_family="Arial"):
     """Adds a logo with text to the sidebar, maintaining aspect ratio.
@@ -200,14 +193,6 @@ if tabs == "January 2024":
     <style>
         /* Force small gap between rectangles */
         .rectangle-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -862,14 +847,6 @@ elif tabs == "February 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -1535,14 +1512,6 @@ elif tabs == "March 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
         .vertical-rectangle-mar2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
@@ -2180,14 +2149,6 @@ elif tabs == "April 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -2831,14 +2792,6 @@ elif tabs == "May 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -3519,14 +3472,6 @@ elif tabs == "June 2024":
             position: relative;  /* Allows child elements to be positioned relative to this */
             z-index: 1; /* Ensure that the parent has lower stacking order than the children */
         }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
         .vertical-rectangle-jun2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
@@ -4139,14 +4084,6 @@ elif tabs == "July 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -4799,14 +4736,6 @@ elif tabs == "August 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
@@ -5465,14 +5394,6 @@ elif tabs == "September 2024":
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
         }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
         .vertical-rectangle-sep2024-ilomore01 {
             background-color: #365E32; /* Example color */
             color: white !important;;
@@ -6116,14 +6037,6 @@ elif tabs == "October 2024":
         .rectangle-container {
             display: flex;
             flex-direction: column;
-            gap: 10px !important; /* Minimal gap */
-            margin: 0 !important; /* Remove container margin */
-            padding: 0 !important; /* Remove container padding */
-        }
-        .rectangle-container-2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px !important; /* Minimal gap */
             margin: 0 !important; /* Remove container margin */
             padding: 0 !important; /* Remove container padding */
