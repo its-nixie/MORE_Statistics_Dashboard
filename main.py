@@ -155,12 +155,12 @@ tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "M
 # January 2024
 if tabs == "January 2024":    
     col1, col2, col3, col4, col5 = st.columns([1.5, 1, 1.5, 1, 1.5])
-    
+
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -168,7 +168,7 @@ if tabs == "January 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -179,9 +179,9 @@ if tabs == "January 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">63,108,547 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,108,547 kWh</p>
                 </div>
             </div>
             ''', 
@@ -618,31 +618,30 @@ if tabs == "January 2024":
         }
     </style>
     <div class="rectangle-container">
-        <div class="rectangle-container">
-                <div class="invisible-rectangle-1st-column">
-                    <div class="vertical-rectangle-cc-jan">
-                            Contestables (6,992,365)
-                        <div class="tooltip-jan">
-                            <div class="arrow"></div>SM Delgado - 464,921<br>SM City - 2,381,612<br>Golden Portals -  634,825<br>QHP -  395,239<br>Mary Mart -  275,059<br>HEVA -  414,681<br>Marriott -  419,552<br>Festive Walk Mall -  655,735<br>Smart Communications -  326,431<br>HEVA ICC -  125,321<br>KAREILA -  214,966<br>One Fintech -  298,937<br>Seda Hotel -  119,976<br>Innove Communications -  179,489<br>Adauge (The Shops) -  85,622
-                        </div>
-                    </div>
-                    <div class="vertical-rectangle-scpc-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                        SCPC (16,882,500)
-                    </div>
-                    <div class="vertical-rectangle-kspc-jan" onclick="fetch('/?rect=3').then(() => window.location.reload())">
-                        KSPC (11,245,000)
-                    </div>
-                    <div class="vertical-rectangle-edc-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
-                        EDC (9,360,000)
-                    </div>
-                    <div class="vertical-rectangle-wesm-jan" onclick="fetch('/?rect=5').then(() => window.location.reload())">
-                        WESM (18,628,682)
-                    </div>
+        <div class="invisible-rectangle-1st-column">
+            <div class="vertical-rectangle-cc-jan">
+                    Contestables (6,992,365)
+                <div class="tooltip-jan">
+                    <div class="arrow"></div>SM Delgado - 464,921<br>SM City - 2,381,612<br>Golden Portals -  634,825<br>QHP -  395,239<br>Mary Mart -  275,059<br>HEVA -  414,681<br>Marriott -  419,552<br>Festive Walk Mall -  655,735<br>Smart Communications -  326,431<br>HEVA ICC -  125,321<br>KAREILA -  214,966<br>One Fintech -  298,937<br>Seda Hotel -  119,976<br>Innove Communications -  179,489<br>Adauge (The Shops) -  85,622
                 </div>
             </div>
-            """,
-            unsafe_allow_html=True
-        )
+            <div class="vertical-rectangle-scpc-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                SCPC (16,882,500)
+            </div>
+            <div class="vertical-rectangle-kspc-jan" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                KSPC (11,245,000)
+            </div>
+            <div class="vertical-rectangle-edc-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                EDC (9,360,000)
+            </div>
+            <div class="vertical-rectangle-wesm-jan" onclick="fetch('/?rect=5').then(() => window.location.reload())">
+                WESM (18,628,682)
+            </div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
     with col2:
         st.markdown(
@@ -658,8 +657,8 @@ if tabs == "January 2024":
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -668,7 +667,7 @@ if tabs == "January 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -680,9 +679,9 @@ if tabs == "January 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">63,108,547 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,108,547 kWh</p>
                 </div>
             </div>
             ''', 
@@ -694,13 +693,13 @@ if tabs == "January 2024":
             <div class="rectangle-container">
         <div class="invisible-rectangle-2nd-column">
             <div class="vertical-rectangle-jan2024-ilomore01" onclick="fetch('/?rect=1').then(() => window.location.reload())">
-                ILOMORE01-PN1MORE04 (32,109,152 kWh)
+                ILOMORE01-PN1MORE04 (32,109,152)
             </div>
             <div class="vertical-rectangle-jan2024-sbamore02" onclick="fetch('/?rect=2').then(() => window.location.reload())">
-                SBAMORE02-ILOMORE01 (13,817,384 kWh)
+                SBAMORE02-ILOMORE01 (13,817,384)
             </div>
             <div class="vertical-rectangle-jan2024-sbamore03" onclick="fetch('/?rect=3').then(() => window.location.reload())">
-                SBAMORE03 (17,182,011 kWh)
+                SBAMORE03 (17,182,011)
             </div>
         </div>
     </div>
@@ -720,7 +719,7 @@ if tabs == "January 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -730,8 +729,8 @@ if tabs == "January 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -739,7 +738,7 @@ if tabs == "January 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -750,9 +749,9 @@ if tabs == "January 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,100,358 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,100,358 kWh</p>
                 </div>
             </div>
             ''', 
@@ -793,7 +792,7 @@ if tabs == "January 2024":
                     <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -811,8 +810,8 @@ elif tabs == "February 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -820,7 +819,7 @@ elif tabs == "February 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -831,9 +830,9 @@ elif tabs == "February 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">58,981,068 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">58,981,068 kWh</p>
                 </div>
             </div>
             ''', 
@@ -1305,12 +1304,12 @@ elif tabs == "February 2024":
         unsafe_allow_html=True
     )
 
-    with col3:
+    with col3:    
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -1319,7 +1318,7 @@ elif tabs == "February 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -1331,9 +1330,9 @@ elif tabs == "February 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">58,981,068 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">58,981,068 kWh</p>
                 </div>
             </div>
             ''', 
@@ -1371,7 +1370,7 @@ elif tabs == "February 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -1381,8 +1380,8 @@ elif tabs == "February 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -1390,7 +1389,7 @@ elif tabs == "February 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -1401,9 +1400,9 @@ elif tabs == "February 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,582,125 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,582,125 kWh</p>
                 </div>
             </div>
             ''', 
@@ -1444,7 +1443,7 @@ elif tabs == "February 2024":
                     <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -1460,10 +1459,11 @@ elif tabs == "March 2024":
     col1, col2, col3, col4, col5 = st.columns([1.5, 1, 1.5, 1, 1.5])
 
     with col1:
+        
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -1471,7 +1471,7 @@ elif tabs == "March 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -1482,9 +1482,9 @@ elif tabs == "March 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,434,800 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,434,800 kWh</p>
                 </div>
             </div>
             ''', 
@@ -1594,7 +1594,7 @@ elif tabs == "March 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  
-            height: 380px; 
+            height: 360px; 
             background-color: white; 
             border: 1px solid transparent; 
             margin-bottom: 100px;
@@ -1946,12 +1946,12 @@ elif tabs == "March 2024":
         unsafe_allow_html=True
     )
 
-    with col3:
+    with col3:    
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -1960,7 +1960,7 @@ elif tabs == "March 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -1972,9 +1972,9 @@ elif tabs == "March 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,434,800 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,434,800 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2012,7 +2012,7 @@ elif tabs == "March 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -2022,8 +2022,8 @@ elif tabs == "March 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -2031,7 +2031,7 @@ elif tabs == "March 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -2042,9 +2042,9 @@ elif tabs == "March 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">60,682,228 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">60,682,228 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2082,10 +2082,10 @@ elif tabs == "March 2024":
                     <div class="vertical-rectangle-stss-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (815,450)
                     </div>
-                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
+                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -140px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -358px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -2103,8 +2103,8 @@ elif tabs == "April 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -2112,7 +2112,7 @@ elif tabs == "April 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -2123,9 +2123,9 @@ elif tabs == "April 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">60,492,498 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">60,492,498 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2235,7 +2235,7 @@ elif tabs == "April 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 380px; Set the height of the rectangle */
+            height: 372px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -2592,8 +2592,8 @@ elif tabs == "April 2024":
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -2602,7 +2602,7 @@ elif tabs == "April 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -2614,9 +2614,9 @@ elif tabs == "April 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">60,492,497 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">60,492,497 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2654,7 +2654,7 @@ elif tabs == "April 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -2664,8 +2664,8 @@ elif tabs == "April 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -2673,7 +2673,7 @@ elif tabs == "April 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -2684,9 +2684,9 @@ elif tabs == "April 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">71,628,383 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,628,383 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2727,7 +2727,7 @@ elif tabs == "April 2024":
                 <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -367px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -2745,8 +2745,8 @@ elif tabs == "May 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -2754,7 +2754,7 @@ elif tabs == "May 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -2765,9 +2765,9 @@ elif tabs == "May 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">71,453,962 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,453,962 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2805,12 +2805,6 @@ elif tabs == "May 2024":
             margin: 0 !important; /* Remove rectangle margin */
             box-sizing: border-box; /* Ensure consistent sizing */
             font-size: 85%;
-        }
-        .invisible-rectangle-3rd-column-2 {
-            width: 75%;  /* Set the width of the rectangle */
-            height: 175px; /* Set the height of the rectangle */
-            background-color: white; /* Make the rectangle invisible */
-            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
         }
         .vertical-rectangle-may2024-sbamore02 {
             background-color: #365E32; /* Example color */
@@ -3238,11 +3232,11 @@ elif tabs == "May 2024":
     )
 
     with col3:
-        # Second column icon
+    # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -3251,7 +3245,7 @@ elif tabs == "May 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -3263,9 +3257,9 @@ elif tabs == "May 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">71,453,961 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,453,961 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3303,7 +3297,7 @@ elif tabs == "May 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -3313,8 +3307,8 @@ elif tabs == "May 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -3322,7 +3316,7 @@ elif tabs == "May 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -3333,9 +3327,9 @@ elif tabs == "May 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">76,666,235 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">76,666,235 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3394,8 +3388,8 @@ elif tabs == "June 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -3403,7 +3397,7 @@ elif tabs == "June 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -3414,9 +3408,9 @@ elif tabs == "June 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">76,626,701 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">76,626,701 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3455,7 +3449,7 @@ elif tabs == "June 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 380px; Set the height of the rectangle */
+            height: 370px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -3883,8 +3877,8 @@ elif tabs == "June 2024":
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -3893,7 +3887,7 @@ elif tabs == "June 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -3905,9 +3899,9 @@ elif tabs == "June 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">76,626,701 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">76,626,701 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3945,7 +3939,7 @@ elif tabs == "June 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -3955,8 +3949,8 @@ elif tabs == "June 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -3964,7 +3958,7 @@ elif tabs == "June 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -3975,9 +3969,9 @@ elif tabs == "June 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">68,152,747 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">68,152,747 kWh</p>
                 </div>
             </div>
             ''', 
@@ -4015,10 +4009,10 @@ elif tabs == "June 2024":
                     <div class="vertical-rectangle-stss-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (691,715)
                     </div>
-                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -143px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -366px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -4038,8 +4032,8 @@ elif tabs == "July 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -4047,7 +4041,7 @@ elif tabs == "July 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -4058,9 +4052,9 @@ elif tabs == "July 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">68,054,095 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">68,054,095 kWh</p>
                 </div>
             </div>
             ''', 
@@ -4176,7 +4170,7 @@ elif tabs == "July 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 380px; Set the height of the rectangle */
+            height: 365px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -4529,12 +4523,12 @@ elif tabs == "July 2024":
         unsafe_allow_html=True
     )
 
-    with col3:
-    # Second column icon
+    with col3:  
+        # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -4543,7 +4537,7 @@ elif tabs == "July 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -4555,9 +4549,9 @@ elif tabs == "July 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">68,054,094 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">68,054,094 kWh</p>
                 </div>
             </div>
             ''', 
@@ -4595,7 +4589,7 @@ elif tabs == "July 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -4603,11 +4597,10 @@ elif tabs == "July 2024":
     )
 
     with col5:
-
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -4615,7 +4608,7 @@ elif tabs == "July 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -4626,9 +4619,9 @@ elif tabs == "July 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">63,806,940 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,806,940 kWh</p>
                 </div>
             </div>
             ''', 
@@ -4666,10 +4659,10 @@ elif tabs == "July 2024":
                     <div class="vertical-rectangle-stss-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (563,739)
                     </div>
-                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
+                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -142px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -377px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -362px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -4689,8 +4682,8 @@ elif tabs == "August 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -4698,7 +4691,7 @@ elif tabs == "August 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -4709,9 +4702,9 @@ elif tabs == "August 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">63,708,922 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,708,922 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5185,8 +5178,8 @@ elif tabs == "August 2024":
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -5195,7 +5188,7 @@ elif tabs == "August 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -5207,9 +5200,9 @@ elif tabs == "August 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">63,708,922 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,708,922 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5247,7 +5240,7 @@ elif tabs == "August 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -5255,11 +5248,10 @@ elif tabs == "August 2024":
     )
 
     with col5:
-
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -5267,7 +5259,7 @@ elif tabs == "August 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -5278,9 +5270,9 @@ elif tabs == "August 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">69,411,871 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,411,871 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5343,8 +5335,8 @@ elif tabs == "September 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -5352,7 +5344,7 @@ elif tabs == "September 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -5363,9 +5355,9 @@ elif tabs == "September 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">69,285,360 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,285,360 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5830,11 +5822,10 @@ elif tabs == "September 2024":
     )
 
     with col3:    
-        # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -5843,7 +5834,7 @@ elif tabs == "September 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -5855,9 +5846,9 @@ elif tabs == "September 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">69,285,360 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,285,360 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5895,7 +5886,7 @@ elif tabs == "September 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -5905,8 +5896,8 @@ elif tabs == "September 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -5914,7 +5905,7 @@ elif tabs == "September 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -5925,9 +5916,9 @@ elif tabs == "September 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">66,119,532 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,119,532 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5988,11 +5979,10 @@ elif tabs == "October 2024":
     col1, col2, col3, col4, col5= st.columns([1.5, 1, 1.5, 1, 1.5])
 
     with col1:
-        
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -6000,7 +5990,7 @@ elif tabs == "October 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -6011,9 +6001,9 @@ elif tabs == "October 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">66,003,977 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,003,977 kWh</p>
                 </div>
             </div>
             ''', 
@@ -6476,12 +6466,12 @@ elif tabs == "October 2024":
         unsafe_allow_html=True
     )
 
-    with col3:
+    with col3:    
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -6490,7 +6480,7 @@ elif tabs == "October 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -6502,9 +6492,9 @@ elif tabs == "October 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">66,003,976 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,003,976 kWh</p>
                 </div>
             </div>
             ''', 
@@ -6542,7 +6532,7 @@ elif tabs == "October 2024":
 
             st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+            <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
                 <img src="data:image/png;base64,{arrow_img_str}" width="100%">
             </div>
             ''', 
@@ -6552,8 +6542,8 @@ elif tabs == "October 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -6561,7 +6551,7 @@ elif tabs == "October 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -6572,9 +6562,9 @@ elif tabs == "October 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">66,371,221 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,371,221 kWh</p>
                 </div>
             </div>
             ''', 
@@ -6631,11 +6621,10 @@ elif tabs == "November 2024":
     col1, col2, col3, col4, col5 = st.columns([1.5, 1, 1.5, 1, 1.5])
 
     with col1:
-        
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -6643,7 +6632,7 @@ elif tabs == "November 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -6654,9 +6643,9 @@ elif tabs == "November 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">66,243,078 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,243,078 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7124,8 +7113,8 @@ elif tabs == "November 2024":
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -7134,7 +7123,7 @@ elif tabs == "November 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -7146,9 +7135,9 @@ elif tabs == "November 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">66,243,078 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,243,078 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7186,7 +7175,7 @@ elif tabs == "November 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -7196,8 +7185,8 @@ elif tabs == "November 2024":
     with col5:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 21%; z-index:2;">
-            <img src="data:image/png;base64,{sales_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -7205,7 +7194,7 @@ elif tabs == "November 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 18%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
                 </div>
@@ -7216,9 +7205,9 @@ elif tabs == "November 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 7%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">67,333,374 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,333,374 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7281,8 +7270,8 @@ elif tabs == "December 2024":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -7290,7 +7279,7 @@ elif tabs == "December 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -7301,9 +7290,9 @@ elif tabs == "December 2024":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">67,204,899 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,204,899 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7767,12 +7756,12 @@ elif tabs == "December 2024":
         unsafe_allow_html=True
     )
 
-    with col3:    
+    with col3:  
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -7781,7 +7770,7 @@ elif tabs == "December 2024":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -7793,9 +7782,9 @@ elif tabs == "December 2024":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">67,204,899 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,204,899 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7833,7 +7822,7 @@ elif tabs == "December 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -7923,8 +7912,8 @@ elif tabs == "January 2025":
     with col1:
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{power_plant_img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -7932,7 +7921,7 @@ elif tabs == "January 2025":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
                 </div>
@@ -7943,9 +7932,9 @@ elif tabs == "January 2025":
 
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">65,058,655 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">65,058,655 kWh</p>
                 </div>
             </div>
             ''', 
@@ -8409,12 +8398,12 @@ elif tabs == "January 2025":
         unsafe_allow_html=True
     )
 
-    with col3:
+    with col3:    
         # Second column icon
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 16%; z-index:2;">
-            <img src="data:image/png;base64,{img_str}" width="35%">
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
         </div>
         ''', 
         unsafe_allow_html=True
@@ -8423,7 +8412,7 @@ elif tabs == "January 2025":
         # Second column title
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -13px; font-family: Arial; margin-bottom: 8px">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
                 <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
                 </div>
@@ -8435,9 +8424,9 @@ elif tabs == "January 2025":
         # Show total     
         st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: 0px; font-family: Arial; margin-top: 30px; margin-bottom: 5px;">
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -12%; margin-top: 12%; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">65,058,655 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">65,058,655 kWh</p>
                 </div>
             </div>
             ''', 
