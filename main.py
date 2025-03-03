@@ -2500,7 +2500,7 @@ elif tabs == "April 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 388px; Set the height of the rectangle */
+            height: 410px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -2938,7 +2938,7 @@ elif tabs == "April 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 248px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -3017,10 +3017,10 @@ elif tabs == "April 2024":
                         DSL_ST+SS (1,065,819)
                         <button class="mini-button-2">1.49%</button>
                     </div>
-                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -155px; z-index:2;">
+                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -163px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -385px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -410px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -3218,7 +3218,7 @@ elif tabs == "May 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 387px; Set the height of the rectangle */
+            height: 407px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -3656,7 +3656,7 @@ elif tabs == "May 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 245px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -3735,10 +3735,10 @@ elif tabs == "May 2024":
                         DSL_ST+SS (855,002)
                         <button class="mini-button-2">1.12%</button>
                     </div>
-                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -154px; z-index:2;">
+                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -165px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -384px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -405px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -3864,7 +3864,7 @@ elif tabs == "June 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 358px; Set the height of the rectangle */
+            height: 345px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -4373,7 +4373,7 @@ elif tabs == "June 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 205px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 193px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -4452,10 +4452,10 @@ elif tabs == "June 2024":
                         DSL_ST+SS (691,715)
                         <button class="mini-button-2">1.01%</button>
                     </div>
-                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -140px; z-index:2;">
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -130px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -354px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -345px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -4654,7 +4654,7 @@ elif tabs == "July 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 358px; Set the height of the rectangle */
+            height: 348px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -5092,7 +5092,7 @@ elif tabs == "July 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 210px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -5171,10 +5171,10 @@ elif tabs == "July 2024":
                         DSL_ST+SS (563,739)
                         <button class="mini-button-2">0.88%</button>
                     </div>
-                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -143px; z-index:2;">
+                <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -139px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -353px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -343px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -5374,7 +5374,7 @@ elif tabs == "August 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 388px; Set the height of the rectangle */
+            height: 404px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -5812,7 +5812,7 @@ elif tabs == "August 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 228px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 240px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -5891,10 +5891,10 @@ elif tabs == "August 2024":
                         DSL_ST+SS (1,825,939)
                         <button class="mini-button-2">2.63%</button>
                     </div>
-                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -152px; z-index:2;">
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -162px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -388px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -403px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -6096,7 +6096,7 @@ elif tabs == "September 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 375px; Set the height of the rectangle */
+            height: 360px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -6612,10 +6612,10 @@ elif tabs == "September 2024":
                         DSL_ST+SS (596,899)
                         <button class="mini-button-2">0.90%</button>
                     </div>
-                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -150px; z-index:2;">
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -145px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -372px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -355px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -7254,7 +7254,7 @@ elif tabs == "October 2024":
 
             st.markdown(
             f'''
-            <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 207px; z-index:2;">
+            <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 220px; z-index:2;">
                 <img src="data:image/png;base64,{arrow_img_str}" width="100%">
             </div>
             ''', 
@@ -7972,7 +7972,7 @@ elif tabs == "November 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 205px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 225px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -8256,7 +8256,7 @@ elif tabs == "December 2024":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 377px; Set the height of the rectangle */
+            height: 367px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -8694,7 +8694,7 @@ elif tabs == "December 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 215px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -8776,7 +8776,7 @@ elif tabs == "December 2024":
                     <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -149px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -374px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -362px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
@@ -8981,7 +8981,7 @@ elif tabs == "January 2025":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 380px; Set the height of the rectangle */
+            height: 365px; Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -9419,7 +9419,7 @@ elif tabs == "January 2025":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 210px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
@@ -9498,10 +9498,10 @@ elif tabs == "January 2025":
                         DSL_ST+SS (350,015)
                         <button class="mini-button-2">0.56%</button>
                     </div>
-                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -149px; z-index:2;">
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -143px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
         </div>
-            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -374px; margin-bottom: 10px">
+            <div style="position: relative; display: flex; justify-content: flex-start; text-align: center; align-items: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -364px; margin-bottom: 10px">
                 <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
                     <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
                 </div>
