@@ -1,41 +1,43 @@
+# Necessary imports
 import streamlit as st
 from PIL import Image
 import base64
 from io import BytesIO
 
+# Configures the default settings of the page
 st.set_page_config(page_title="Statistics Dashboard", page_icon="more_power_logo.png", layout="wide")
 
-# POWER PLANT
+# Power Plant image
 power_plant_image = Image.open('power-plant-logo.png')
 buffered_2 = BytesIO()
 power_plant_image.save(buffered_2, format="PNG")
 power_plant_img_str = base64.b64encode(buffered_2.getvalue()).decode()
 
-# ELECTRIC METER
+# Electric Meter image
 image = Image.open('meter-logo.png')
 buffered = BytesIO()
 image.save(buffered, format="PNG")
 img_str = base64.b64encode(buffered.getvalue()).decode()
 
-# SALES
+# Sales image
 sales_image = Image.open('sales-logo.png')
 buffered_3 = BytesIO()
 sales_image.save(buffered_3, format="PNG")
 sales_img_str = base64.b64encode(buffered_3.getvalue()).decode()
 
-# SYSTEM LOSS
+# System Loss image
 systemloss_image = Image.open('systemloss-logo.png')
 buffered_4 = BytesIO()
 systemloss_image.save(buffered_4, format="PNG")
 systemloss_img_str = base64.b64encode(buffered_4.getvalue()).decode()
 
-# ARROW 
+# Arrow image
 arrow_image = Image.open('arrow-icon.png')
 buffered_5 = BytesIO()
 arrow_image.save(buffered_5, format="PNG")
 arrow_img_str = base64.b64encode(buffered_5.getvalue()).decode()
 
-# COLUMN TITLES
+# Column titles
 first_column_title = "Energy Offtake"
 second_column_title = "DU Metering"
 third_column_title = "Sales"
@@ -95,17 +97,8 @@ st. markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+# Adds a logo with text to the sidebar, maintaining aspect ratio
 def add_logo_with_text(logo_path, text, max_width=None, max_height=None, text_size=16, font_family="Arial"):
-    """Adds a logo with text to the sidebar, maintaining aspect ratio.
-
-    Args:
-        logo_path (str): Path to the logo image.
-        text (str): Text to display below the logo.
-        max_width (int, optional): Maximum width of the logo. Defaults to None.
-        max_height (int, optional): Maximum height of the logo. Defaults to None.
-        text_size (int, optional): Font size for the text. Defaults to 16.
-        font_family (str, optional): Font family for the text. Defaults to "Arial".
-    """
     try:
         logo = Image.open(logo_path)
         original_width, original_height = logo.size
@@ -139,8 +132,8 @@ def add_logo_with_text(logo_path, text, max_width=None, max_height=None, text_si
     except Exception as e:
         st.error(f"Error displaying logo or text: {e}")
 
+# Converts image to base64 for embedding in HTML
 def get_base64_from_image(image):
-    """Converts image to base64 for embedding in HTML"""
     import base64
     from io import BytesIO
 
@@ -150,7 +143,7 @@ def get_base64_from_image(image):
 
 add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150, text_size=20, font_family="Helvetica")
 
-tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024", "January 2025", "February 2025", "March 2025", "April 2025"], index=0)
+tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024", "January 2025", "February 2025", "March 2025", "April 2025", "May 2025"], index=0)
 
 # January 2024
 if tabs == "January 2024":    
@@ -11046,7 +11039,7 @@ elif tabs == "April 2025":
         }
         .invisible-rectangle-3rd-column {
             width: 90%;  /* Set the width of the rectangle */
-            height: 345px; Set the height of the rectangle */
+            height: 410px; /* Set the height of the rectangle */
             background-color: white; /* Make the rectangle invisible */
             border: 1px solid transparent; /* Optional: Add a border (invisible here) */
             position: relative;  /* Allows child elements to be positioned relative to this */
@@ -11284,6 +11277,204 @@ elif tabs == "April 2025":
             box-sizing: border-box; /* Ensure consistent sizing */
             font-size: 85%;
         }
+        .vertical-rectangle-residential-apr2025 {
+            background-color: #3A4C61; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 40.28%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 85%;
+        }
+        .vertical-rectangle-commercial-apr2025 {
+            background-color: #7A4B56; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 7.04%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 60%;
+        }
+        .vertical-rectangle-intermediate-apr2025 {
+            background-color: #556B2F; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.26%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 65%;
+        }
+        .vertical-rectangle-power-apr2025 {
+            background-color: #5D3F66; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 40.61%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 85%;
+        }
+        .vertical-rectangle-citygovernment-apr2025 {
+            background-color: #7A5A2F; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 1.21%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 70%;
+        }
+        .vertical-rectangle-othergovernment-apr2025 {
+            background-color: #7A4A29; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 1.31%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 70%;
+        }
+        .vertical-rectangle-citystreetlights-apr2025 {
+            background-color: #6B4F3B; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.59%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 55%;
+        }
+        .vertical-rectangle-stss-apr2025 {
+            background-color: #C09C9B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.70%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
+        }
+        .vertical-rectangle-feeder-apr2025 {
+            background-color: #C09C9B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 8.00%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 63%;
+        }
         }
     </style>
     <div class="rectangle-container">
@@ -11392,6 +11583,555 @@ elif tabs == "April 2025":
             <div class="rectangle-container-2">
                 <div class="net-metering-apr2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                     Net Metering (242,895)
+            </div>
+            </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    with col4:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 245px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+    with col5:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+                <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,992,460 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-apr2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Residential (28,996,976)
+                        <button class="mini-button">40.28%</button>
+                    </div>
+                    <div class="vertical-rectangle-commercial-apr2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Commercial (5,068,020)
+                        <button class="mini-button-2">7.04%</button>
+                    </div>
+                    <div class="vertical-rectangle-intermediate-apr2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Intermediate (185,696)
+                        <button class="mini-button-2">0.26%</button>
+                    </div>
+                    <div class="vertical-rectangle-power-apr2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Power (29,237,095)
+                        <button class="mini-button">40.61%</button>
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-apr2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
+                        City Govt. (872,672)
+                        <button class="mini-button-2">1.21%</button>
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-apr2025" onclick="fetch('/?rect=6').then(() => window.location.reload())">
+                        Other Govt. (945,423)
+                        <button class="mini-button-2">1.31%</button>
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-apr2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        City Streetlights (422,536)
+                        <button class="mini-button-2">0.59%</button>
+                    </div>
+                    <div class="vertical-rectangle-feeder-apr2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        DSL_Feeder (5,758,070)
+                        <button class="mini-button-2">8.00%</button>
+                    </div>
+                    <div class="vertical-rectangle-stss-apr2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
+                        DSL_ST+SS (505,972)
+                        <button class="mini-button-2">0.70%</button>
+                    </div>
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -170px; z-index:2;">
+            <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
+        </div>
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -405px; margin-bottom: 10px">
+                <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
+                </div>
+            </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+            )
+
+# May 2025
+elif tabs == "May 2025":
+    col1, col2, col3, col4, col5 = st.columns([1.5, 1, 1.5, 1, 1.5])
+
+    with col1:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 20px">
+                <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,735,154 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+    """
+    <style>
+        /* Force small gap between rectangles */
+        .rectangle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin: 0 !important; /* Remove container margin */
+            padding: 0 !important; /* Remove container padding */
+        }
+        .mini-button {
+            font-size: 12px; /* Make the text small */
+            padding: 2px 5 px; /* Adjust padding for a smaller button */
+            background-color: white; /* Green background */
+            color: black; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Slightly rounded corners */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            margin-left: 5px; /* Space between text and button */
+        }
+        .mini-button-2 {
+            font-size: 8px; /* Even smaller text */
+            padding: 2px 5px; /* Smaller padding for a more compact button */
+            background-color: white; /* White background */
+            color: black; /* Black text color */
+            border: none; /* No border */
+            border-radius: 3px; /* Smaller rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin-left: 5px; /* Reduced space between text and button */
+        }
+        .rectangle-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px !important; /* Minimal gap */
+            margin-top: 15px;
+            padding: 0 !important; /* Remove container padding */
+        }
+        .invisible-rectangle-1st-column {
+            width: 90%;  /* Set the width of the rectangle */
+            height: 480px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+        }
+        .invisible-rectangle-2nd-column {
+            width: 90%;  /* Set the width of the rectangle */
+            height: 480px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+            position: relative;  /* Allows child elements to be positioned relative to this */
+            z-index: 1; /* Ensure that the parent has lower stacking order than the children */
+        }
+        .invisible-rectangle-3rd-column {
+            width: 90%;  /* Set the width of the rectangle */
+            height: 410px; /* Set the height of the rectangle */
+            background-color: white; /* Make the rectangle invisible */
+            border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+            position: relative;  /* Allows child elements to be positioned relative to this */
+            z-index: 1; /* Ensure that the parent has lower stacking order than the children */
+        }
+        .vertical-rectangle-kspc-may2025 {
+            background-color: #4682B4; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 15.14%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 85%;
+        }
+        .vertical-rectangle-scpc-may2025 {
+            background-color: #cc3333;
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 10.52%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 85%;
+        }
+        .vertical-rectangle-wesm-may2025 {
+            background-color: #FFDB58; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 42.46%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 85%;
+        }
+        .vertical-rectangle-edc-may2025 {
+            background-color: #228B22; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 13.48%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 85%;
+        }
+        .vertical-rectangle-pedc-may2025 {
+            background-color: #FFA500; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 5.23%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 75%;
+        }
+        .vertical-rectangle-cc-may2025 {
+            background-color: #8861A8; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 13.16%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            position: relative;
+            pointer-events: auto;
+            font-size: 85%;
+        }
+        .vertical-rectangle-cc-may2025:hover .tooltip-may2025 {
+            display: block;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+            z-index: 15;
+        }
+        .tooltip-may2025 {
+            display: none;
+            position: absolute;
+            top: -65px;
+            left: 105%;
+            width: 135%;
+            margin-left: 10px;
+            background-color: #8861A8;
+            color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            z-index: 15;
+            opacity: 100%;
+        }
+        .vertical-rectangle-may2025-ilomore01 {
+            background-color: #365E32; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 45.84%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            font-size: 85%;
+        }
+        .vertical-rectangle-may2025-sbamore02 {
+            background-color: #365E32; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 25.39%;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            font-size: 85%;
+        }
+        .vertical-rectangle-may2025-sbamore03 {
+            background-color: #365E32; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 28.76%;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            font-size: 85%;
+        }
+        .net-metering-may2025 {
+            background-color: #365E32; /* Example color */
+            color: white !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            font-size: 85%;
+        }
+        }
+    </style>
+    <div class="rectangle-container">
+        <div class="invisible-rectangle-1st-column">
+            <div class="vertical-rectangle-cc-may2025"> 
+                    Contestables (9,442,641)
+                    <button class="mini-button">13.16%</button>
+                <div class="tooltip-may2025">
+                    <div class="arrow">SM Delgado - 457,543<br>SM City - 2,122,617<br>Golden Portals - 592,316<br>QHP - 424,323<br>Mary Mart - 253,519<br>HEVA - 337,050<br>Marriott - 427,379<br>Festive Walk Mall - 655,861<br>Smart Communications - 339,631<br>HEVA ICC - 122,027<br>KAREILA - 209,105<br>One Fintech - 366,798<br>Seda Hotel - 123,793<br>Innove Communications - 188,516<br>Adauge (The Shops) - 111,095<br>Sunnyfield - 225,691<br>Two Fintech - 354,734<br>Festive Walk 2 - 277,394<br>Robinsons City - 958,617<br>Robinsons Jaro - 588,853<br>Foremost - 305,779</div>
+                </div>
+            </div>
+            <div class="vertical-rectangle-kspc-may2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                KSPC (10,860,000)
+                <button class="mini-button">15.14%</button>
+            </div>
+            <div class="vertical-rectangle-scpc-may2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                SCPC (7,550,000)
+                <button class="mini-button">10.52%</button>
+            </div>
+            <div class="vertical-rectangle-edc-may2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                EDC (9,672,000)
+                <button class="mini-button">13.48%</button>
+            </div>
+            <div class="vertical-rectangle-pedc-may2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                PEDC (3,750,000)
+                <button class="mini-button">5.23%</button>
+            </div>
+            <div class="vertical-rectangle-wesm-may2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
+                WESM (30,460,513)
+                <button class="mini-button">42.46%</button>
+            </div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+        
+    with col2:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 300px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+    with col3:    
+        # Second column icon
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        # Second column title
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 20px">
+                <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        # Show total     
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,735,154 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+        <div class="invisible-rectangle-2nd-column">
+            <div class="vertical-rectangle-may2025-ilomore01" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                ILOMORE01-PN1MORE04 (32,885,805)
+                <button class="mini-button">45.84%</button>
+            </div>
+            <div class="vertical-rectangle-may2025-sbamore02" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                SBAMORE02-ILOMORE01 (18,216,953)
+                <button class="mini-button">25.39%</button>
+            </div>
+            <div class="vertical-rectangle-may2025-sbamore03" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                SBAMORE03 (20,632,397)
+                <button class="mini-button">28.76%</button>
+            </div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+        st.markdown(
+                f"""    
+            <div class="rectangle-container-2">
+                <div class="net-metering-may2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                    Net Metering (302,361)
             </div>
             </div>
         """,
