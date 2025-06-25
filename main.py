@@ -13,7 +13,7 @@ buffered_2 = BytesIO()
 power_plant_image.save(buffered_2, format="PNG")
 power_plant_img_str = base64.b64encode(buffered_2.getvalue()).decode()
 
-# Electric Meter image
+# Electric Meter Image
 image = Image.open('meter-logo.png')
 buffered = BytesIO()
 image.save(buffered, format="PNG")
