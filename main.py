@@ -44,37 +44,12 @@ third_column_title = "Sales"
 third_column_title_2 = "System Loss"
 
 hide_streamlit_style = """
-                <style>
-                div[data-testid="stToolbar"] {
-                visibility: hidden;
-                height: 0%;
-                position: fixed;
-                }
-                div[data-testid="stDecoration"] {
-                visibility: hidden;
-                height: 0%;
-                position: fixed;
-                }
-                div[data-testid="stStatusWidget"] {
-                visibility: hidden;
-                height: 0%;
-                position: fixed;
-                }
-                #MainMenu {
-                visibility: hidden;
-                height: 0%;
-                }
-                header {
-                visibility: hidden;
-                height: 0%;
-                }
-                footer {
-                visibility: hidden;
-                height: 0%;
-                }
-                </style>
-                """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+           <style>
+           header {visibility: hidden;}
+           footer {visibility: hidden;}
+           </style>
+           """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.markdown("""
     <style>
@@ -145,7 +120,7 @@ add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150,
 
 tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024", "January 2025", "February 2025", "March 2025", "April 2025", "May 2025"], index=0)
 
-# January (year 2024)
+# January 2024
 if tabs == "January 2024":    
     col1, col2, col3, col4, col5 = st.columns([1.5, 1, 1.5, 1, 1.5])
 
