@@ -746,7 +746,7 @@ if tabs == "January 2024":
 
         st.markdown(
         f'''
-        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 230px; z-index:2;">
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
             <img src="data:image/png;base64,{arrow_img_str}" width="100%">
         </div>
         ''', 
