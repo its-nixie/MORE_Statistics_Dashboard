@@ -395,7 +395,7 @@ if tabs == "January 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 38.26%;
+            height: 38.25%;
             top: 0;
             left: 0;
             display: flex;
@@ -461,7 +461,7 @@ if tabs == "January 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 43.66%;
+            height: 43.65%;
             top: 0;
             left: 0;
             display: flex;
@@ -527,7 +527,7 @@ if tabs == "January 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 0.76%;
+            height: 0.75%;
             top: 0;
             left: 0;
             display: flex;
@@ -550,6 +550,28 @@ if tabs == "January 2024":
             font-weight: bold;
             width: 100%;
             height: 1.28%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 5;
+            font-size: 70%;  
+        }
+        .vertical-rectangle-eou-jan {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.03%;
             top: 0;
             left: 0;
             display: flex;
@@ -778,7 +800,7 @@ if tabs == "January 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,100,358 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,119,620 kWh</p>
                 </div>
             </div>
             ''', 
@@ -791,7 +813,7 @@ if tabs == "January 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-jan" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (22,612,876)
-                        <button class="mini-button">38.26%</button>
+                        <button class="mini-button">38.25%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-jan" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (4,370,276)
@@ -803,7 +825,7 @@ if tabs == "January 2024":
                     </div>
                     <div class="vertical-rectangle-power-jan" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (25,804,037)
-                        <button class="mini-button">43.66%</button>
+                        <button class="mini-button">43.65%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-jan" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (859,156)
@@ -815,7 +837,11 @@ if tabs == "January 2024":
                     </div>
                     <div class="vertical-rectangle-citystreetlights-jan" onclick="fetch('/?rect=7').then(() => window.location.reload())">
                         City Streetlights (446,277)
-                        <button class="mini-button-2">0.76%</button>
+                        <button class="mini-button-2">0.75%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-jan" onclick="fetch('/?rect=9').then(() => window.location.reload())">
+                        EOU (19,262)
+                        <button class="mini-button-2">0.03%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-jan" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (3,505,359)
@@ -1159,7 +1185,7 @@ elif tabs == "February 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 37.60%;
+            height: 37.59%;
             top: 0;
             left: 0;
             display: flex;
@@ -1225,7 +1251,7 @@ elif tabs == "February 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 45.10%;
+            height: 45.09%;
             top: 0;
             left: 0;
             display: flex;
@@ -1306,6 +1332,28 @@ elif tabs == "February 2024":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-feb {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.03%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 65%;
+        }
         .vertical-rectangle-stss-feb {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -1335,7 +1383,7 @@ elif tabs == "February 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 4.77%;
+            height: 4.76%;
             top: 0;
             left: 0;
             display: flex;
@@ -1504,7 +1552,7 @@ elif tabs == "February 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,582,125 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,600,352 kWh</p>
                 </div>
             </div>
             ''', 
@@ -1517,7 +1565,7 @@ elif tabs == "February 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-feb" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (22,402,208)
-                        <button class="mini-button">37.60%</button>
+                        <button class="mini-button">37.59%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-feb" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (4,474,132)
@@ -1529,7 +1577,7 @@ elif tabs == "February 2024":
                     </div>
                     <div class="vertical-rectangle-power-feb" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (26,872,241)
-                        <button class="mini-button">45.10%</button>
+                        <button class="mini-button">45.09%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (965,591)
@@ -1543,9 +1591,13 @@ elif tabs == "February 2024":
                         City Streetlights (452,367)
                         <button class="mini-button-2">0.76%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (18,227)
+                        <button class="mini-button-2">0.03%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,839,645)
-                        <button class="mini-button-2">4.77%</button>
+                        <button class="mini-button-2">4.76%</button>
                     </div>
                     <div class="vertical-rectangle-stss-feb" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (819,041)
@@ -1876,7 +1928,7 @@ elif tabs == "March 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 41.86%;
+            height: 41.85%;
             top: 0;
             left: 0;
             display: flex;
@@ -1942,7 +1994,7 @@ elif tabs == "March 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 44.70%;
+            height: 44.69%;
             top: 0;
             left: 0;
             display: flex;
@@ -2023,6 +2075,28 @@ elif tabs == "March 2024":
             z-index: 10;
             font-size: 50%;
         }
+        .vertical-rectangle-eou-mar {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.03%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 60%;
+        }
         .vertical-rectangle-stss-mar {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -2052,7 +2126,7 @@ elif tabs == "March 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 0.59%;
+            height: 0.58%;
             top: 0;
             left: 0;
             display: flex;
@@ -2221,7 +2295,7 @@ elif tabs == "March 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">60,682,228 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">60,703,159 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2234,7 +2308,7 @@ elif tabs == "March 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-mar" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (25,402,152)
-                        <button class="mini-button">41.86%</button>
+                        <button class="mini-button">41.85%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-mar" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (4,763,443)
@@ -2246,7 +2320,7 @@ elif tabs == "March 2024":
                     </div>
                     <div class="vertical-rectangle-power-mar" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (27,125,240)
-                        <button class="mini-button">44.70%</button>
+                        <button class="mini-button">44.69%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (986,917)
@@ -2260,9 +2334,13 @@ elif tabs == "March 2024":
                         City Streetlights (414,691)
                         <button class="mini-button-2">0.68%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (20,931)
+                        <button class="mini-button-2">0.03%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (354,998)
-                        <button class="mini-button-2">0.59%</button>
+                        <button class="mini-button-2">0.58%</button>
                     </div>
                     <div class="vertical-rectangle-stss-mar" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (815,450)
@@ -2593,7 +2671,7 @@ elif tabs == "April 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 42.22%;
+            height: 42.21%;
             top: 0;
             left: 0;
             display: flex;
@@ -2659,7 +2737,7 @@ elif tabs == "April 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 41.04%;
+            height: 41.03%;
             top: 0;
             left: 0;
             display: flex;
@@ -2739,6 +2817,28 @@ elif tabs == "April 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-apr {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.03%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 65%;
         }
         .vertical-rectangle-stss-apr {
             background-color: #C09C9B; /* Example color */
@@ -2938,7 +3038,7 @@ elif tabs == "April 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,628,383 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,649,692 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2951,7 +3051,7 @@ elif tabs == "April 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-apr" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (30,242,166)
-                        <button class="mini-button">42.22%</button>
+                        <button class="mini-button">42.21%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-apr" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (5,330,890)
@@ -2963,7 +3063,7 @@ elif tabs == "April 2024":
                     </div>
                     <div class="vertical-rectangle-power-apr" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (29,397,040)
-                        <button class="mini-button">41.04%</button>
+                        <button class="mini-button">41.03%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (924,248)
@@ -2976,6 +3076,10 @@ elif tabs == "April 2024":
                     <div class="vertical-rectangle-citystreetlights-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (448,175)
                         <button class="mini-button-2">0.63%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (21,309)
+                        <button class="mini-button-2">0.03%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-apr" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,316,900)
@@ -3311,7 +3415,7 @@ elif tabs == "May 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 41.93%;
+            height: 41.86%;
             top: 0;
             left: 0;
             display: flex;
@@ -3333,7 +3437,7 @@ elif tabs == "May 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 7.35%;
+            height: 7.34%;
             top: 0;
             left: 0;
             display: flex;
@@ -3377,7 +3481,7 @@ elif tabs == "May 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 40.57%;
+            height: 40.50%;
             top: 0;
             left: 0;
             display: flex;
@@ -3458,6 +3562,28 @@ elif tabs == "May 2024":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-may {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.16%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
+        }
         .vertical-rectangle-stss-may {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -3465,7 +3591,7 @@ elif tabs == "May 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 1.12%;
+            height: 1.11%;
             top: 0;
             left: 0;
             display: flex;
@@ -3487,7 +3613,7 @@ elif tabs == "May 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 5.82%;
+            height: 5.81%;
             top: 0;
             left: 0;
             display: flex;
@@ -3656,7 +3782,7 @@ elif tabs == "May 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">76,666,235 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">76,788,209 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3669,11 +3795,11 @@ elif tabs == "May 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (32,143,692)
-                        <button class="mini-button">41.93%</button>
+                        <button class="mini-button">41.86%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-may" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (5,635,237)
-                        <button class="mini-button-2">7.35%</button>
+                        <button class="mini-button-2">7.34%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-may" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Intermediate (208,063)
@@ -3681,7 +3807,7 @@ elif tabs == "May 2024":
                     </div>
                     <div class="vertical-rectangle-power-may" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (31,103,059)
-                        <button class="mini-button">40.57%</button>
+                        <button class="mini-button">40.50%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (1,021,343)
@@ -3695,13 +3821,17 @@ elif tabs == "May 2024":
                         City Streetlights (434,690)
                         <button class="mini-button-2">0.57%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (121,974)
+                        <button class="mini-button-2">0.16%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (4,458,153)
-                        <button class="mini-button-2">5.82%</button>
+                        <button class="mini-button-2">5.81%</button>
                     </div>
-                    <div class="vertical-rectangle-stss-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                    <div class="vertical-rectangle-feeder-may" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (855,002)
-                        <button class="mini-button-2">1.12%</button>
+                        <button class="mini-button-2">1.11%</button>
                     </div>
                 <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -165px; z-index:2;">
             <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
@@ -4028,7 +4158,7 @@ elif tabs == "June 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 40.10%;
+            height: 40.07%;
             top: 0;
             left: 0;
             display: flex;
@@ -4094,7 +4224,7 @@ elif tabs == "June 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 43.27%;
+            height: 43.25%;
             top: 0;
             left: 0;
             display: flex;
@@ -4138,7 +4268,7 @@ elif tabs == "June 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 1.08%;
+            height: 1.07%;
             top: 0;
             left: 0;
             display: flex;
@@ -4175,6 +4305,28 @@ elif tabs == "June 2024":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-jun {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.06%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 65%;
+        }
         .vertical-rectangle-stss-jun {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -4204,7 +4356,7 @@ elif tabs == "June 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 4.99%;
+            height: 4.98%;
             top: 0;
             left: 0;
             display: flex;
@@ -4373,7 +4525,7 @@ elif tabs == "June 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">68,152,747 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">68,196,439 kWh</p>
                 </div>
             </div>
             ''', 
@@ -4386,7 +4538,7 @@ elif tabs == "June 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-jun" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (27,326,241)
-                        <button class="mini-button">40.10%</button>
+                        <button class="mini-button">40.07%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-jun" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (5,017,783)
@@ -4398,7 +4550,7 @@ elif tabs == "June 2024":
                     </div>
                     <div class="vertical-rectangle-power-jun" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (29,492,327)
-                        <button class="mini-button">43.27%</button>
+                        <button class="mini-button">43.25%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (875,200)
@@ -4406,15 +4558,19 @@ elif tabs == "June 2024":
                     </div>
                     <div class="vertical-rectangle-othergovernment-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Other Govt. (732,954)
-                        <button class="mini-button-2">1.08%</button>
+                        <button class="mini-button-2">1.07%</button>
                     </div>
                     <div class="vertical-rectangle-citystreetlights-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (434,829)
                         <button class="mini-button-2">0.64%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (43,692)
+                        <button class="mini-button-2">0.06%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,398,984)
-                        <button class="mini-button-2">4.99%</button>
+                        <button class="mini-button-2">4.98%</button>
                     </div>
                     <div class="vertical-rectangle-stss-jun" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_ST+SS (691,715)
@@ -4747,7 +4903,7 @@ elif tabs == "July 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 40.31%;
+            height: 40.28%;
             top: 0;
             left: 0;
             display: flex;
@@ -4769,7 +4925,7 @@ elif tabs == "July 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 7.67%;
+            height: 7.66%;
             top: 0;
             left: 0;
             display: flex;
@@ -4813,7 +4969,7 @@ elif tabs == "July 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 44.58%;
+            height: 44.54%;
             top: 0;
             left: 0;
             display: flex;
@@ -4893,6 +5049,28 @@ elif tabs == "July 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-jul {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 65%;
         }
         .vertical-rectangle-stss-jul {
             background-color: #C09C9B; /* Example color */
@@ -5092,7 +5270,7 @@ elif tabs == "July 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,806,940 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,850,921 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5105,11 +5283,11 @@ elif tabs == "July 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-jul" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (25,719,097)
-                        <button class="mini-button">40.31%</button>
+                        <button class="mini-button">40.28%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-jul" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (4,892,858)
-                        <button class="mini-button-2">7.67%</button>
+                        <button class="mini-button-2">7.66%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-jul" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Intermediate (168,171)
@@ -5117,7 +5295,7 @@ elif tabs == "July 2024":
                     </div>
                     <div class="vertical-rectangle-power-jul" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (28,442,028)
-                        <button class="mini-button">44.58%</button>
+                        <button class="mini-button">44.54%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (836,197)
@@ -5130,6 +5308,10 @@ elif tabs == "July 2024":
                     <div class="vertical-rectangle-citystreetlights-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (412,060)
                         <button class="mini-button-2">0.65%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (43,981)
+                        <button class="mini-button-2">0.07%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-jul" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,092,143)
@@ -5467,7 +5649,7 @@ elif tabs == "August 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 39.91%;
+            height: 39.88%;
             top: 0;
             left: 0;
             display: flex;
@@ -5533,7 +5715,7 @@ elif tabs == "August 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 42.63%;
+            height: 42.60%;
             top: 0;
             left: 0;
             display: flex;
@@ -5613,6 +5795,28 @@ elif tabs == "August 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-aug {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
         }
         .vertical-rectangle-stss-aug {
             background-color: #C09C9B; /* Example color */
@@ -5812,7 +6016,7 @@ elif tabs == "August 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,411,871 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,458,394 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5825,7 +6029,7 @@ elif tabs == "August 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-aug" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (27,699,354)
-                        <button class="mini-button">39.91%</button>
+                        <button class="mini-button">39.88%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-aug" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (5,041,468)
@@ -5837,7 +6041,7 @@ elif tabs == "August 2024":
                     </div>
                     <div class="vertical-rectangle-power-aug" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (29,592,103)
-                        <button class="mini-button">42.63%</button>
+                        <button class="mini-button">42.60%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (1,084,803)
@@ -5850,6 +6054,10 @@ elif tabs == "August 2024":
                     <div class="vertical-rectangle-citystreetlights-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (430,198)
                         <button class="mini-button-2">0.62%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (46,523)
+                        <button class="mini-button-2">0.07%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-aug" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,701,268)
@@ -6189,7 +6397,7 @@ elif tabs == "September 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 39.08%;
+            height: 39.05%;
             top: 0;
             left: 0;
             display: flex;
@@ -6255,7 +6463,7 @@ elif tabs == "September 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 44.33%;
+            height: 44.30%;
             top: 0;
             left: 0;
             display: flex;
@@ -6335,6 +6543,28 @@ elif tabs == "September 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-sep {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 70%;
         }
         .vertical-rectangle-stss-sep {
             background-color: #C09C9B; /* Example color */
@@ -6533,7 +6763,7 @@ elif tabs == "September 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,119,532 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,163,711 kWh</p>
                 </div>
             </div>
             ''', 
@@ -6546,7 +6776,7 @@ elif tabs == "September 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-sep" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (25,836,637)
-                        <button class="mini-button">39.08%</button>
+                        <button class="mini-button">39.05%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-sep" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (4,860,307)
@@ -6558,7 +6788,7 @@ elif tabs == "September 2024":
                     </div>
                     <div class="vertical-rectangle-power-sep" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (29,312,602)
-                        <button class="mini-button">44.33%</button>
+                        <button class="mini-button">44.30%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (1,020,489)
@@ -6571,6 +6801,10 @@ elif tabs == "September 2024":
                     <div class="vertical-rectangle-citystreetlights-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (526,798)
                         <button class="mini-button-2">0.80%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (44,179)
+                        <button class="mini-button-2">0.07%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-sep" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (2,912,053)
@@ -6909,7 +7143,7 @@ elif tabs == "October 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 39.23%;
+            height: 39.21%;
             top: 0;
             left: 0;
             display: flex;
@@ -6975,7 +7209,7 @@ elif tabs == "October 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 43.95%;
+            height: 43.92%;
             top: 0;
             left: 0;
             display: flex;
@@ -6997,7 +7231,7 @@ elif tabs == "October 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 1.68%;
+            height: 1.67%;
             top: 0;
             left: 0;
             display: flex;
@@ -7055,6 +7289,28 @@ elif tabs == "October 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-oct {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
         }
         .vertical-rectangle-stss-oct {
             background-color: #C09C9B; /* Example color */
@@ -7254,7 +7510,7 @@ elif tabs == "October 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,371,221 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,416,388 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7267,7 +7523,7 @@ elif tabs == "October 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-oct" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (26,039,704)
-                        <button class="mini-button">39.23%</button>
+                        <button class="mini-button">39.21%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-oct" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (4,880,754)
@@ -7279,11 +7535,11 @@ elif tabs == "October 2024":
                     </div>
                     <div class="vertical-rectangle-power-oct" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (29,168,182)
-                        <button class="mini-button">43.95%</button>
+                        <button class="mini-button">43.92%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (1,112,136)
-                        <button class="mini-button-2">1.68%</button>
+                        <button class="mini-button-2">1.67%</button>
                     </div>
                     <div class="vertical-rectangle-othergovernment-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Other Govt. (907,607)
@@ -7292,6 +7548,10 @@ elif tabs == "October 2024":
                     <div class="vertical-rectangle-citystreetlights-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (435,889)
                         <button class="mini-button-2">0.66%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (45,167)
+                        <button class="mini-button-2">0.07%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-oct" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,278,701)
@@ -7627,7 +7887,7 @@ elif tabs == "November 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 39.54%;
+            height: 39.50%;
             top: 0;
             left: 0;
             display: flex;
@@ -7649,7 +7909,7 @@ elif tabs == "November 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 7.48%;
+            height: 7.47%;
             top: 0;
             left: 0;
             display: flex;
@@ -7693,7 +7953,7 @@ elif tabs == "November 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 43.18%;
+            height: 43.14%;
             top: 0;
             left: 0;
             display: flex;
@@ -7773,6 +8033,28 @@ elif tabs == "November 2024":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-nov {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.09%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
         }
         .vertical-rectangle-stss-nov {
             background-color: #C09C9B; /* Example color */
@@ -7972,7 +8254,7 @@ elif tabs == "November 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,333,374 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,391,969 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7985,11 +8267,11 @@ elif tabs == "November 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-nov" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Residential (26,621,291)
-                        <button class="mini-button">39.54%</button>
+                        <button class="mini-button">39.50%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-nov" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Commercial (5,034,110)
-                        <button class="mini-button-2">7.48%</button>
+                        <button class="mini-button-2">7.47%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-nov" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Intermediate (174,857)
@@ -7997,7 +8279,7 @@ elif tabs == "November 2024":
                     </div>
                     <div class="vertical-rectangle-power-nov" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Power (29,076,012)
-                        <button class="mini-button">43.18%</button>
+                        <button class="mini-button">43.14%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Govt. (1,060,257)
@@ -8010,6 +8292,10 @@ elif tabs == "November 2024":
                     <div class="vertical-rectangle-citystreetlights-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         City Streetlights (439,117)
                         <button class="mini-button-2">0.65%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        EOU (58,595)
+                        <button class="mini-button-2">0.09%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-nov" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         DSL_Feeder (3,104,654)
@@ -8349,7 +8635,7 @@ elif tabs == "December 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 38.77%;
+            height: 38.75%;
             top: 0;
             left: 0;
             display: flex;
@@ -8415,7 +8701,7 @@ elif tabs == "December 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 44.53%;
+            height: 44.49%;
             top: 0;
             left: 0;
             display: flex;
@@ -8496,6 +8782,28 @@ elif tabs == "December 2024":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-dec {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
+        }
         .vertical-rectangle-stss-dec {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -8525,7 +8833,7 @@ elif tabs == "December 2024":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 4.53%;
+            height: 4.52%;
             top: 0;
             left: 0;
             display: flex;
@@ -8694,7 +9002,7 @@ elif tabs == "December 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">65,181,528 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">65,229,255 kWh</p>
                 </div>
             </div>
             ''', 
@@ -8707,7 +9015,7 @@ elif tabs == "December 2024":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-dec" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (25,273,704)
-                        <button class="mini-button">38.77%</button>
+                        <button class="mini-button">38.75%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-dec" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (4,785,379)
@@ -8719,7 +9027,7 @@ elif tabs == "December 2024":
                     </div>
                     <div class="vertical-rectangle-power-dec" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (29,023,526)
-                        <button class="mini-button">44.53%</button>
+                        <button class="mini-button">44.49%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-dec" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (990,510)
@@ -8733,9 +9041,13 @@ elif tabs == "December 2024":
                         City Streetlights (446,366)
                         <button class="mini-button-2">0.68%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-dec" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        EOU (47,727)
+                        <button class="mini-button-2">0.07%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-dec" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (2,949,895)
-                        <button class="mini-button-2">4.53%</button>
+                        <button class="mini-button-2">4.52%</button>
                     </div>
                     <div class="vertical-rectangle-stss-dec" onclick="fetch('/?rect=9').then(() => window.location.reload())">
                         DSL_ST+SS (675,589)
@@ -9074,7 +9386,7 @@ elif tabs == "January 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 39.83%;
+            height: 39.80%;
             top: 0;
             left: 0;
             display: flex;
@@ -9096,7 +9408,7 @@ elif tabs == "January 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 7.48%;
+            height: 7.47%;
             top: 0;
             left: 0;
             display: flex;
@@ -9140,7 +9452,7 @@ elif tabs == "January 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 43.14%;
+            height: 43.11%;
             top: 0;
             left: 0;
             display: flex;
@@ -9221,6 +9533,28 @@ elif tabs == "January 2025":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-jan2025 {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 70%;
+        }
         .vertical-rectangle-stss-jan2025 {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -9250,7 +9584,7 @@ elif tabs == "January 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 5.27%;
+            height: 5.26%;
             top: 0;
             left: 0;
             display: flex;
@@ -9419,7 +9753,7 @@ elif tabs == "January 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">62,765,144 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">62,810,250 kWh</p>
                 </div>
             </div>
             ''', 
@@ -9432,11 +9766,11 @@ elif tabs == "January 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-jan2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (24,998,326)
-                        <button class="mini-button">39.83%</button>
+                        <button class="mini-button">39.80%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-jan2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (4,694,133)
-                        <button class="mini-button-2">7.48%</button>
+                        <button class="mini-button-2">7.47%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-jan2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Intermediate (165,725)
@@ -9444,7 +9778,7 @@ elif tabs == "January 2025":
                     </div>
                     <div class="vertical-rectangle-power-jan2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (27,076,440)
-                        <button class="mini-button">43.14%</button>
+                        <button class="mini-button">43.11%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-jan2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (914,391)
@@ -9458,9 +9792,13 @@ elif tabs == "January 2025":
                         City Streetlights (450,518)
                         <button class="mini-button-2">0.72%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-jan2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        EOU (45,106)
+                        <button class="mini-button-2">0.07%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-jan2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (3,304,777)
-                        <button class="mini-button-2">5.27%</button>
+                        <button class="mini-button-2">5.26%</button>
                     </div>
                     <div class="vertical-rectangle-stss-jan2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
                         DSL_ST+SS (350,015)
@@ -9795,7 +10133,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 32.78%;
+            height: 37.41%;
             top: 0;
             left: 0;
             display: flex;
@@ -9817,7 +10155,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 6.29%;
+            height: 7.18%;
             top: 0;
             left: 0;
             display: flex;
@@ -9839,7 +10177,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 12.91%;
+            height: 0.25%;
             top: 0;
             left: 0;
             display: flex;
@@ -9861,7 +10199,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 37.24%;
+            height: 42.67%;
             top: 0;
             left: 0;
             display: flex;
@@ -9883,7 +10221,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 1.37%;
+            height: 1.58%;
             top: 0;
             left: 0;
             display: flex;
@@ -9905,7 +10243,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 1.16%;
+            height: 1.39%;
             top: 0;
             left: 0;
             display: flex;
@@ -9927,7 +10265,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 0.55%;
+            height: 0.68%;
             top: 0;
             left: 0;
             display: flex;
@@ -9942,6 +10280,28 @@ elif tabs == "February 2025":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-feb2025 {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.06%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 70%;
+        }
         .vertical-rectangle-stss-feb2025 {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -9949,7 +10309,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 0.19%;
+            height: 0.22%;
             top: 0;
             left: 0;
             display: flex;
@@ -9971,7 +10331,7 @@ elif tabs == "February 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 7.50%;
+            height: 8.56%;
             top: 0;
             left: 0;
             display: flex;
@@ -10140,7 +10500,7 @@ elif tabs == "February 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">64,385,476 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">64,424,274 kWh</p>
                 </div>
             </div>
             ''', 
@@ -10153,11 +10513,11 @@ elif tabs == "February 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-feb2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (24,100,555)
-                        <button class="mini-button">37.43%</button>
+                        <button class="mini-button">37.41%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-feb2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (4,628,295)
-                        <button class="mini-button-2">7.19%</button>
+                        <button class="mini-button-2">7.18%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-feb2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Intermediate (158,944)
@@ -10165,7 +10525,7 @@ elif tabs == "February 2025":
                     </div>
                     <div class="vertical-rectangle-power-feb2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (27,489,760)
-                        <button class="mini-button">42.70%</button>
+                        <button class="mini-button">42.67%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-feb2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (1,017,458)
@@ -10179,9 +10539,13 @@ elif tabs == "February 2025":
                         City Streetlights (437,070)
                         <button class="mini-button-2">0.68%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-feb2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        EOU (38,798)
+                        <button class="mini-button-2">0.06%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-feb2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (5,515,061)
-                        <button class="mini-button-2">8.57%</button>
+                        <button class="mini-button-2">8.56%</button>
                     </div>
                     <div class="vertical-rectangle-stss-feb2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
                         DSL_ST+SS (142,571)
@@ -10516,7 +10880,7 @@ elif tabs == "March 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 41.34%;
+            height: 41.31%;
             top: 0;
             left: 0;
             display: flex;
@@ -10538,7 +10902,7 @@ elif tabs == "March 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 7.92%;
+            height: 7.91%;
             top: 0;
             left: 0;
             display: flex;
@@ -10582,7 +10946,7 @@ elif tabs == "March 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 45.45%;
+            height: 45.41%;
             top: 0;
             left: 0;
             display: flex;
@@ -10604,7 +10968,7 @@ elif tabs == "March 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 1.68%;
+            height: 1.67%;
             top: 0;
             left: 0;
             display: flex;
@@ -10662,6 +11026,28 @@ elif tabs == "March 2025":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-mar2025 {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.07%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
         }
         .vertical-rectangle-stss-mar2025 {
             background-color: #C09C9B; /* Example color */
@@ -10861,7 +11247,7 @@ elif tabs == "March 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">60,255,103 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">60,299,624 kWh</p>
                 </div>
             </div>
             ''', 
@@ -10874,11 +11260,11 @@ elif tabs == "March 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-mar2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (24,911,214)
-                        <button class="mini-button">41.34%</button>
+                        <button class="mini-button">41.31%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-mar2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (4,771,171)
-                        <button class="mini-button-2">7.92%</button>
+                        <button class="mini-button-2">7.91%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-mar2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Intermediate (166,087)
@@ -10886,11 +11272,11 @@ elif tabs == "March 2025":
                     </div>
                     <div class="vertical-rectangle-power-mar2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (27,384,519)
-                        <button class="mini-button">45.45%</button>
+                        <button class="mini-button">45.41%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-mar2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (1,009,547)
-                        <button class="mini-button-2">1.68%</button>
+                        <button class="mini-button-2">1.67%</button>
                     </div>
                     <div class="vertical-rectangle-othergovernment-mar2025" onclick="fetch('/?rect=6').then(() => window.location.reload())">
                         Other Govt. (854,496)
@@ -10899,6 +11285,10 @@ elif tabs == "March 2025":
                     <div class="vertical-rectangle-citystreetlights-mar2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
                         City Streetlights (402,736)
                         <button class="mini-button-2">0.67%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-mar2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        EOU (44,521)
+                        <button class="mini-button-2">0.07%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-mar2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (236,695)
@@ -11259,7 +11649,7 @@ elif tabs == "April 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 40.28%;
+            height: 40.25%;
             top: 0;
             left: 0;
             display: flex;
@@ -11325,7 +11715,7 @@ elif tabs == "April 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 40.61%;
+            height: 40.59%;
             top: 0;
             left: 0;
             display: flex;
@@ -11406,6 +11796,28 @@ elif tabs == "April 2025":
             z-index: 10;
             font-size: 55%;
         }
+        .vertical-rectangle-eou-apr2025 {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.06%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 70%;
+        }
         .vertical-rectangle-stss-apr2025 {
             background-color: #C09C9B; /* Example color */
             color: black !important;;
@@ -11435,7 +11847,7 @@ elif tabs == "April 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 8.00%;
+            height: 7.99%;
             top: 0;
             left: 0;
             display: flex;
@@ -11608,7 +12020,7 @@ elif tabs == "April 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,992,460 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">72,037,516 kWh</p>
                 </div>
             </div>
             ''', 
@@ -11621,7 +12033,7 @@ elif tabs == "April 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-apr2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (28,996,976)
-                        <button class="mini-button">40.28%</button>
+                        <button class="mini-button">40.25%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-apr2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (5,068,020)
@@ -11633,7 +12045,7 @@ elif tabs == "April 2025":
                     </div>
                     <div class="vertical-rectangle-power-apr2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (29,237,095)
-                        <button class="mini-button">40.61%</button>
+                        <button class="mini-button">40.59%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-apr2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (872,672)
@@ -11647,9 +12059,13 @@ elif tabs == "April 2025":
                         City Streetlights (422,536)
                         <button class="mini-button-2">0.59%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-apr2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                       EOU (45,056)
+                        <button class="mini-button-2">0.06%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-apr2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (5,758,070)
-                        <button class="mini-button-2">8.00%</button>
+                        <button class="mini-button-2">7.99%</button>
                     </div>
                     <div class="vertical-rectangle-stss-apr2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
                         DSL_ST+SS (505,972)
@@ -12006,7 +12422,7 @@ elif tabs == "May 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 42.14%;
+            height: 42.12%;
             top: 0;
             left: 0;
             display: flex;
@@ -12072,7 +12488,7 @@ elif tabs == "May 2025":
             border: 2px solid #ccc;
             font-weight: bold;
             width: 100%;
-            height: 42.27%;
+            height: 42.25%;
             top: 0;
             left: 0;
             display: flex;
@@ -12152,6 +12568,28 @@ elif tabs == "May 2025":
             box-sizing: border-box; /* Ensure consistent sizing */
             z-index: 10;
             font-size: 55%;
+        }
+        .vertical-rectangle-eou-may2025 {
+            background-color: #C0B97B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 0.05%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;    
+            font-size: 70%;
         }
         .vertical-rectangle-stss-may2025 {
             background-color: #C09C9B; /* Example color */
@@ -12364,7 +12802,7 @@ elif tabs == "May 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">70,727,974 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">70,762,097 kWh</p>
                 </div>
             </div>
             ''', 
@@ -12377,7 +12815,7 @@ elif tabs == "May 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-may2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (29,805,946)
-                        <button class="mini-button">42.14%</button>
+                        <button class="mini-button">42.12%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-may2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (5,335,889)
@@ -12389,7 +12827,7 @@ elif tabs == "May 2025":
                     </div>
                     <div class="vertical-rectangle-power-may2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (29,894,455)
-                        <button class="mini-button">42.27%</button>
+                        <button class="mini-button">42.25%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-may2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (904,407)
@@ -12402,6 +12840,10 @@ elif tabs == "May 2025":
                     <div class="vertical-rectangle-citystreetlights-may2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
                         City Streetlights (421,558)
                         <button class="mini-button-2">0.60%</button>
+                    </div>
+                     <div class="vertical-rectangle-eou-may2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        EOU (34,123)
+                        <button class="mini-button-2">0.05%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-may2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (1,205,862)
@@ -12780,7 +13222,7 @@ elif tabs == "June 2025":
                 border: 2px solid #ccc;
                 font-weight: bold;
                 width: 100%;
-                height: 40.76%;
+                height: 40.74%;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -12802,7 +13244,7 @@ elif tabs == "June 2025":
                 border: 2px solid #ccc;
                 font-weight: bold;
                 width: 100%;
-                height: 7.45%;
+                height: 7.44%;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -12846,7 +13288,7 @@ elif tabs == "June 2025":
                 border: 2px solid #ccc;
                 font-weight: bold;
                 width: 100%;
-                height: 43.27%;
+                height: 43.25%;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -12927,6 +13369,28 @@ elif tabs == "June 2025":
                 z-index: 10;
                 font-size: 55%;
             }
+            .vertical-rectangle-eou-jun2025 {
+                background-color: #C0B97B; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.06%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;    
+                font-size: 70%;
+            }
             .vertical-rectangle-stss-jun2025 {
                 background-color: #C09C9B; /* Example color */
                 color: black !important;;
@@ -12956,7 +13420,7 @@ elif tabs == "June 2025":
                 border: 2px solid #ccc;
                 font-weight: bold;
                 width: 100%;
-                height: 1.74%;
+                height: 1.73%;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -13138,7 +13602,7 @@ elif tabs == "June 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,488,119 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,527,152 kWh</p>
                 </div>
             </div>
             ''', 
@@ -13151,11 +13615,11 @@ elif tabs == "June 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-jun2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (28,326,290)
-                        <button class="mini-button">40.76%</button>
+                        <button class="mini-button">40.74%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-jun2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (5,173,877)
-                        <button class="mini-button-2">7.45%</button>
+                        <button class="mini-button-2">7.44%</button>
                     </div>
                     <div class="vertical-rectangle-intermediate-jun2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
                         Intermediate (186,622)
@@ -13163,7 +13627,7 @@ elif tabs == "June 2025":
                     </div>
                     <div class="vertical-rectangle-power-jun2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
                         Power (30,069,505)
-                        <button class="mini-button">43.27%</button>
+                        <button class="mini-button">43.25%</button>
                     </div>
                     <div class="vertical-rectangle-citygovernment-jun2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
                         City Govt. (1,034,397)
@@ -13177,9 +13641,13 @@ elif tabs == "June 2025":
                         City Streetlights (433,806)
                         <button class="mini-button-2">0.62%</button>
                     </div>
+                    <div class="vertical-rectangle-eou-jun2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        EOU (39,033)
+                        <button class="mini-button-2">0.06%</button>
+                    </div>
                     <div class="vertical-rectangle-feeder-jun2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
                         DSL_Feeder (1,205,862)
-                        <button class="mini-button-2">1.74%</button>
+                        <button class="mini-button-2">1.73%</button>
                     </div>
                     <div class="vertical-rectangle-stss-jun2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
                         DSL_ST+SS (2,037,053)
