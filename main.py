@@ -14815,6 +14815,234 @@ elif tabs == "August 2025":
                 box-sizing: border-box; /* Ensure consistent sizing */
                 font-size: 85%;
             }
+            .vertical-rectangle-residential-aug2025 {
+                background-color: #3A4C61; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 39.69%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+            .vertical-rectangle-commercial-aug2025 {
+                background-color: #7A4B56; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 7.49%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 60%;
+            }
+            .vertical-rectangle-intermediate-aug2025 {
+                background-color: #556B2F; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.27%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 65%;
+            }
+            .vertical-rectangle-power-aug2025 {
+                background-color: #5D3F66; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 42.85%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+            .vertical-rectangle-citygovernment-aug2025 {
+                background-color: #7A5A2F; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.67%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 60%;
+            }
+            .vertical-rectangle-othergovernment-aug2025 {
+                background-color: #7A4A29; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.29%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 65%;
+            }
+            .vertical-rectangle-citystreetlights-aug2025 {
+                background-color: #6B4F3B; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.61%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 55%;
+            }
+            .vertical-rectangle-eou-aug2025 {
+                background-color: #C0B97B; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.06%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;    
+                font-size: 70%;
+            }
+            .vertical-rectangle-stss-aug2025 {
+                background-color: #C09C9B; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.04%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;    
+                font-size: 65%;
+            }
+            .vertical-rectangle-feeder-aug2025 {
+                background-color: #C09C9B; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 5.03%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 63%;
+            }
+            .invisible-rectangle-3rd-column {
+                width: 90%;  /* Set the width of the rectangle */
+                height: 360px; /* Set the height of the rectangle */
+                background-color: white; /* Make the rectangle invisible */
+                border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+                position: relative;  /* Allows child elements to be positioned relative to this */
+                z-index: 1; /* Ensure that the parent has lower stacking order than the children */
+            }
         }
         </style>
         <div class="rectangle-container">
@@ -14929,3 +15157,112 @@ elif tabs == "August 2025":
         """,
         unsafe_allow_html=True
     )
+        
+    with col4:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 225px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+        
+    with col5:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+                <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">70,459,535 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-aug2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Residential (27,962,301)
+                        <button class="mini-button">39.69%</button>
+                    </div>
+                    <div class="vertical-rectangle-commercial-aug2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Commercial (5,274,442)
+                        <button class="mini-button-2">7.49%</button>
+                    </div>
+                    <div class="vertical-rectangle-intermediate-aug2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Intermediate (193,116)
+                        <button class="mini-button-2">0.27%</button>
+                    </div>
+                    <div class="vertical-rectangle-power-aug2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Power (30,194,407)
+                        <button class="mini-button">42.85%</button>
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-aug2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
+                        City Govt. (1,173,250)
+                        <button class="mini-button-2">1.67%</button>
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-aug2025" onclick="fetch('/?rect=6').then(() => window.location.reload())">
+                        Other Govt. (911,726)
+                        <button class="mini-button-2">1.29%</button>
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-aug2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        City Streetlights (429,573)
+                        <button class="mini-button-2">0.61%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-aug2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        EOU (43,537)
+                        <button class="mini-button-2">0.06%</button>
+                    </div>
+                    <div class="vertical-rectangle-feeder-aug2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        DSL_Feeder (3,542,199)
+                        <button class="mini-button-2">5.03%</button>
+                    </div>
+                    <div class="vertical-rectangle-stss-aug2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
+                        DSL_ST+SS (734,984)
+                        <button class="mini-button-2">1.04%</button>
+                    </div>
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -145px; z-index:2;">
+            <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
+        </div>
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -355px; margin-bottom: 10px">
+                <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
+                </div>
+            </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
