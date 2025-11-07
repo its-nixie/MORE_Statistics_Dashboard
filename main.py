@@ -118,7 +118,7 @@ def get_base64_from_image(image):
 
 add_logo_with_text("more_power_logo.png", "Statistics Dashboard", max_width=150, text_size=20, font_family="Helvetica")
 
-tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024", "January 2025", "February 2025", "March 2025", "April 2025", "May 2025",  "June 2025", "July 2025", "August 2025", "September 2025"], index=0)
+tabs = st.sidebar.radio("For the month of", ["January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024", "January 2025", "February 2025", "March 2025", "April 2025", "May 2025",  "June 2025", "July 2025", "August 2025", "September 2025", "October 2025"], index=0)
 
 # January 2024
 if tabs == "January 2024":    
@@ -800,7 +800,7 @@ if tabs == "January 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,119,620 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">54,855,400 kWh</p>
                 </div>
             </div>
             ''', 
@@ -1552,7 +1552,7 @@ elif tabs == "February 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,600,352 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">55,941,666 kWh</p>
                 </div>
             </div>
             ''', 
@@ -2295,7 +2295,7 @@ elif tabs == "March 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">60,703,159 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">59,532,711 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3038,7 +3038,7 @@ elif tabs == "April 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,649,692 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,266,973 kWh</p>
                 </div>
             </div>
             ''', 
@@ -3782,7 +3782,7 @@ elif tabs == "May 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">76,788,209 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">71,475,054 kWh</p>
                 </div>
             </div>
             ''', 
@@ -4525,7 +4525,7 @@ elif tabs == "June 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">68,196,439 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">64,105,740 kWh</p>
                 </div>
             </div>
             ''', 
@@ -5270,7 +5270,7 @@ elif tabs == "July 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,850,921 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">61,195,039 kWh</p>
                 </div>
             </div>
             ''', 
@@ -6016,7 +6016,7 @@ elif tabs == "August 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,458,394 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">64,931,187 kWh</p>
                 </div>
             </div>
             ''', 
@@ -6763,7 +6763,7 @@ elif tabs == "September 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,163,711 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">62,654,759 kWh</p>
                 </div>
             </div>
             ''', 
@@ -7510,7 +7510,7 @@ elif tabs == "October 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,416,388 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">62,762,388 kWh</p>
                 </div>
             </div>
             ''', 
@@ -8254,7 +8254,7 @@ elif tabs == "November 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,391,969 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,367,008 kWh</p>
                 </div>
             </div>
             ''', 
@@ -9002,7 +9002,7 @@ elif tabs == "December 2024":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">65,229,255 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">61,603,771 kWh</p>
                 </div>
             </div>
             ''', 
@@ -9753,7 +9753,7 @@ elif tabs == "January 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">62,810,250 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,155,458 kWh</p>
                 </div>
             </div>
             ''', 
@@ -10500,7 +10500,7 @@ elif tabs == "February 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">64,424,274 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">58,766,642 kWh</p>
                 </div>
             </div>
             ''', 
@@ -11247,7 +11247,7 @@ elif tabs == "March 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">60,299,624 kWh</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">59,544,291 kWh</p>
                 </div>
             </div>
             ''', 
@@ -12020,7 +12020,7 @@ elif tabs == "April 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">72,037,516 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">65,773,474 kWh</p>
                 </div>
             </div>
             ''', 
@@ -12802,7 +12802,7 @@ elif tabs == "May 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">70,762,097 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,519,182 kWh</p>
                 </div>
             </div>
             ''', 
@@ -13602,7 +13602,7 @@ elif tabs == "June 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">69,527,152 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,284,237 kWh</p>
                 </div>
             </div>
             ''', 
@@ -14402,7 +14402,7 @@ elif tabs == "July 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,244,222 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">65,123,659 kWh</p>
                 </div>
             </div>
             ''', 
@@ -14822,7 +14822,7 @@ elif tabs == "August 2025":
                 border: 2px solid #ccc;
                 font-weight: bold;
                 width: 100%;
-                height: 39.69%;
+                height: 39.68%;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -15202,7 +15202,7 @@ elif tabs == "August 2025":
             f'''
             <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
                 <div style="text-decoration-line: underline;">
-                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">70,459,535 kWh</p>
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">66,182,352 kWh</p>
                 </div>
             </div>
             ''', 
@@ -15215,7 +15215,7 @@ elif tabs == "August 2025":
                 <div class="invisible-rectangle-3rd-column">
                     <div class="vertical-rectangle-residential-aug2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                         Residential (27,962,301)
-                        <button class="mini-button">39.69%</button>
+                        <button class="mini-button">39.68%</button>
                     </div>
                     <div class="vertical-rectangle-commercial-aug2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
                         Commercial (5,274,442)
@@ -15246,7 +15246,7 @@ elif tabs == "August 2025":
                         <button class="mini-button-2">0.06%</button>
                     </div>
                     <div class="vertical-rectangle-feeder-aug2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
-                        DSL_Feeder (3,542,199)
+                        DSL_Feeder (3,543,599)
                         <button class="mini-button-2">5.03%</button>
                     </div>
                     <div class="vertical-rectangle-stss-aug2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
@@ -15365,7 +15365,7 @@ elif tabs == "September 2025":
 
             .invisible-rectangle-3rd-column {
                 width: 90%;  /* Set the width of the rectangle */
-                height: 410px; /* Set the height of the rectangle */
+                height: 340px; /* Set the height of the rectangle */
                 background-color: white; /* Make the rectangle invisible */
                 border: 1px solid transparent; /* Optional: Add a border (invisible here) */
                 position: relative;  /* Allows child elements to be positioned relative to this */
@@ -15615,6 +15615,226 @@ elif tabs == "September 2025":
                 box-sizing: border-box; /* Ensure consistent sizing */
                 font-size: 85%;
             }
+            .vertical-rectangle-residential-sep2025 {
+                background-color: #3A4C61; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 38.77%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+            .vertical-rectangle-commercial-sep2025 {
+                background-color: #7A4B56; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 7.60%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 60%;
+            }
+            .vertical-rectangle-intermediate-sep2025 {
+                background-color: #556B2F; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.27%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 65%;
+            }
+            .vertical-rectangle-power-sep2025 {
+                background-color: #5D3F66; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 43.57%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+            .vertical-rectangle-citygovernment-sep2025 {
+                background-color: #7A5A2F; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.73%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 70%;
+            }
+            .vertical-rectangle-othergovernment-sep2025 {
+                background-color: #7A4A29; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.35%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 70%;
+            }
+            .vertical-rectangle-citystreetlights-sep2025 {
+                background-color: #6B4F3B; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.65%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 55%;
+            }
+            .vertical-rectangle-eou-sep2025 {
+                background-color: #C0B97B; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 0.06%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;    
+                font-size: 70%;
+            }
+            .vertical-rectangle-stss-sep2025 {
+                background-color: #C09C9B; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.01%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;    
+                font-size: 65%;
+            }
+        .vertical-rectangle-feeder-sep2025 {
+            background-color: #C09C9B; /* Example color */
+            color: black !important;;
+            padding: 10px;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            width: 100%;
+            height: 4.98%;
+            top: 0;
+            left: 0;
+            display: flex;
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 !important; /* Remove rectangle margin */
+            box-sizing: border-box; /* Ensure consistent sizing */
+            z-index: 10;
+            font-size: 60%;
+        }
         }
         </style>
         <div class="rectangle-container">
@@ -15724,6 +15944,578 @@ elif tabs == "September 2025":
             <div class="rectangle-container-2">
                 <div class="net-metering-sep2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
                     Net Metering (266,710)
+            </div>
+            </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    with col4:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 200px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 210px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+        
+    with col5:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{sales_img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 8px">
+                <div style="background-color: #517d8b; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{third_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 10px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">63,945,077 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+                <div class="invisible-rectangle-3rd-column">
+                    <div class="vertical-rectangle-residential-sep2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                        Residential (26,375,515)
+                        <button class="mini-button">38.77%</button>
+                    </div>
+                    <div class="vertical-rectangle-commercial-sep2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                        Commercial (5,169,864)
+                        <button class="mini-button-2">7.60%</button>
+                    </div>
+                    <div class="vertical-rectangle-intermediate-sep2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                        Intermediate (186,129)
+                        <button class="mini-button-2">0.27%</button>
+                    </div>
+                    <div class="vertical-rectangle-power-sep2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                        Power (29,636,416)
+                        <button class="mini-button">43.57%</button>
+                    </div>
+                    <div class="vertical-rectangle-citygovernment-sep2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
+                        City Govt. (1,178,361)
+                        <button class="mini-button-2">1.73%</button>
+                    </div>
+                    <div class="vertical-rectangle-othergovernment-sep2025" onclick="fetch('/?rect=6').then(() => window.location.reload())">
+                        Other Govt. (918,296)
+                        <button class="mini-button-2">1.35%</button>
+                    </div>
+                    <div class="vertical-rectangle-citystreetlights-sep2025" onclick="fetch('/?rect=7').then(() => window.location.reload())">
+                        City Streetlights (438,840)
+                        <button class="mini-button-2">0.65%</button>
+                    </div>
+                    <div class="vertical-rectangle-eou-sep2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        EOU (41,656)
+                        <button class="mini-button-2">0.06%</button>
+                    </div>
+                    <div class="vertical-rectangle-feeder-sep2025" onclick="fetch('/?rect=8').then(() => window.location.reload())">
+                        DSL_Feeder (3,390,747)
+                        <button class="mini-button-2">4.98%</button>
+                    </div>
+                    <div class="vertical-rectangle-stss-sep2025" onclick="fetch('/?rect=9').then(() => window.location.reload())">
+                        DSL_ST+SS (686,632)
+                        <button class="mini-button-2">1.01%</button>
+                    </div>
+                    <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 0%; margin-top: -130px; z-index:2;">
+            <img src="data:image/png;base64,{systemloss_img_str}" width="35%">
+        </div>
+            <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; text-align: center; height: 100%; margin-left: 30%; font-family: Arial; margin-top: -340px; margin-bottom: 10px">
+                <div style="background-color: #496615; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 20px; font-weight: bold; color: white; margin: 0;">{third_column_title_2}</p>
+                </div>
+            </div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# October 2025
+elif tabs == "October 2025":
+    col1, col2, col3, col4, col5 = st.columns([1.5, 1, 1.5, 1, 1.5])
+
+    with col1:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index: 2;">
+            <img src="data:image/png;base64,{power_plant_img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 20px">
+                <div style="background-color: #932c27; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{first_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;">67,776,303 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+        """
+        <style>
+            /* Force small gap between rectangles */
+            .rectangle-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px !important; /* Minimal gap */
+                margin: 0 !important; /* Remove container margin */
+                padding: 0 !important; /* Remove container padding */
+            }
+
+            .mini-button {
+                font-size: 12px; /* Make the text small */
+                padding: 2px 5 px; /* Adjust padding for a smaller button */
+                background-color: white; /* Green background */
+                color: black; /* White text color */
+                border: none; /* Remove border */
+                border-radius: 5px; /* Slightly rounded corners */
+                cursor: pointer; /* Change cursor to pointer on hover */
+                margin-left: 5px; /* Space between text and button */
+            }
+
+            .mini-button-2 {
+                font-size: 8px; /* Even smaller text */
+                padding: 2px 5px; /* Smaller padding for a more compact button */
+                background-color: white; /* White background */
+                color: black; /* Black text color */
+                border: none; /* No border */
+                border-radius: 3px; /* Smaller rounded corners */
+                cursor: pointer; /* Pointer cursor on hover */
+                margin-left: 5px; /* Reduced space between text and button */
+            }
+
+            .rectangle-container-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px !important; /* Minimal gap */
+                margin-top: 15px;
+                padding: 0 !important; /* Remove container padding */
+            }
+
+            .invisible-rectangle-1st-column {
+                width: 90%;  /* Set the width of the rectangle */
+                height: 480px; /* Set the height of the rectangle */
+                background-color: white; /* Make the rectangle invisible */
+                border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+            }
+
+            .invisible-rectangle-2nd-column {
+                width: 90%;  /* Set the width of the rectangle */
+                height: 480px; /* Set the height of the rectangle */
+                background-color: white; /* Make the rectangle invisible */
+                border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+                position: relative;  /* Allows child elements to be positioned relative to this */
+                z-index: 1; /* Ensure that the parent has lower stacking order than the children */
+            }
+
+            .invisible-rectangle-3rd-column {
+                width: 90%;  /* Set the width of the rectangle */
+                height: 340px; /* Set the height of the rectangle */
+                background-color: white; /* Make the rectangle invisible */
+                border: 1px solid transparent; /* Optional: Add a border (invisible here) */
+                position: relative;  /* Allows child elements to be positioned relative to this */
+                z-index: 1; /* Ensure that the parent has lower stacking order than the children */
+            }
+
+            .vertical-rectangle-kspc-oct2025 {
+                background-color: #4682B4; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 16.38%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+
+            .vertical-rectangle-scpc-oct2025 {
+                background-color: #cc3333;
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 1.57%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 75%;
+            }
+
+            .vertical-rectangle-wesm-oct2025 {
+                background-color: #FFDB58; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 47.89%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+
+            .vertical-rectangle-edc-oct2025 {
+                background-color: #228B22; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 14.27%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 85%;
+            }
+
+            .vertical-rectangle-pedc-oct2025 {
+                background-color: #FFA500; /* Example color */
+                color: black !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 5.49%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                font-size: 75%;
+            }
+
+            .vertical-rectangle-cc-oct2025 {
+                background-color: #8861A8; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 14.40%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                z-index: 10;
+                position: relative;
+                pointer-events: auto;
+                font-size: 85%;
+            }
+
+            .vertical-rectangle-cc-oct2025:hover .tooltip-oct2025 {
+                display: block;
+                transform: scale(1.05);
+                transition: background-color 0.3s, transform 0.3s;
+                z-index: 15;
+            }
+
+            .tooltip-oct2025 {
+                display: none;
+                position: absolute;
+                top: -65px;
+                left: 105%;
+                width: 135%;
+                margin-left: 10px;
+                background-color: #8861A8;
+                color: white;
+                padding: 10px;
+                border: 1px solid #ddd;
+                z-index: 15;
+                opacity: 100%;
+            }
+
+            .vertical-rectangle-oct2025-ilomore01 {
+                background-color: #365E32; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 37.10%;
+                top: 0;
+                left: 0;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                font-size: 85%;
+            }
+
+            .vertical-rectangle-oct2025-sbamore02 {
+                background-color: #365E32; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 31.80%;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                font-size: 85%;
+            }
+
+            .vertical-rectangle-oct2025-sbamore03 {
+                background-color: #365E32; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 100%;
+                height: 31.10%;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                font-size: 85%;
+            }
+
+            .net-metering-oct2025 {
+                background-color: #365E32; /* Example color */
+                color: white !important;;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-weight: bold;
+                width: 90%;
+                height: 100%;
+                display: flex;
+                font-size: 12px;
+                border-radius: 5px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 !important; /* Remove rectangle margin */
+                box-sizing: border-box; /* Ensure consistent sizing */
+                font-size: 85%;
+            }
+        }
+        </style>
+        <div class="rectangle-container">
+            <div class="invisible-rectangle-1st-column">
+                <div class="vertical-rectangle-cc-oct2025"> 
+                        Contestables (9,761,219)
+                        <button class="mini-button">14.40%</button>
+                    <div class="tooltip-oct2025">
+                        <div class="arrow">SM Delgado -  491,277<br>SM City -  2,314,948<br>Golden Portals - 673,127<br>QHP - 419,777<br>Mary Mart -  260,386<br>HEVA - 355,787<br>Marriott - 395,243<br>Festive Walk Mall - 680,134<br>Smart Communications - 329,883<br>HEVA ICC - 107,704<br>KAREILA - 234,322<br>One Fintech - 302,867<br>Seda Hotel - 120,534<br>Innove Communications - 184,657<br>Adauge (The Shops) - 115,150<br>Sunnyfield - 173,854<br>Two Fintech - 321,912<br>Festive Walk 2 - 262,632<br>Robinsons City - 1,063,002<br>Robinsons Jaro - 663,601<br>Foremost - 290,423</div>
+                    </div>
+                </div>
+                <div class="vertical-rectangle-kspc-oct2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                    KSPC (11,100,000)
+                    <button class="mini-button">16.38%</button>
+                </div>
+                <div class="vertical-rectangle-scpc-oct2025" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                    SCPC (1,062,500)
+                    <button class="mini-button">1.57%</button>
+                </div>
+                <div class="vertical-rectangle-edc-oct2025" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                    EDC (9,672,000)
+                    <button class="mini-button">14.27%</button>
+                </div>
+                <div class="vertical-rectangle-pedc-oct2025" onclick="fetch('/?rect=4').then(() => window.location.reload())">
+                    PEDC (3,720,000)
+                    <button class="mini-button">5.49%</button>
+                </div>
+                <div class="vertical-rectangle-wesm-oct2025" onclick="fetch('/?rect=5').then(() => window.location.reload())">
+                    WESM (32,460,584)
+                    <button class="mini-button">47.89%</button>
+                </div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+        
+    with col2:
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; height: 100%; margin-top: 300px; z-index:2;">
+            <img src="data:image/png;base64,{arrow_img_str}" width="100%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+    with col3:    
+        # Second column icon
+        st.markdown(
+        f'''
+        <div style="position: relative; display: flex; justify-content: flex-start; align-items: center; height: 100%; margin-left: 30%; z-index:2;">
+            <img src="data:image/png;base64,{img_str}" width="45%">
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
+
+        # Second column title
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; margin-left: -20px; margin-top: -9px; font-family: Arial; margin-bottom: 20px">
+                <div style="background-color: #88778d; padding: 2px 15px; border-radius: 100px; z-index:1;">
+                    <p style="font-size: 24px; font-weight: bold; color: white; margin: 0;">{second_column_title}</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        # Show total     
+        st.markdown(
+            f'''
+            <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; margin-left: -12%; margin-top: 0px; font-family: Arial;">
+                <div style="text-decoration-line: underline;">
+                    <p style="font-size: 18px; font-weight: bold; color: white; margin: 0;"> 67,776,303 kWh</p>
+                </div>
+            </div>
+            ''', 
+            unsafe_allow_html=True
+        )
+
+        st.markdown(
+            f"""
+            <div class="rectangle-container">
+        <div class="invisible-rectangle-2nd-column">
+            <div class="vertical-rectangle-oct2025-ilomore01" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                ILOMORE01-PN1MORE04 (25,145,816)
+                <button class="mini-button">37.10%</button>
+            </div>
+            <div class="vertical-rectangle-oct2025-sbamore02" onclick="fetch('/?rect=2').then(() => window.location.reload())">
+                SBAMORE02-ILOMORE01 (21,551,992)
+                <button class="mini-button">31.80%</button>
+            </div>
+            <div class="vertical-rectangle-oct2025-sbamore03" onclick="fetch('/?rect=3').then(() => window.location.reload())">
+                SBAMORE03 (21,078,495)
+                <button class="mini-button">31.10%</button>
+            </div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+        
+        st.markdown(
+                f"""    
+            <div class="rectangle-container-2">
+                <div class="net-metering-oct2025" onclick="fetch('/?rect=1').then(() => window.location.reload())">
+                    Net Metering (246,154)
             </div>
             </div>
         """,
